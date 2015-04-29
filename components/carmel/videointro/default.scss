@@ -10,8 +10,8 @@
   color: #4a4a4a;
   font-family: 'Railway', sans-serif;
   font-weight: 700;
-  font-size: 2.8rem;
-  line-height: 3.2rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
 }
 
 .videointro h2 {
@@ -22,8 +22,8 @@
   color: #4a4a4a;
   font-family: 'Railway', sans-serif;
   font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 2.0rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
 
 .videointro p {
@@ -34,8 +34,8 @@
   color: #4a4a4a;
   font-family: 'Railway', sans-serif;
   font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 2.0rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 .videointro iframe {
@@ -49,20 +49,20 @@
   .videointro {}
 
     .videointro h1 {
-      font-size: 2.8rem;
-      line-height: 4.0rem;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
     }
 
     .videointro h2 {
-      margin-top: 2.0rem;
-      font-size: 2.0rem;
-      line-height: 2.4rem;
+      margin-top: 1.4rem;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
     }
 
     .videointro p {
-      margin-top: 3.0rem;
-      font-size: 1.8rem;
-      line-height: 2.4rem;
+      margin-top: 1.6rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
     }
 
     .videointro iframe {
@@ -74,14 +74,20 @@
 
   @media (min-width: 1200px) {
     .videointro h1 {
-      font-size: 3.2rem;
-      line-height: 4.0rem;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+    }
+
+    .videointro h2 {
+      margin-top: 1.4rem;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
     }
 
     .videointro p {
       padding-right: 1.0rem;
-      font-size: 1.4rem;
-      line-height: 1.8rem;
+      font-size: 1.1rem;
+      line-height: 1.6rem;
     }
 
   }
