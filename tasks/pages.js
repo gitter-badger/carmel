@@ -47,7 +47,7 @@ module.exports = function (gulp, plugins, config) {
         var body = '';
         var imports = '';
         var componentPaths = [config.bowerDir + '/jquery/dist/jquery.min.js',
-                              config.bowerDir + 'bootstrap-sass/assets/javascripts/bootstrap.min.js'];
+                              config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap.min.js'];
         components.forEach(function(component){
           body = body + "{{> " + component + "}}";
           imports = imports + "@import \"" + component + "\"; \n";
