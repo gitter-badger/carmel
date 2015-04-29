@@ -46,7 +46,8 @@ module.exports = function (gulp, plugins, config) {
 
         var body = '';
         var imports = '';
-        var componentPaths = [config.bowerDir + '/jquery/dist/jquery.min.js'];
+        var componentPaths = [config.bowerDir + '/jquery/dist/jquery.min.js',
+                              config.bowerDir + 'bootstrap-sass/assets/javascripts/bootstrap.min.js'];
         components.forEach(function(component){
           body = body + "{{> " + component + "}}";
           imports = imports + "@import \"" + component + "\"; \n";
@@ -81,7 +82,7 @@ module.exports = function (gulp, plugins, config) {
               path.basename = "index";
               path.extname = '.html';
             }))
-          //  .pipe(plugins.htmlmin({collapseWhitespace: true}))
+           .pipe(plugins.htmlmin({collapseWhitespace: true}))
            .pipe(gulp.dest(config.publicDir + "/" + page.name));
       });
     }
