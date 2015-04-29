@@ -29,9 +29,8 @@ module.exports = function (gulp, plugins, config) {
     function compilePages(pages) {
       pages.forEach(function(page) {
 
-        console.log("COMPILING PAGE " + page.name + " ...")
-
         page['menu'] = _createPageMenu(page);
+
         var pageOptions = options;
         var components = [];
         page.components.forEach(function(component){
@@ -47,13 +46,19 @@ module.exports = function (gulp, plugins, config) {
 
         var body = '';
         var imports = '';
+        var componentPaths = [config.bowerDir + '/jquery/dist/jquery.min.js'];
         components.forEach(function(component){
           body = body + "{{> " + component + "}}";
           imports = imports + "@import \"" + component + "\"; \n";
+          componentPath = config.carmelDir + '/components/' + component + ".js";
+          if (fs.existsSync(componentPath)){
+            componentPaths.push(componentPath);
+          }
         });
 
-        console.log("   -> found " + components.length + " components.");
-        console.log("   -> compiling css ...");
+        gulp.src(componentPaths)
+          .pipe(plugins.concat('scripts.js'))
+          .pipe(gulp.dest(config.publicDir + "/" + page.name));
 
         gulp.src(config.carmelDir + '/layouts/' + page.layout + '/style.scss')
             .pipe(plugins.insert.append(imports))
@@ -69,8 +74,6 @@ module.exports = function (gulp, plugins, config) {
             }))
             .pipe(gulp.dest(config.publicDir + "/" + page.name));
 
-        console.log("   -> compiling html ...");
-
         gulp.src(config.carmelDir + '/layouts/' + page.layout + '/index.hbs')
            .pipe(plugins.replace(/__PAGE_CONTENT__/g, body))
            .pipe(plugins.compileHandlebars(page, pageOptions))
@@ -78,10 +81,8 @@ module.exports = function (gulp, plugins, config) {
               path.basename = "index";
               path.extname = '.html';
             }))
-           .pipe(plugins.htmlmin({collapseWhitespace: true}))
+          //  .pipe(plugins.htmlmin({collapseWhitespace: true}))
            .pipe(gulp.dest(config.publicDir + "/" + page.name));
-
-         console.log("Done.\n---")
       });
     }
 

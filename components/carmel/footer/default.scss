@@ -1,8 +1,4 @@
-/********************************************************
-FOOTER
-*********************************************************/
-
-._tiber-footer {
+.footer {
   margin-top: 2.0rem;
   padding-top: 2.0rem;
   padding-bottom: 2.0rem;
@@ -11,7 +7,7 @@ FOOTER
   background-color:#2c3e50;
 }
 
-._tiber-footer h1 {
+.footer h1 {
   color:#ffffff;
   text-align: center;
   padding: 0;
@@ -22,11 +18,11 @@ FOOTER
   line-height: 2.8rem;
 }
 
-._tiber-footer form {
+.footer form {
   margin-top: 2.0rem;
 }
 
-._tiber-footer form input {
+.footer form input {
   text-align: left;
   margin-top: 0rem;
   -webkit-font-smoothing: antialiased;
@@ -44,7 +40,7 @@ FOOTER
   background-color: #FFFFFF;
 }
 
-._tiber-footer button.volunteer {
+.footer button.volunteer {
   text-align: center;
   margin-top: 0rem;
   margin-bottom: 2.0rem;
@@ -60,25 +56,25 @@ FOOTER
   text-shadow: 0px 1px #4a4a4a;
 }
 
-._tiber-footer .message {
+.footer .message {
   margin-top: 2.0rem;
   margin-bottom: 1.0rem;
   text-align: center;
   font-size: 1.2rem;
 }
 
-._tiber-footer .details {
+.footer .details {
   margin-top: 2.0rem;
   margin-bottom: 2.0rem;
   text-align: center;
 }
 
-._tiber-footer .details .fa {
+.footer .details .fa {
   color: #FFFFFF;
   font-size: 4.0rem;
 }
 
-._tiber-footer p {
+.footer p {
   text-align: justify;
   padding: 0;
   margin-top: 1.0rem;
@@ -90,31 +86,31 @@ FOOTER
   line-height: 2.0rem;
 }
 
-._tiber-footer .likebox-sm {
+.footer .likebox-sm {
   display:block;
 }
 
-._tiber-footer .likebox-md {
+.footer .likebox-md {
   display:none;
 }
 
 @media (min-width: 768px) {
-  ._tiber-footer {
+  .footer {
     padding-top: 3.0rem;
     padding-bottom: 3.0rem;
   }
 
-  ._tiber-footer h1 {
+  .footer h1 {
     font-size: 2.4rem;
     line-height: 3.0rem;
   }
-  ._tiber-footer p {
+  .footer p {
     margin-top: 2.0rem;
     font-size: 1.6rem;
     line-height: 2.2rem;
   }
 
-  ._tiber-footer span {
+  .footer span {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -131,29 +127,29 @@ FOOTER
     width: 100%;
   }
 
-  ._tiber-footer .likebox-sm {
+  .footer .likebox-sm {
     display:none;
   }
 
-  ._tiber-footer .likebox-md {
+  .footer .likebox-md {
     display:block;
   }
 }
 
 @media (min-width: 1200px) {
-  ._tiber-footer {
+  .footer {
   }
 
-  ._tiber-footer h1 {
+  .footer h1 {
     font-size: 1.8rem;
     line-height: 2.0rem;
   }
-  ._tiber-footer p {
+  .footer p {
     font-size: 1.2rem;
     line-height: 1.6rem;
   }
 
-  ._tiber-footer span {
+  .footer span {
     margin-top: 2.0rem;
     margin-bottom: 3.0rem;
     padding-top: 0.5rem;
@@ -164,11 +160,11 @@ FOOTER
     width: 100%;
   }
 
-  ._tiber-footer form {
+  .footer form {
     margin-top: 2.0rem;
   }
 
-  ._tiber-footer form input {
+  .footer form input {
     text-align: left;
     margin-top: 0rem;
     -webkit-font-smoothing: antialiased;
@@ -186,7 +182,7 @@ FOOTER
     background-color: #FFFFFF;
   }
 
-  ._tiber-footer button.volunteer {
+  .footer button.volunteer {
     text-align: center;
     margin-top: 0rem;
     margin-bottom: 2.0rem;

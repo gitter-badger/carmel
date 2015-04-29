@@ -1,127 +1,8 @@
 /********************************************************
-HEADER
-*********************************************************/
-
-.tiber-header {
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  position: relative;
-  min-height: 110px;
-  overflow: hidden;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-}
-
-.tiber-header .overlay {
-  background: rgba(48, 48, 48, 0.30);
-  height: 100%;
-}
-
-.tiber-header .intro {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 250px;
-  width: 100%;
-  text-align: center;
-}
-
-.tiber-header .intro h1 {
-  text-align: center;
-  font-size: 3.2rem;
-  font-family: "Railway", sans-serif;
-  font-weight: 700;
-  text-shadow: 1px 1px #000000;
-  color: #ffffff;
-  margin-bottom:20px;
-  margin-top:20px;
-  line-height:150%;
-}
-
-.tiber-header .intro .btn {
-  margin-top: 1.0rem;
-  text-align: center;
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-family: "Railway", sans-serif;
-  font-weight: 400;
-  border: 2px solid #ffffff;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  width: 100%;
-}
-
-.tiber-header .intro .btn.main {
-  background: #4da8f4;
-}
-
-.tiber-header .intro .btn.main:hover {
-  background: #ffffff;
-  color: #333333;
-}
-
-.tiber-header .intro .btn.secondary:hover {
-  background: #ffffff;
-  color: #333333;
-}
-
-.tiber-header .intro .arrow-down {
-  position: relative;
-  bottom: -50px;
-}
-
-.tiber-header .intro .arrow-down a {
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-@media only screen and (max-width: 400px) {
-  .tiber-header .intro .arrow-down {
-    position: relative;
-    bottom: 5px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-
-  .tiber-header .intro {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 50px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .tiber-header .intro h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: "Railway", sans-serif;
-    font-weight: 400;
-    text-shadow: 1px 1px #000000;
-    color: #ffffff;
-    margin-bottom:20px;
-    margin-top:20px;
-    line-height:100%;
-  }
-
-}
-
-/********************************************************
 INTRO
 *********************************************************/
 
-._tiber-intro {
+.hero {
   background-image: url("/img/cover-sm.png");
   background-color: #CCCCCC;
   background-size: cover;
@@ -131,7 +12,7 @@ INTRO
   background-repeat: no-repeat;
 }
 
-._tiber-intro .welcome {
+.hero .welcome {
   margin-top: 6.0rem;
   text-align: center;
   padding: 0;
@@ -139,7 +20,7 @@ INTRO
   color: #ffffff;
 }
 
-._tiber-intro h1 {
+.hero h1 {
   text-shadow: 0px 1px #4a4a4a;
   font-family: 'Exo 2', sans-serif;
   font-weight: 900;
@@ -147,7 +28,7 @@ INTRO
   line-height: 2.8rem;
 }
 
-._tiber-intro h2 {
+.hero h2 {
   text-shadow: 0px 1px #4a4a4a;
   font-family: 'Railway', sans-serif;
   font-weight: 400;
@@ -156,7 +37,7 @@ INTRO
   margin-top: 1.0rem;
 }
 
-._tiber-intro .actions {
+.hero .actions {
   margin-top: 2.0rem;
   text-align: center;
   -webkit-font-smoothing: antialiased;
@@ -164,11 +45,11 @@ INTRO
   font-weight: 400;
 }
 
-._tiber-intro .action-primary {
+.hero .action-primary {
   margin-top: 1.0rem;
 }
 
-._tiber-intro .action-primary .btn {
+.hero .action-primary .btn {
   background-color: #2ecc71;
   color: #FFFFFF;
   border: 1px solid #ffffff;
@@ -180,11 +61,11 @@ INTRO
   text-shadow: 0px 1px #4a4a4a;
 }
 
-._tiber-intro .action-secondary {
+.hero .action-secondary {
   margin-top: 1.0rem;
 }
 
-._tiber-intro .action-secondary .btn {
+.hero .action-secondary .btn {
   color: #999999;
   background-color: #FFFFFF;
   border: 1px solid #ffffff;
@@ -197,44 +78,44 @@ INTRO
 
 @media (min-width: 480px) {
 
-  ._tiber-intro {
+  .hero {
     background-image: url("/img/cover-sm.png");
   }
 
-  ._tiber-intro .welcome {
+  .hero .welcome {
     margin-top: 5.0rem;
   }
 
-  ._tiber-intro h1 {
+  .hero h1 {
     font-size: 1.8rem;
     line-height: 2.0rem;
   }
 
-  ._tiber-intro h2 {
+  .hero h2 {
     font-size: 1.6rem;
     line-height: 1.8rem;
     margin-top: 0.5rem;
   }
 
-  ._tiber-intro .actions {
+  .hero .actions {
     margin-top: 2.5rem;
   }
 
-  ._tiber-intro .action-primary {
+  .hero .action-primary {
     margin-top: 0.5rem;
   }
 
-  ._tiber-intro .action-primary .btn {
+  .hero .action-primary .btn {
     font-size: 1.8rem;
     line-height: 2.0rem;
     border: 2px solid #ffffff;
   }
 
-  ._tiber-intro .action-secondary {
+  .hero .action-secondary {
     margin-top: 0.5rem;
   }
 
-  ._tiber-intro .action-secondary .btn {
+  .hero .action-secondary .btn {
     font-size: 1.6rem;
     line-height: 2.0rem;
   }
@@ -242,44 +123,44 @@ INTRO
 
 @media (min-width: 768px) {
 
-  ._tiber-intro {
+  .hero {
     background-image: url("/img/cover-md.png");
   }
 
-  ._tiber-intro .welcome {
+  .hero .welcome {
     margin-top: 10.0rem;
   }
 
-  ._tiber-intro h1 {
+  .hero h1 {
     font-size: 3.6rem;
     line-height: 3.8rem;
   }
 
-  ._tiber-intro h2 {
+  .hero h2 {
     font-size: 3.0rem;
     line-height: 3.4rem;
     margin-top: 3.0rem;
   }
 
-  ._tiber-intro .actions {
+  .hero .actions {
     margin-top: 3.0rem;
   }
 
-  ._tiber-intro .action-primary {
+  .hero .action-primary {
     margin-top: 2.0rem;
   }
 
-  ._tiber-intro .action-primary .btn {
+  .hero .action-primary .btn {
     font-size: 2.8rem;
     line-height: 4.0rem;
     border: 2px solid #ffffff;
   }
 
-  ._tiber-intro .action-secondary {
+  .hero .action-secondary {
     margin-top: 1.0rem;
   }
 
-  ._tiber-intro .action-secondary .btn {
+  .hero .action-secondary .btn {
     font-size: 2.2rem;
     line-height: 4.0rem;
   }
@@ -287,87 +168,87 @@ INTRO
 
 @media (min-width: 992px) {
 
-  ._tiber-intro {
+  .hero {
   }
 
-  ._tiber-intro .welcome {
+  .hero .welcome {
     margin-top: 5.0rem;
   }
 
-  ._tiber-intro h1 {
+  .hero h1 {
     font-size: 3.2rem;
     line-height: 3.6rem;
   }
 
-  ._tiber-intro h2 {
+  .hero h2 {
     font-size: 2.4rem;
     line-height: 3.0rem;
     margin-top: 2.0rem;
   }
 
-  ._tiber-intro .actions {
+  .hero .actions {
     margin-top: 3.0rem;
   }
 
-  ._tiber-intro .action-primary {
+  .hero .action-primary {
     margin-top: 1.0rem;
   }
 
-  ._tiber-intro .action-primary .btn {
+  .hero .action-primary .btn {
     font-size: 2.4rem;
     line-height: 3.0rem;
     border: 2px solid #ffffff;
   }
 
-  ._tiber-intro .action-secondary {
+  .hero .action-secondary {
     margin-top: 1.0rem;
   }
 
-  ._tiber-intro .action-secondary .btn {
+  .hero .action-secondary .btn {
     font-size: 1.8rem;
     line-height: 3.0rem;
   }
 }
 
 @media (min-width: 1200px) {
-  ._tiber-intro {
+  .hero {
     background-image: url("/img/cover-lg.png");
   }
 
-  ._tiber-intro .welcome {
+  .hero .welcome {
     margin-top: 1.0rem;
   }
 
-  ._tiber-intro h1 {
+  .hero h1 {
     font-size: 3.5rem;
     line-height: 4.0rem;
   }
 
-  ._tiber-intro h2 {
+  .hero h2 {
     font-size: 2.2rem;
     line-height: 3.0rem;
     margin-top: 1.0rem;
   }
 
-  ._tiber-intro .actions {
+  .hero .actions {
     margin-top: 3.0rem;
   }
 
-  ._tiber-intro .action-primary {
+  .hero .action-primary {
     margin-top: 1.0rem;
   }
 
-  ._tiber-intro .action-primary .btn {
+  .hero .action-primary .btn {
     font-size: 1.8rem;
     line-height: 2.4rem;
     border: 2px solid #ffffff;
   }
 
-  ._tiber-intro .action-secondary {
+  .hero .action-secondary {
     margin-top: 1.0rem;
   }
 
-  ._tiber-intro .action-secondary .btn {
+  .hero .action-secondary .btn {
     font-size: 1.4rem;
     line-height: 2.4rem;
   }
