@@ -1,7 +1,8 @@
+$bg-color:#2ecc71;
 .navbar {
-  background: #ffffff;
+  background: darken($bg-color, 5%);
   height: 64px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid transparent;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -22,13 +23,13 @@
 }
 
 .navbar .navbar-default .navbar-nav > li > a, .navbar .navbar-default .navbar-brand {
-  color: #f1f1f1;
+  color: #fff;
 }
 
 .navbar .navbar-default .navbar-nav > li > a:hover,
 .navbar .navbar-default .navbar-nav > li > a:focus {
-  color: #f1f1f1;
-  background-color: #b27677;
+  color: #fff;
+
 }
 @media only screen and (max-width: 766px) {
 
@@ -61,7 +62,7 @@
 }
 
 .navbar .navbar-nav li a {
-  color: #333333;
+  color: #eee;
   font-family: "Railway", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -71,8 +72,8 @@
 }
 
 .navbar .navbar-nav li a:hover {
-  color: black;
-  background: #e6e6e6;
+ color: #fff;
+   background: darken($bg-color, 15%);
   -moz-transition-property: color;
   -o-transition-property: color;
   -webkit-transition-property: color;
@@ -91,8 +92,8 @@
 }
 
 .navbar .navbar-nav li.current a {
-  color: black;
-  background: #e6e6e6;
+  color: #fff;
+  background: darken($bg-color, 15%);
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;

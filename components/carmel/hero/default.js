@@ -29,7 +29,7 @@
     }
   };
 
-  app.start();
+//  app.start();
 
   $(document).ready(function(){
     app.load();
