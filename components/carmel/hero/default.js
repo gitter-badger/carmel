@@ -18,7 +18,7 @@
 
     load: function(){
       $('#hero-details').on('click', function(event) {
-        var target = $('#details');
+        var target = $('#vision');
         if( target.length ) {
           event.preventDefault();
           $('html, body').animate({
