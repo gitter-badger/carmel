@@ -45,11 +45,13 @@ module.exports = function (gulp, plugins, config) {
         });
 
         var body = '';
-        var imports = '';
+        var imports = '@import "theme";';
+        var variables = '';
         var componentPaths = [config.bowerDir + '/jquery/dist/jquery.min.js',
                               config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap.min.js'];
         components.forEach(function(component){
           body = body + "{{> " + component + "}}";
+          variables = variables + "@import \"" + component + "-variables\"; \n";
           imports = imports + "@import \"" + component + "\"; \n";
           componentPath = config.carmelDir + '/components/' + component + ".js";
           if (fs.existsSync(componentPath)){
@@ -62,10 +64,11 @@ module.exports = function (gulp, plugins, config) {
           .pipe(gulp.dest(config.publicDir + "/" + page.name));
 
         gulp.src(config.carmelDir + '/layouts/' + page.layout + '/style.scss')
+            .pipe(plugins.insert.append(variables))
             .pipe(plugins.insert.append(imports))
             .pipe(plugins.sass({
                 includePaths: [config.bootstrapDir + '/assets/stylesheets',
-                config.carmelDir + '/components'],
+                config.carmelDir + '/components', home],
              }))
             .pipe(plugins.autoprefixer())
             .pipe(plugins.minifyCss())
