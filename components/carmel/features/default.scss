@@ -1,0 +1,88 @@
+.features {
+  //margin-top: 2.0rem;
+  padding:2.0rem;
+  color: #4a4a4a;
+}
+
+.features h1 {
+  text-align: center;
+  padding: 0;
+  margin-top: 1.0rem;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Josefin Sans',sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+}
+
+.features .details {
+  text-align: center;
+  margin-top: 4.0rem;
+}
+
+.features .details h2 {
+  margin-top: 1.0rem;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Josefin Sans',sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2.0rem;
+}
+
+.features .details p {
+  text-align: justify;
+  margin-top: 1.0rem;
+  margin-bottom: 3.0rem;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Josefin Sans',sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .features {
+    margin-top: 3.0rem;
+  }
+
+  .features h1 {
+    font-size: 3.0rem;
+    line-height: 3.8rem;
+  }
+
+  .features .details h2 {
+    margin-top: 1.5rem;
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+  }
+
+  .features .details p {
+    margin-top: 1.5rem;
+    margin-bottom: 4.0rem;
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .features h1 {
+    font-size: 2.0rem;
+    line-height: 2.2rem;
+  }
+
+  .features .details h2 {
+    font-size: 1.0rem;
+    line-height: 1.6rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+  }
+
+  .features .details p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+  }
+}

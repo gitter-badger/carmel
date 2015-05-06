@@ -1,0 +1,72 @@
+.subscribe {
+  padding:100px 0;
+  background-color: #f39c12;
+  display: flex;
+
+  h1{
+    color: #fff;
+    font-size: 2.0rem;
+    margin-bottom: 2.0rem;
+    font-family: 'Josefin Sans',sans-serif;
+
+  }
+
+  .subscribe-name {
+    float: left;
+    margin: 10px;
+
+    input[type="text"] {
+      border:none;
+      border:1px solid grey;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px;
+      padding:0.3rem;
+      height: 48px;
+      width: 300px;
+      font-size:1.0rem;
+      font-weight: 300;
+      font-family: 'Josefin Sans',sans-serif;
+    }
+  }
+
+ .subscribe-email {
+   float: left;
+   margin: 10px;
+
+   input[type="email"] {
+    border:none;
+     border:1px solid grey;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -o-border-radius: 4px;
+     border-radius: 4px;
+     padding:0.3rem;
+     height: 48px;
+     width: 300px;
+     font-size:1.0rem;
+     font-weight: 300;
+     font-family: 'Josefin Sans',sans-serif;
+   }
+ }
+
+  .subscribe-submit {
+    margin: 10px;
+
+    input[type="submit"] {
+      border:none;
+      padding:0.5rem;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px;
+      height: 48px;
+      width:250px;
+      font-size:0.8rem;
+      background-color: #439fe0;
+      color:#fff;
+      font-family: 'Josefin Sans',sans-serif;
+    }
+  }
+}
