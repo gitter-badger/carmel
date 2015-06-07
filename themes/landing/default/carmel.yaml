@@ -42,15 +42,11 @@ pages:
   root: true
   components:
   - navbar
-  - hero:
-      style:
-        welcome-color: "#FFFFFF"
+  - hero
   - features
   - videointro
   - vision
   - footer
-  style:
-    welcome-color: "#EEEEEE"
 
 - page: story
   layout: default

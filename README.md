@@ -83,7 +83,3 @@ menu
 ```
 
 The menu consists of the links visible on all pages in the navigation bar.
-
-## Release History
-
-* 0.1.5 Initial release

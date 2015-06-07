@@ -1,6 +1,6 @@
 {
   "name": "carmel",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "The easiest way to build a website",
   "main": "./lib/index.js",
   "scripts": {
