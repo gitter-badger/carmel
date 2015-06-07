@@ -1,7 +1,7 @@
 {
   "name": "carmel",
-  "version": "0.1.5",
-  "description": "A ridiculously easy to use static site generator.",
+  "version": "0.1.7",
+  "description": "The easiest way to build a website",
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

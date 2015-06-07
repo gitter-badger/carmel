@@ -17,11 +17,13 @@ text:
   vision-title: Our Vision Is To Change The World
   vision-body: This is the best vision in the world. Trust us. We envision a world that simply can't live without this product. I mean, could you live without bread? Seriously, are you going to slice it yourself?
 
-theme:
+style:
   hero-welcome-text-color: "#ffffff"
-  hero-background-color: "#2ecc71"
+  hero-background-color: "#e74c3c"
   hero-main-button-text-color: "#ffffff"
   hero-main-button-background-color: "#f1c40f"
+  navbar-background-color: "#c0392b"
+  navbar-item-background-color: "#c0392b"
 
 assets:
   images:
@@ -41,13 +43,13 @@ pages:
   components:
   - navbar
   - hero:
-      theme:
+      style:
         welcome-color: "#FFFFFF"
   - features
   - videointro
   - vision
   - footer
-  theme:
+  style:
     welcome-color: "#EEEEEE"
 
 - page: story
