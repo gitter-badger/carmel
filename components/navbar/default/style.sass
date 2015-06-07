@@ -1,0 +1,107 @@
+.navbar {
+  background: darken($navbar-background-color, 5%);
+  height: 64px;
+  border: 1px solid transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar .navbar-header button {
+  background: $navbar-item-background-color;
+  height: 44px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ffffff;
+}
+
+.navbar .navbar-header button .icon-bar {
+  background: #ffffff;
+}
+
+.navbar .navbar {
+  background-color: #8e181b;
+}
+
+.navbar .navbar-default .navbar-nav > li > a, .navbar .navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar .navbar-default .navbar-nav > li > a:hover,
+.navbar .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+
+}
+@media only screen and (max-width: 766px) {
+
+  .navbar .collapsing, .navbar .in {
+    background-color: #f7f7f7;
+  }
+
+  .navbar .collapsing ul li a, .navbar .in ul li a {
+    color: #555 !important;
+  }
+
+  .navbar .collapsing ul li a:hover, .navbar .in ul li a:hover {
+    color: #f1f1f1 !important;
+  }
+}
+
+.navbar .navbar-brand {
+  padding: 10px;
+  margin: 0;
+  height: 64px;
+}
+
+.navbar .navbar-brand img {
+  height: 44px;
+}
+
+.navbar .navbar-nav {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav li a {
+  color: #eee;
+  font-family: "Railway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 4px;
+  height: 44px;
+  padding: 14px;
+}
+
+.navbar .navbar-nav li a:hover {
+ color: #fff;
+   background: darken($navbar-background-color, 15%);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.75s;
+  -o-transition-duration: 0.75s;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.navbar .navbar-nav li.current a {
+  color: #fff;
+  background: darken($navbar-background-color, 15%);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.navbar .navbar-nav li.main-action a {
+  color: white;
+  background: $navbar-item-background-color;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
