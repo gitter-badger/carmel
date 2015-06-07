@@ -16,7 +16,6 @@ carmel init && carmel build && carmel preview
 
 ## Usage
 
-
 #### Creating a brand new website
 
 ```
