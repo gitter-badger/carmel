@@ -1,7 +1,6 @@
 # carmel
-===
 
-A ridiculously easy to use static site generator.
+The easiest way to build a website.
 
 ## Installation
 
@@ -10,8 +9,9 @@ npm install carmel -g
 ## Usage
 
 carmel init
+carmel build
 carmel preview
 
 ## Release History
 
-* 0.1.0 Initial release
+* 0.1.5 Initial release
