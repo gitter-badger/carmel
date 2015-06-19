@@ -19,10 +19,10 @@ carmel init && carmel build && carmel preview
 #### Creating a brand new website
 
 ```
-carmel init [template]
+carmel init [theme]
 ```
 
-This gets you up and running quickly by creating a brand new website for you from a predefined template. If you don't specify a template, the default ```carmel/landing/default``` template will be used.
+This gets you up and running quickly by creating a brand new website for you from a predefined theme. If you don't specify a theme, the default ```carmel/corporate/default``` theme will be used.
 
 At this point, you will see a ```carmel.yaml``` file in your current working directory and an ```images``` directory. This is all you need to manage your website.
 
@@ -46,7 +46,7 @@ Run this command once you have built your website and then open your web browser
 
 ## The carmel.yaml Configuration File
 
-The configuration file has six main categories: text, style, assets, settings, pages and menu.
+The configuration file has six main categories: text, style, assets, links, settings, pages and menu.
 
 ```
 text
@@ -65,6 +65,12 @@ assets
 ```
 
 In order to use assets, you have to specify them in the assets category. Each asset has a container, such as the *images* container.
+
+```
+links
+```
+
+You can specify all known links in your carmel configuration file so that your site can be easily re-configured if you want to change links and routing.
 
 ```
 settings
