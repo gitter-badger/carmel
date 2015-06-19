@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("/img/cover-sm.png");
+  //background-image: url("/img/cover-sm.png");
   background-color: $hero-background-color;
   background-size: cover;
   -webkit-background-size: cover;
@@ -10,7 +10,7 @@
 }
 
 .hero .welcome {
-  margin-top: 2.0rem;
+  margin-top: 7.0rem;
   text-align: center;
   padding: 2.0rem 0;
   -webkit-font-smoothing: antialiased;
@@ -18,24 +18,24 @@
 }
 
 .hero h1 {
-  text-shadow: 0px 1px #4a4a4a;
+  text-shadow: 0px 1px black;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 900;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   line-height: 2.8rem;
 }
 
 .hero h2 {
-  text-shadow: 0px 1px #4a4a4a;
+  text-shadow: 0px 1px darkgrey;
   font-family: 'Railway', sans-serif;
   font-weight: 400;
-  font-size: 2.0rem;
-  line-height: 2.2rem;
-  margin-top: 1.0rem;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  margin-top: 3.0rem;
 }
 
 .hero .actions {
-  margin-top: 2.0rem;
+  margin-top:0;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   font-family: 'Railway', sans-serif;
@@ -49,13 +49,13 @@
 .hero .action-primary .btn {
   background-color: $hero-main-button-background-color;
   color: $hero-main-button-text-color;
-  border: 1px solid #ffffff;
+  border: 1px solid white;
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 2.0rem;
   line-height: 3.0rem;
-  text-shadow: 0px 1px #4a4a4a;
+  text-shadow: 0px 1px black;
 }
 
 .hero .action-secondary {
@@ -67,13 +67,13 @@
   font-size: 2.0rem;
 
   a{
-    color:#fff;
+    color:$arrow-down-color;
 
     .fa-angle-down {
       font-size: 2.0rem;
     }
     &:focus {
-      color:#fff;
+      color:$arrow-down-color;
     }
   }
 }
@@ -81,7 +81,7 @@
 .hero .action-secondary .btn {
   color: #999999;
   background-color: #FFFFFF;
-  border: 1px solid #ffffff;
+  border: 1px solid $action-border;
   width: 100%;
   font-size: 1.4rem;
   line-height: 3.0rem;
@@ -89,10 +89,37 @@
   padding-bottom: 0.5rem;
 }
 
+@media (min-height: 550px) and (max-width:480px) {
+  .hero .welcome {
+    margin-top: 9.0rem;
+  }
+
+  .hero .actions {
+    padding:3.0rem 0;
+  }
+  .more-info {
+    padding:5.0rem 0;
+    font-size: 2.0rem;
+
+    a{
+      color:$arrow-down-color;
+
+      .fa-angle-down {
+        font-size: 2.0rem;
+
+      }
+      &:focus {
+        color:$arrow-down-color;
+      }
+    }
+  }
+
+}
+
 @media (min-width: 480px) {
 
   .hero {
-    background-image: url("/img/cover-sm.png");
+    //background-image: url("/img/cover-sm.png");
   }
 
   .hero .welcome {
@@ -121,7 +148,7 @@
   .hero .action-primary .btn {
     font-size: 1.8rem;
     line-height: 2.0rem;
-    border: 2px solid #ffffff;
+    border: 2px solid $action-border;
   }
 
   .hero .action-secondary {
@@ -137,36 +164,37 @@
 @media (min-width: 768px) {
 
   .hero {
-    background-image: url("/img/cover-md.png");
+    //background-image: url("/img/cover-md.png");
   }
 
   .hero .welcome {
-    margin-top: 10.0rem;
+    margin-top: 4.0rem;
   }
 
   .hero h1 {
-    font-size: 3.6rem;
+    font-size: 2.5rem;
     line-height: 3.8rem;
   }
 
   .hero h2 {
-    font-size: 3.0rem;
-    line-height: 3.4rem;
-    margin-top: 3.0rem;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    margin-top: 1.5rem;
   }
 
   .hero .actions {
-    margin-top: 3.0rem;
+    margin-top: 1.0rem;
   }
 
   .hero .action-primary {
-    margin-top: 2.0rem;
+    margin-top: 0.5rem;
   }
 
   .hero .action-primary .btn {
-    font-size: 2.8rem;
-    line-height: 4.0rem;
-    border: 2px solid #ffffff;
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    border: 2px solid $action-border;
+    width:20.0rem;
   }
 
   .hero .action-secondary {
@@ -185,32 +213,33 @@
   }
 
   .hero .welcome {
-    margin-top: 5.0rem;
+    margin-top: 2.5rem;
   }
 
   .hero h1 {
-    font-size: 3.2rem;
-    line-height: 3.6rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
   }
 
   .hero h2 {
-    font-size: 2.4rem;
-    line-height: 3.0rem;
-    margin-top: 2.0rem;
+    font-size: 1.9rem;
+    line-height: 2.0rem;
+    margin-top: 1.8rem;
   }
 
   .hero .actions {
-    margin-top: 3.0rem;
+    margin-top: 0.5rem ;
+
   }
 
   .hero .action-primary {
-    margin-top: 1.0rem;
+    margin-top: 0;
   }
 
   .hero .action-primary .btn {
-    font-size: 2.4rem;
-    line-height: 3.0rem;
-    border: 2px solid #ffffff;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    border: 2px solid $action-border;
   }
 
   .hero .action-secondary {
@@ -225,7 +254,7 @@
 
 @media (min-width: 1200px) {
   .hero {
-    background-image: url("/img/cover-lg.png");
+    //background-image: url("/img/cover-lg.png");
   }
 
   .hero .welcome {
@@ -254,7 +283,8 @@
   .hero .action-primary .btn {
     font-size: 1.6rem;
     line-height: 2.0rem;
-    border: 2px solid #ffffff;
+    border: 2px solid $action-border;
+    width:15.0rem;
   }
 
   .hero .action-secondary {
