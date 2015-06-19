@@ -1,29 +1,30 @@
 ---
 text:
-  hero-title: Introducing Sliced Bread
-  hero-subtitle: The Greatest Bread Since The iPhone
-  hero-action-title: Get It Fresh
-  features-title: Here are the main product features
-  first-feature-title: Love at first sight
-  first-feature-body: This feature is the first and best one out of all three and that's why we showcase it first
-  second-feature-title: Goes wherever you go
-  second-feature-body: This is where things get really interesting because this feature is the one that will surprise you the most
-  third-feature-title: Remember everything
-  third-feature-body: By now you should already be in love with this product and ready to share the good news with all your friends
-  videointro-title: The Making Of Sliced Bread
-  videointro-details: This is a great video that showcases how great this product truly is. You will absolutely love it. Press play and sit back and enjoy a healthy dose of awesomeness. There's really nothing like it on the market. Thanks for watching. Don't forget to share it with your friends.
-  footer-title: Join Our Community
-  footer-body: You are in good company. There are a lot of smart people that are using this product and we promise that you will love it too.
-  vision-title: Our Vision Is To Change The World
-  vision-body: This is the best vision in the world. Trust us. We envision a world that simply can't live without this product. I mean, could you live without bread? Seriously, are you going to slice it yourself?
+  hero-title: Let's Change The World Together
+  hero-subtitle: Join the movement that is taking the world by storm
+  hero-action-title: Join Us
+  summary-title: Our Vision Is To Change The World
+  summary-body: Etiam at tristique augue, quis tincidunt orci.Integer at nunc ac ligula sodales ornare. Proin ac tempus nibh, non volutpat libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla eget maximus tellus, sit amet convallis metus. Quisque lobortis justo ac turpis aliquam, semper rutrum mauris vulputate. Cras semper, odio in cursus ornare, augue mauris suscipit ex, sit amet tristique lacus diam ac felis. Fusce aliquam lorem quis justo fringilla luctus. Suspendisse potenti. Aliquam a nulla quis nibh condimentum malesuada.  <br><br> Integer pretium vitae odio ut ultrices. In sapien leo, laoreet eget venenatis a, laoreet et tortor. Maecenas tincidunt est lectus, quis pulvinar est lobortis non. Nam sagittis nec elit id commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus porta lacus sit amet imperdiet. Integer lobortis convallis cursus. Suspendisse neque nisi, egestas eu pharetra at, venenatis eget urna. Nam ornare sem quis blandit pellentesque. Proin laoreet lorem non urna mattis ultrices. Curabitur vel mauris non risus rhoncus pellentesque. Sed mollis, turpis id rhoncus commodo, dui dolor ullamcorper orci, eget rhoncus neque tellus vel elit. Donec molestie pulvinar enim ut placerat.
+  videointro-title: Meet The Team
+  videointro-details: Proin rhoncus urna a est dignissim, eget sodales eros feugiat. Suspendisse at nulla in dui accumsan blandit. Aenean ut mattis arcu. Nulla commodo tellus at tortor cursus vulputate. Sed venenatis ac velit condimentum condimentum. Maecenas ac tempor elit, sit amet tempor enim. Nunc quis rhoncus nunc. Sed lacinia imperdiet tincidunt.
+  features-title: Here are the main things we do
+  first-feature-title: We love our customers
+  first-feature-body: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis porta, ligula vitae scelerisque rutrum, turpis elit ultricies elit, ac porta diam nisi nec magna.
+  second-feature-title: We go where you go
+  second-feature-body: Cras semper, odio in cursus ornare, augue mauris suscipit ex, sit amet tristique lacus diam ac felis. Fusce aliquam lorem quis justo fringilla luctus. Suspendisse potenti.
+  third-feature-title: We help you get things done
+  third-feature-body: Sed venenatis ac velit condimentum condimentum. Maecenas ac tempor elit, sit amet tempor enim. Nunc quis rhoncus nunc.
+  footer-title: Join our growing community
+  footer-body: Nulla eget maximus tellus, sit amet convallis metus. Quisque lobortis justo ac turpis aliquam, semper rutrum mauris vulputate. Cras semper, odio in cursus ornare, augue mauris suscipit ex, sit amet tristique lacus diam ac felis. Fusce aliquam lorem quis justo fringilla luctus. Suspendisse potenti. Aliquam a nulla quis nibh condimentum malesuada. Integer pretium vitae odio ut ultrices. In sapien leo, laoreet eget venenatis a, laoreet et tortor.
 
 style:
+  navbar-background-color: "#c0392b"
+  navbar-item-background-color: "#c0392b"
+  navbar-primary-background-color: "#f39c12"
   hero-welcome-text-color: "#ffffff"
   hero-background-color: "#e74c3c"
   hero-main-button-text-color: "#ffffff"
   hero-main-button-background-color: "#f1c40f"
-  navbar-background-color: "#c0392b"
-  navbar-item-background-color: "#c0392b"
 
 assets:
   images:
@@ -32,51 +33,100 @@ assets:
     second-feature: map.png
     third-feature: calendar.png
 
+links:
+  root: /
+  projects: /projects
+  story: /story
+  contact: /contact
+  join: /join
+  primary-link: join
+
+menu:
+- name: welcome
+  text: Welcome
+  link: root
+- name: projects
+  text: What we do
+  link: projects
+- name: story
+  text: Our Story
+  link: story
+- name: contact
+  text: Talk to us
+  link: contact
+- name: join
+  text: Get Involved
+  link: join
+
 settings:
   facebook-page-name: FacebookDevelopers
-  videointro-id: 3CEa9fL9nS0
+  videointro-id: UjXi6X-moxE
 
 pages:
-- page: features
+- page: welcome
   layout: default
   root: true
   components:
   - navbar
   - hero
-  - features
+  - summary
   - videointro
-  - vision
+  - features
+  - subscribe
   - footer
+
+- page: projects
+  layout: default
+  components:
+  - navbar
+  - carmel/hero/small
+  - summary:
+      text:
+        summary-title: We Do Several Different Things
+        summary-body: Proin ac tempus nibh, non volutpat libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla eget maximus tellus, sit amet convallis metus. Quisque lobortis justo ac turpis aliquam, semper rutrum mauris vulputate. Cras semper, odio in cursus ornare, augue mauris suscipit ex, sit amet tristique lacus diam ac felis. Fusce aliquam lorem quis justo fringilla luctus. Suspendisse potenti. Aliquam a nulla quis nibh condimentum malesuada.  <br><br> Integer pretium vitae odio ut ultrices. In sapien leo, laoreet eget venenatis a, laoreet et tortor. Maecenas tincidunt est lectus, quis pulvinar est lobortis non. Nam sagittis nec elit id commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus porta lacus sit amet imperdiet. Integer lobortis convallis cursus. Suspendisse neque nisi, egestas eu pharetra at, venenatis eget urna. Nam ornare sem quis blandit pellentesque. Proin laoreet lorem non urna mattis ultrices. Curabitur vel mauris non risus rhoncus pellentesque. Sed mollis, turpis id rhoncus commodo, dui dolor ullamcorper orci, eget rhoncus neque tellus vel elit. Donec molestie pulvinar enim ut placerat.
+  - footer
+  text:
+    hero-title: Check Out Our Projects
+    hero-subtitle: We are involved with a lot of cool stuff
 
 - page: story
   layout: default
   components:
   - navbar
-  - hero
+  - carmel/hero/small
+  - summary:
+      text:
+        summary-title: We Are A Team Of People On A Mission
+        summary-body:  Proin ac tempus nibh, non volutpat libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla eget maximus tellus, sit amet convallis metus. Quisque lobortis justo ac turpis aliquam, semper rutrum mauris vulputate. Aliquam a nulla quis nibh condimentum malesuada. Integer pretium vitae odio ut ultrices. In sapien leo, laoreet eget venenatis a, laoreet et tortor. Maecenas tincidunt est lectus, quis pulvinar est lobortis non. Nam sagittis nec elit id commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus porta lacus sit amet imperdiet. Integer lobortis convallis cursus. Suspendisse neque nisi, egestas eu pharetra at, venenatis eget urna. Nam ornare sem quis blandit pellentesque. Proin laoreet lorem non urna mattis ultrices. Curabitur vel mauris non risus rhoncus pellentesque. Sed mollis, turpis id rhoncus commodo, dui dolor ullamcorper orci, eget rhoncus neque tellus vel elit. Donec molestie pulvinar enim ut placerat.
   - footer
   text:
-    hero-title: Once Upon A Time ...
-    hero-subtitle: A brave baker embarked on the adventure of a lifetime
-    hero-action-title: Read More
+    hero-title: This Is Our Story
+    hero-subtitle: It all began with a really big dream
+
+- page: contact
+  layout: default
+  components:
+  - navbar
+  - carmel/hero/small
+  - summary:
+      text:
+        summary-title: We Would Love To Hear From You
+        summary-body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus porta lacus sit amet imperdiet. Integer lobortis convallis cursus. Suspendisse neque nisi, egestas eu pharetra at, venenatis eget urna. Nam ornare sem quis blandit pellentesque. Proin laoreet lorem non urna mattis ultrices. Curabitur vel mauris non risus rhoncus pellentesque. Sed mollis, turpis id rhoncus commodo, dui dolor ullamcorper orci, eget rhoncus neque tellus vel elit. Donec molestie pulvinar enim ut placerat.
+  - footer
+  text:
+    hero-title: We Would Love To Hear From You
+    hero-subtitle: Let us know how you really feel or simply say hello
 
 - page: join
   layout: default
   components:
   - navbar
-  - hero
+  - carmel/hero/small
+  - summary:
+      text:
+        summary-title: Here Are A Few Way You Can Contribute
+        summary-body: Semper rutrum mauris vulputate. Cras semper, odio in cursus ornare, augue mauris suscipit ex, sit amet tristique lacus diam ac felis. Fusce aliquam lorem quis justo fringilla luctus. Suspendisse potenti. Aliquam a nulla quis nibh condimentum malesuada.  <br><br> Integer pretium vitae odio ut ultrices. In sapien leo, laoreet eget venenatis a, laoreet et tortor. Maecenas tincidunt est lectus, quis pulvinar est lobortis non. Nam sagittis nec elit id commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus porta lacus sit amet imperdiet. Integer lobortis convallis cursus. Suspendisse neque nisi, egestas eu pharetra at, venenatis eget urna. Nam ornare sem quis blandit pellentesque. Proin laoreet lorem non urna mattis ultrices. Curabitur vel mauris non risus rhoncus pellentesque. Sed mollis, turpis id rhoncus commodo, dui dolor ullamcorper orci, eget rhoncus neque tellus vel elit. Donec molestie pulvinar enim ut placerat.
   - footer
   text:
-    hero-title: Join A Growing Community
-    hero-subtitle: Get a free account and get started
-    hero-action-title: Join Now
-
-menu:
-- name: features
-  text: Features
-  link: /
-- name: story
-  text: Story
-  link: /story
-- name: join
-  text: Sign up
-  link: /join
+    hero-title: We Can't Do It Without Your Help
+    hero-subtitle: Find out how you can get involved
