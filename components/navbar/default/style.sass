@@ -1,9 +1,9 @@
 .second-fixed .navbar-fixed-top {
-  top:2rem!important;
+  top:$navbar-top!important;
 }
 .navbar {
   background: darken($navbar-background-color, 5%);
-  height: 64px;
+  height: $navbar-height;
   border: 1px solid transparent;
   -webkit-font-smoothing: antialiased;
 }
@@ -17,11 +17,7 @@
 }
 
 .navbar .navbar-header button .icon-bar {
-  background: #ffffff;
-}
-
-.navbar .navbar {
-  background-color: #8e181b;
+  background: $navbar-button-background;
 }
 
 .navbar .navbar-default .navbar-nav > li > a, .navbar .navbar-default .navbar-brand {
@@ -65,9 +61,9 @@
 
 .navbar .navbar-nav li a {
   color: #eee;
-  font-family: "Railway", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
+  font-family: $navbar-font-family;
+  font-weight: $navbar-font-weight;
+  font-size: $navbar-font-size;
   margin-left: 4px;
   height: 44px;
   padding: 14px;
@@ -113,6 +109,7 @@
   height: $topbar-height;
   font-weight: $topbar-font-weight;
   background: $topbar-background-color;
+  font-size: $topbar-font-size;
   width: 100%;
 
   ul {
