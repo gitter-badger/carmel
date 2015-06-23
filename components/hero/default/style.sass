@@ -6,30 +6,30 @@
   -moz-background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height:550px;
+  height:$hero-height;
 }
 
-.hero .welcome {
+.hero .heading {
   margin-top: 7.0rem;
   text-align: center;
   padding: 2.0rem 0;
   -webkit-font-smoothing: antialiased;
-  color: $hero-welcome-text-color;
+  color: $hero-heading-text-color;
 }
 
 .hero h1 {
   text-shadow: 0px 1px black;
   font-family: $hero-main-font-family;
-  font-weight: 900;
-  font-size: 2.5rem;
+  font-weight: $hero-h1-font-weight;
+  font-size: $hero-h1-font-size;
   line-height: 2.8rem;
 }
 
 .hero h2 {
   text-shadow: 0px 1px darkgrey;
   font-family: $hero-second-font-family;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: $hero-h2-font-weight;
+  font-size: $hero-h2-font-size;
   line-height: 2.0rem;
   margin-top: 3.0rem;
 }
@@ -90,8 +90,8 @@
 }
 
 @media (min-height: 550px) and (max-width:480px) {
-  .hero .welcome {
-    margin-top: 9.0rem;
+  .hero .heading {
+    margin-top: 7.5rem;
   }
 
   .hero .actions {
@@ -122,7 +122,7 @@
     //background-image: url("/img/cover-sm.png");
   }
 
-  .hero .welcome {
+  .hero .heading {
     margin-top: 5.0rem;
   }
 
@@ -167,7 +167,7 @@
     //background-image: url("/img/cover-md.png");
   }
 
-  .hero .welcome {
+  .hero .heading {
     margin-top: 4.0rem;
   }
 
@@ -212,7 +212,7 @@
   .hero {
   }
 
-  .hero .welcome {
+  .hero .heading {
     margin-top: 2.0rem;
   }
 
@@ -257,7 +257,7 @@
     //background-image: url("/img/cover-lg.png");
   }
 
-  .hero .welcome {
+  .hero .heading {
     margin-top: 4.0rem;
   }
 
