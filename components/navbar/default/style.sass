@@ -1,3 +1,6 @@
+.second-fixed .navbar-fixed-top {
+  top:2rem!important;
+}
 .navbar {
   background: darken($navbar-background-color, 5%);
   height: 64px;
@@ -104,4 +107,25 @@
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+}
+
+.topbar {
+  height: $topbar-height;
+  font-weight: $topbar-font-weight;
+  background: $topbar-background-color;
+  width: 100%;
+
+  ul {
+    list-style-type: none;
+    float: right;
+
+    li {
+      display: inline-block;
+      position: relative;
+      padding-top: 2rem;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
 }
