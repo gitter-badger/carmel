@@ -2,7 +2,7 @@
   top:$navbar-top!important;
 }
 .navbar {
-  background: darken($navbar-background-color, 5%);
+  background: $navbar-background-color;
   height: $navbar-height;
   border: 1px solid transparent;
   -webkit-font-smoothing: antialiased;
@@ -13,7 +13,7 @@
   height: 44px;
   padding: 10px;
   margin: 10px;
-  border: 1px solid #ffffff;
+  border: 1px solid $navbar-default-color;
 }
 
 .navbar .navbar-header button .icon-bar {
@@ -21,12 +21,12 @@
 }
 
 .navbar .navbar-default .navbar-nav > li > a, .navbar .navbar-default .navbar-brand {
-  color: #fff;
+  color: $navbar-default-color;
 }
 
 .navbar .navbar-default .navbar-nav > li > a:hover,
 .navbar .navbar-default .navbar-nav > li > a:focus {
-  color: #fff;
+  color: $navbar-default-color;
 
 }
 @media only screen and (max-width: 766px) {
@@ -70,7 +70,7 @@
 }
 
 .navbar .navbar-nav li a:hover {
- color: #fff;
+ color: $navbar-default-color;
    background: darken($navbar-background-color, 15%);
   -moz-transition-property: color;
   -o-transition-property: color;
@@ -90,7 +90,7 @@
 }
 
 .navbar .navbar-nav li.current a {
-  color: #fff;
+  color: $navbar-default-color;
   background: darken($navbar-background-color, 15%);
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
