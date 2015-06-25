@@ -5,7 +5,6 @@ content:
     - fr: français
     - ro: română
   images:
-    logo: star.png
     first-feature: heart.png
     second-feature: map.png
     third-feature: calendar.png
@@ -37,6 +36,12 @@ pages:
   - navbar
 
 - page: story
+  layout: default
+  components:
+  - topbar
+  - navbar
+
+- page: join
   layout: default
   components:
   - topbar
