@@ -9,3 +9,5 @@ style:
 - top: 2rem
 - button-background: "#ffffff"
 - default-color: "#fff"
+images:
+  logo: logo.png

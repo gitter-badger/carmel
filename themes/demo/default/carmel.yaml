@@ -1,0 +1,43 @@
+---
+content:
+  locales:
+    - en: English
+    - fr: français
+    - ro: română
+  images:
+    logo: star.png
+    first-feature: heart.png
+    second-feature: map.png
+    third-feature: calendar.png
+  text:
+
+style:
+
+settings:
+  facebook-page-name: FacebookDevelopers
+  videointro-id: UjXi6X-moxE
+
+links:
+  primary-link: join
+
+menu:
+- page: welcome
+  text: HOME_MENU_ITEM
+- page: story
+  text: STORY_MENU_ITEM
+- page: join
+  text: ACTION_MENU_ITEM
+
+pages:
+- page: welcome
+  layout: default
+  root: true
+  components:
+  - topbar
+  - navbar
+
+- page: story
+  layout: default
+  components:
+  - topbar
+  - navbar
