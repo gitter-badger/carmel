@@ -1,0 +1,21 @@
+style:
+- height: 550px
+- heading-text-color: "#ffffff"
+- background-color: "#2ecc71"
+- main-button-text-color: "#ffffff"
+- main-button-background-color: "#f1c40f"
+- main-font-name: "\"Josefin Sans\""
+- second-font-family: "\"Railway\""
+- h1-color: "#4a4a4a"
+- h2-color: "#4a4a4a"
+- action-bg-color: "#f1c40f"
+- action-color: "#fff"
+- action-shadow: "#4a4a4a"
+- action-border: "#fff"
+- arrow-down-color: "#fff"
+text:
+  title: Sample hero title
+  subtitle: Sample hero subtitletitle
+  action-title: Button
+variables:
+  maxChars: 24

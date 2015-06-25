@@ -1,54 +1,53 @@
-.hero {
   //background-image: url("/img/cover-sm.png");
-  background-color: $hero-background-color;
+  background-color: $background-color;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height:$hero-height;
-}
+  height:$height;
 
-.hero .heading {
+
+ .heading {
   margin-top: 7.0rem;
   text-align: center;
   padding: 2.0rem 0;
   -webkit-font-smoothing: antialiased;
-  color: $hero-heading-text-color;
+  color: $heading-text-color;
 }
 
-.hero h1 {
+ h1 {
   text-shadow: 0px 1px black;
-  font-family: $hero-main-font-family;
+  font-family: $main-font-name,sans-serif;
   font-weight: 900;
   font-size:  2.5rem;
   line-height: 2.8rem;
 }
 
-.hero h2 {
+ h2 {
   text-shadow: 0px 1px darkgrey;
-  font-family: $hero-second-font-family;
+  font-family: $second-font-family;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.0rem;
   margin-top: 3.0rem;
 }
 
-.hero .actions {
+  .actions {
   margin-top:0;
   text-align: center;
   -webkit-font-smoothing: antialiased;
-  font-family: $hero-second-font-family;
+  font-family: $second-font-family;
   font-weight: 400;
 }
 
-.hero .action-primary {
+  .action-primary {
   margin-top: 1.0rem;
 }
 
-.hero .action-primary .btn {
-  background-color: $hero-main-button-background-color;
-  color: $hero-main-button-text-color;
+  .action-primary .btn {
+  background-color: $main-button-background-color;
+  color: $main-button-text-color;
   border: 1px solid white;
   width: 100%;
   padding-top: 0.5rem;
@@ -58,7 +57,7 @@
   text-shadow: 0px 1px black;
 }
 
-.hero .action-secondary {
+  .action-secondary {
   margin-top: 1.0rem;
 }
 
@@ -78,7 +77,7 @@
   }
 }
 
-.hero .action-secondary .btn {
+  .action-secondary .btn {
   color: #999999;
   background-color: #FFFFFF;
   border: 1px solid $action-border;
@@ -90,11 +89,11 @@
 }
 
 @media (min-height: 550px) and (max-width:480px) {
-  .hero .heading {
+    .heading {
     margin-top: 7.5rem;
   }
 
-  .hero .actions {
+    .actions {
     padding:3.0rem 0;
   }
   .more-info {
@@ -118,44 +117,41 @@
 
 @media (min-width: 480px) {
 
-  .hero {
-    //background-image: url("/img/cover-sm.png");
-  }
 
-  .hero .heading {
+    .heading {
     margin-top: 5.0rem;
   }
 
-  .hero h1 {
+    h1 {
     font-size: 1.8rem;
     line-height: 2.0rem;
   }
 
-  .hero h2 {
+    h2 {
     font-size: 1.6rem;
     line-height: 1.8rem;
     margin-top: 0.5rem;
   }
 
-  .hero .actions {
+    .actions {
     margin-top: 2.5rem;
   }
 
-  .hero .action-primary {
+    .action-primary {
     margin-top: 0.5rem;
   }
 
-  .hero .action-primary .btn {
+    .action-primary .btn {
     font-size: 1.8rem;
     line-height: 2.0rem;
     border: 2px solid $action-border;
   }
 
-  .hero .action-secondary {
+    .action-secondary {
     margin-top: 0.5rem;
   }
 
-  .hero .action-secondary .btn {
+    .action-secondary .btn {
     font-size: 1.6rem;
     line-height: 2.0rem;
   }
@@ -163,45 +159,41 @@
 
 @media (min-width: 768px) {
 
-  .hero {
-    //background-image: url("/img/cover-md.png");
-  }
-
-  .hero .heading {
+    .heading {
     margin-top: 4.0rem;
   }
 
-  .hero h1 {
+    h1 {
     font-size: 2.5rem;
     line-height: 3.8rem;
   }
 
-  .hero h2 {
+    h2 {
     font-size: 2.0rem;
     line-height: 3.0rem;
     margin-top: 1.5rem;
   }
 
-  .hero .actions {
+    .actions {
     margin-top: 1.0rem;
   }
 
-  .hero .action-primary {
+    .action-primary {
     margin-top: 0.5rem;
   }
 
-  .hero .action-primary .btn {
+    .action-primary .btn {
     font-size: 1.5rem;
     line-height: 2.0rem;
     border: 2px solid $action-border;
     width:20.0rem;
   }
 
-  .hero .action-secondary {
+    .action-secondary {
     margin-top: 1.0rem;
   }
 
-  .hero .action-secondary .btn {
+    .action-secondary .btn {
     font-size: 2.2rem;
     line-height: 4.0rem;
   }
@@ -209,89 +201,85 @@
 
 @media (min-width: 992px) {
 
-  .hero {
-  }
 
-  .hero .heading {
+    .heading {
     margin-top: 2.0rem;
   }
 
-  .hero h1 {
+    h1 {
     font-size: 2.6rem;
     line-height: 3.2rem;
   }
 
-  .hero h2 {
+    h2 {
     font-size: 1.7rem;
     line-height: 2.0rem;
     margin-top: 1.6rem;
   }
 
-  .hero .actions {
+    .actions {
     margin-top: 0.5rem ;
   }
 
-  .hero .action-primary {
+    .action-primary {
     margin-top: 0;
   }
 
-  .hero .action-primary .btn {
+    .action-primary .btn {
     font-size: 2.0rem;
     line-height: 2.0rem;
     border: 2px solid $action-border;
     width:300px;
   }
 
-  .hero .action-secondary {
+    .action-secondary {
     margin-top: 1.0rem;
   }
 
-  .hero .action-secondary .btn {
+    .action-secondary .btn {
     font-size: 1.8rem;
     line-height: 3.0rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .hero {
-    //background-image: url("/img/cover-lg.png");
-  }
 
-  .hero .heading {
+
+    .heading {
     margin-top: 4.0rem;
   }
 
-  .hero h1 {
+    h1 {
     font-size: 2.2rem;
     line-height: 3.0rem;
   }
 
-  .hero h2 {
+    h2 {
     font-size: 1.6rem;
     line-height: 2.0rem;
     margin-top: 0.8rem;
   }
 
-  .hero .actions {
+    .actions {
     margin-top: 0.5rem;
   }
 
-  .hero .action-primary {
+    .action-primary {
     margin-top: 1.0rem;
   }
 
-  .hero .action-primary .btn {
+    .action-primary .btn {
     font-size: 1.6rem;
     line-height: 2.0rem;
     border: 2px solid $action-border;
     width:15.0rem;
   }
 
-  .hero .action-secondary {
+    .action-secondary {
     margin-top: 1.0rem;
   }
 
-  .hero .action-secondary .btn {
+    .action-secondary .btn {
     font-size: 1.4rem;
     line-height: 2.0rem;
   }
