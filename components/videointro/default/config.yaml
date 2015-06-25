@@ -1,0 +1,10 @@
+style:
+- bg: "#53C5E3"
+- text-color: "#fff"
+- border: "#fff"
+- button-background: "#f39c12"
+text:
+  title: Video Title
+  details: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+variables:
+  maxChars: 500
