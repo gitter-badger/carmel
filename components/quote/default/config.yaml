@@ -1,0 +1,8 @@
+style:
+- color: "#4a4a4a"
+- align: justify
+text:
+  title: This Is A Sample Title
+  body: This is a sample body. This can be longer. Like this.
+variables:
+  maxChars: 24

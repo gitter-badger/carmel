@@ -1,0 +1,11 @@
+style:
+- height: 64px
+- background-color: "#29b765"
+- item-background-color: "#00a86b"
+- primary-background-color: "#f39c12"
+- font-name: "\"Railway\""
+- font-size: 16px
+- font-weight: 600
+- top: 2rem
+- button-background: "#ffffff"
+- default-color: "#fff"
