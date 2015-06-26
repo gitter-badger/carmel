@@ -1,0 +1,9 @@
+style:
+- bg: "#2ECC71"
+- text-color: "#fff"
+- input-border: "grey"
+- submit-bg: "#F9BF3B"
+text:
+  title: Stay Connected By Subscribing To Our Monthly Newsletter
+variables:
+  maxChars: 100
