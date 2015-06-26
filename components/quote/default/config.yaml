@@ -2,7 +2,8 @@ style:
 - color: "#4a4a4a"
 - align: justify
 text:
-  title: This Is A Sample Title
-  body: This is a sample body. This can be longer. Like this.
+  title: QUOTE_TITLE
+  body: QUOTE_BODY
 variables:
-  maxChars: 24
+  titleMaxChars: 24
+  bodyMaxChars: 256

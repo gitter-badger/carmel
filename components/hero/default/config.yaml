@@ -14,8 +14,10 @@ style:
 - action-border: "#fff"
 - arrow-down-color: "#fff"
 text:
-  title: Sample hero title
-  subtitle: Sample hero subtitletitle
-  action-title: Button
+  title: HERO_TITLE
+  subtitle: HERO_SUBTITLE
+  actionTitle: ACTION_BUTTON_TITLE
 variables:
-  maxChars: 24
+  titleMaxChars: 24
+  subtitleMaxChars: 256
+  actionButtonTitleMaxChars: 12
