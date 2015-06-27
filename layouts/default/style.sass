@@ -56,3 +56,44 @@ html {
     font-size: 22px;
   }
 }
+
+
+@mixin carmel-heading ($font-name: 'Josefin Sans', $color: #FFFFFF) {
+  h1 {
+    text-shadow: 0px 1px black;
+    font-family: $font-name,sans-serif;
+    font-weight: 900;
+    font-size:  2.5rem;
+    line-height: 2.8rem;
+    color: $color;
+  }
+
+  @media (min-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+      line-height: 2.0rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 3.8rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 2.6rem;
+      line-height: 3.2rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 2.2rem;
+      line-height: 3.0rem;
+    }
+  }
+
+}
