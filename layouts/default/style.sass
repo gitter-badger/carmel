@@ -93,4 +93,51 @@ $carmel-global-desktop-width: 1024px;
       @include carmel-text-size (2.2, 3.0);
     }
   }
+
+   h2 {
+    text-shadow: 0px 1px darkgrey;
+    font-family: $font-name;
+    font-weight: 400;
+    @include carmel-text-size (1.5, 2.0);
+    margin-top: 1.0rem;
+
+    @include carmel-device-tablet {
+      @include carmel-text-size (1.8, 2.2);
+    }
+
+    @include carmel-device-desktop {
+      @include carmel-text-size (1.2, 2.0);
+    }
+  }
+
+}
+$carmel-global-button-bg-color: #2ecc71;
+$carmel-global-button-text-color: #fff;
+
+@mixin carmel-button ($background:$carmel-global-button-bg-color,
+$color: $carmel-global-button-text-color, $border:#fff, $width:100%, $font-name: 'Josefin Sans') {
+  .action-primary {
+    margin-top: 1.0rem;
+    .btn {
+      background-color: $background;
+      color: $color;
+      font-family: $font-name;
+      border: 1px solid $border;
+      width: $width;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 2.0rem;
+      line-height: 3.0rem;
+      @include carmel-text-size(2.0, 3.0);
+      text-shadow: 0px 1px black;
+
+      @include carmel-device-tablet {
+        @include carmel-text-size (1.8, 2.2);
+      }
+
+      @include carmel-device-desktop {
+        @include carmel-text-size (1.2, 2.0);
+      }
+    }
+  }
 }
