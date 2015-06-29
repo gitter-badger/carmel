@@ -1,34 +1,60 @@
 
   //margin-top: 2.0rem;
   padding-top: 2.0rem;
-  padding-bottom: 2.0rem;
+  // padding-bottom: 2.0rem;
   margin-bottom: 0;
   color: #ffffff;
-  background-color:#2c3e50;
+  background-color:#34495E;
+.pre-footer{
+  text-align: center;
+}
 
 h1{
-  text-align: center;
-  @include h1 (#fff);
+  @include h1 (#fff,1.2);
 }
 
 input[name="carmel-input"] {
-  @include input(#ccc);
+  @include input(#000,#ccc,4px,350px);
   margin-bottom: 10px;
 }
 
-textarea{
-  @include input(#000,#ccc,4px,250px,150px);
+textarea {
+  @include input(#000,#ccc,4px,350px,200px);
   resize: none;
 }
 
 .footer-button {
-  @include carmel-button(#f1c40f,#fff,#f1c40f,250px,0rem,0rem);
+  @include carmel-button(#f1c40f,#fff,#f1c40f,350px,0rem,0rem);
+  margin-top: 5px;
+}
+
+.support {
+  margin-top: 50px;
+}
+
+.sponsor p {
+  text-align: justify;
+}
+
+.bottom-footer {
+  background-color:  #2c3e50;
+  width: 100%;
+  padding:20px;
+  margin-top: 100px;
+
+  .right {
+    float: right;
+  }
+}
+
+.social {
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
 
     padding-top: 3.0rem;
-    padding-bottom: 3.0rem;
+    // padding-bottom: 3.0rem;
 
 }
 

@@ -125,7 +125,7 @@ $color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,
       padding-top: $top;
       padding-bottom: $bottom;
       @include carmel-text-size(2.0, 3.0);
-      text-shadow: 0px 1px black;
+      // text-shadow: 0px 1px black;
 
       @include carmel-device-tablet {
         @include carmel-text-size (1.8, 2.2);
@@ -137,11 +137,11 @@ $color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,
     }
 }
 
-@mixin h1 ($color:#000,$weight:900,$font-name: 'Josefin Sans') {
+@mixin h1 ($color:#000,$size:1.5,$line:2.0,$weight:900,$font-name: 'Josefin Sans') {
   color:$color;
   font-weight: $weight;
   font-family: $font-name;
-  @include carmel-text-size (1.5, 2.0);
+  @include carmel-text-size ($size, $line);
 }
 
 @mixin input ($color:#000,$border:#ccc,$radius:4px,$width:250px,$height:48px,$size:0.8rem) {
@@ -155,5 +155,5 @@ $color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,
       height: $height;
       width: $width;
       font-size:$size;
-      font-weight: 300;
+      font-weight: 400;
 }

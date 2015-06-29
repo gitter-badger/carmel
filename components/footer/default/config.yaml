@@ -3,5 +3,5 @@ text:
   body: FOOTER_BODY
 variables:
   titleMaxChars: 24
-  bodyMaxChars: 128
+  bodyMaxChars: 200
   pageName: Facebook
