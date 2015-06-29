@@ -115,19 +115,15 @@ $carmel-global-button-bg-color: #2ecc71;
 $carmel-global-button-text-color: #fff;
 
 @mixin carmel-button ($background:$carmel-global-button-bg-color,
-$color: $carmel-global-button-text-color, $border:#fff, $width:100%, $font-name: 'Josefin Sans') {
-  .action-primary {
-    margin-top: 1.0rem;
+$color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,$bottom:0.5rem,$font-name: 'Josefin Sans') {
     .btn {
       background-color: $background;
       color: $color;
       font-family: $font-name;
       border: 1px solid $border;
       width: $width;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      font-size: 2.0rem;
-      line-height: 3.0rem;
+      padding-top: $top;
+      padding-bottom: $bottom;
       @include carmel-text-size(2.0, 3.0);
       text-shadow: 0px 1px black;
 
@@ -139,5 +135,25 @@ $color: $carmel-global-button-text-color, $border:#fff, $width:100%, $font-name:
         @include carmel-text-size (1.2, 2.0);
       }
     }
-  }
+}
+
+@mixin h1 ($color:#000,$weight:900,$font-name: 'Josefin Sans') {
+  color:$color;
+  font-weight: $weight;
+  font-family: $font-name;
+  @include carmel-text-size (1.5, 2.0);
+}
+
+@mixin input ($color:#000,$border:#ccc,$radius:4px,$width:250px,$height:48px,$size:0.8rem) {
+      color:$color;
+      border:none;
+      border:1px solid $border;
+      -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+      border-radius: $radius;
+      padding:0.3rem;
+      height: $height;
+      width: $width;
+      font-size:$size;
+      font-weight: 300;
 }
