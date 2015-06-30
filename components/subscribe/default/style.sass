@@ -17,52 +17,19 @@
   .subscribe-name {
     margin: 10px 0;
     input[type="text"] {
-      border:none;
-      border:1px solid $input-border;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -o-border-radius: 4px;
-      border-radius: 4px;
-      padding:0.3rem;
-      height: 48px;
-      width:250px;
-      font-size:2.0rem;
-      font-weight: 300;
-    }
+      @include input(#fff,#ccc,0);
   }
 
  .subscribe-email {
    margin: 10px 0;
 
    input[type="email"] {
-     border:none;
-     border:1px solid $input-border;
-     -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-     -o-border-radius: 4px;
-     border-radius: 4px;
-     padding:0.3rem;
-     height: 48px;
-     width:250px;
-     font-size:2.0rem;
-     font-weight: 300;
+    @include input(#fff,#ccc,0);
    }
  }
 
   .subscribe-submit {
-    margin: 10px 0;
-    input[type="button"] {
-      border:none;
-      padding:0.5rem;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -o-border-radius: 4px;
-      border-radius: 4px;
-      height: 48px;
-      width:250px;
-      font-size:1.8rem;
-      background-color: $submit-bg;
-      color:$text-color;
+    @include carmel-button();
     }
   }
     .subscribe-info {

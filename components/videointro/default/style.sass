@@ -41,21 +41,22 @@
 }
 
 .story-btn {
-  .story-btn:first-child {
-    text-decoration: none;
-  }
-
-  .btn {
-      background-color: $button-background;
-      color:  $text-color;
-      width: 100%;
-      padding:14px 0px;
-      -webkit-border-radius:0;
-      -moz-border-radius:0;
-      border-radius: 0;
-      font-size: 1.0rem;
-      overflow: hidden;
-  }
+  @include carmel-button($button-background,#D9B00E,#eee,0,$button-background);
+  // .story-btn:first-child {
+  //   text-decoration: none;
+  // }
+  //
+  // .btn {
+  //     background-color: $button-background;
+  //     color:  $text-color;
+  //     width: 100%;
+  //     padding:14px 0px;
+  //     -webkit-border-radius:0;
+  //     -moz-border-radius:0;
+  //     border-radius: 0;
+  //     font-size: 1.0rem;
+  //     overflow: hidden;
+  // }
 }
 
 .video-link {

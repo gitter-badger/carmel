@@ -116,7 +116,7 @@ $carmel-global-button-bg-color: #2ecc71;
 $carmel-global-button-text-color: #eee;
 
 @mixin carmel-button ($background:$carmel-global-button-bg-color,$new-background:#208F4F,
-$color: $carmel-global-button-text-color,$radius:0, $border:#fff, $width:100%,$top:0.5rem,$bottom:0.5rem,$font-name: 'Josefin Sans') {
+$color: $carmel-global-button-text-color,$radius:0, $border:#fff, $width:100%,$top:0.5rem,$bottom:0.5rem,$size:1.2,$line:2.0rem,$font-name: 'Josefin Sans') {
     .btn {
       background: $background;
       -moz-transition-property: background;
@@ -133,7 +133,7 @@ $color: $carmel-global-button-text-color,$radius:0, $border:#fff, $width:100%,$t
       width: $width;
       padding-top: $top;
       padding-bottom: $bottom;
-      @include carmel-text-size(2.0, 3.0);
+      @include carmel-text-size($size, $line);
       text-shadow: 0px 1px #ccc;
       -webkit-border-radius:$radius;
       -moz-border-radius:$radius;
