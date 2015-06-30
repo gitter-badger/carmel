@@ -112,9 +112,10 @@ $carmel-global-desktop-width: 1024px;
 
 }
 $carmel-global-button-bg-color: #2ecc71;
+
 $carmel-global-button-text-color: #fff;
 
-@mixin carmel-button ($background:$carmel-global-button-bg-color,
+@mixin carmel-button ($background:$carmel-global-button-bg-color,$new-background:#208F4F,
 $color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,$bottom:0.5rem,$font-name: 'Josefin Sans') {
     .btn {
       background-color: $background;
@@ -125,7 +126,7 @@ $color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,
       padding-top: $top;
       padding-bottom: $bottom;
       @include carmel-text-size(2.0, 3.0);
-      // text-shadow: 0px 1px black;
+      text-shadow: 0px 1px #ccc;
 
       @include carmel-device-tablet {
         @include carmel-text-size (1.8, 2.2);
@@ -133,6 +134,10 @@ $color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,
 
       @include carmel-device-desktop {
         @include carmel-text-size (1.2, 2.0);
+      }
+
+      &:hover {
+        background-color: $new-background;
       }
     }
 }
