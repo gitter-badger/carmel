@@ -1,0 +1,7 @@
+style:
+- $color: "#ffffff"
+text:
+  title: Small Title
+  subtitle: Small Subtitle
+variables:
+  maxChars: 50
