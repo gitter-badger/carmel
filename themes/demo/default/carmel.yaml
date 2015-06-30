@@ -3,17 +3,13 @@ content:
   locales:
     - en: English
     - fr: français
-    - ro: română
   images:
     first-feature: heart.png
     second-feature: map.png
     third-feature: calendar.png
-  text:
-
 style:
 
 settings:
-  facebook-page-name: FacebookDevelopers
   videointro-id: UjXi6X-moxE
 
 links:
@@ -34,15 +30,32 @@ pages:
   components:
   - topbar
   - navbar
+  - hero
+  - summary
+  - videointro
+  - features
+  - subscribe
+  - archive
+  - footer
 
 - page: story
   layout: default
   components:
   - topbar
   - navbar
+  - carmel/hero/small
+  - summary
+  - subscribe
+  - quote
+  - footer
 
 - page: join
   layout: default
   components:
   - topbar
   - navbar
+  - carmel/hero/small
+  - summary
+  - subscribe
+  - quote
+  - footer
