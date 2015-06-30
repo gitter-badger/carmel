@@ -1,4 +1,15 @@
 ---
 HOME_MENU_ITEM: Welcome
 STORY_MENU_ITEM: Our Story
-ACTION_MENU_ITEM: Help Us
+ACTION_MENU_ITEM: Download
+HERO_TITLE: Welcome To Carmel
+HERO_SUBTITLE: The easiest way to build a website from scratch
+HERO_ACTION_TITLE: Try It Out
+FOOTER_TITLE: See For Yourself
+FOOTER_BODY: This is a free and open-source project that you can start using right away in your next project.
+FOOTER_ACTION_TITLE: Browse The Code
+FOOTER_CONTACT_TITLE: Get In Touch With Us
+FOOTER_CONTACT_NAME_PLACEHOLDER: Your Name
+FOOTER_CONTACT_EMAIL_PLACEHOLDER: Your Email Address
+FOOTER_CONTACT_MESSAGE_PLACEHOLDER: Hello, Carmel!
+FOOTER_CONTACT_BUTTON_TITLE: Send Message Now

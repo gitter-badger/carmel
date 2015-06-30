@@ -1,4 +1,15 @@
 ---
 HOME_MENU_ITEM: Bonjour
-STORY_MENU_ITEM: Notre historie
-ACTION_MENU_ITEM: Aidez nous
+STORY_MENU_ITEM: Notre histoire
+ACTION_MENU_ITEM: Télécharger
+HERO_TITLE: Bienvenue à Carmel
+HERO_SUBTITLE: La façon la plus simple de construire un site web à partir de zéro
+HERO_ACTION_TITLE: Essayez-le
+FOOTER_TITLE: Voyez pour vous-même
+FOOTER_BODY: C'est un logiciel gratuit et open-source du projet que vous pouvez commencer à utiliser immédiatement dans votre prochain projet.
+FOOTER_ACTION_TITLE: Parcourir le Code
+FOOTER_CONTACT_TITLE: Entrer en contact avec nous
+FOOTER_CONTACT_NAME_PLACEHOLDER: Votre nom
+FOOTER_CONTACT_EMAIL_PLACEHOLDER: Votre adresse e-mail
+FOOTER_CONTACT_MESSAGE_PLACEHOLDER: Bonjour, Carmel!
+FOOTER_CONTACT_BUTTON_TITLE: Envoyer message maintenant
