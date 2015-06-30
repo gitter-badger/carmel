@@ -16,8 +16,8 @@ style:
 text:
   title: HERO_TITLE
   subtitle: HERO_SUBTITLE
-  actionTitle: ACTION_BUTTON_TITLE
+  actionTitle: HERO_ACTION_TITLE
 variables:
-  titleMaxChars: 24
+  titleMaxChars: 50
   subtitleMaxChars: 256
-  actionButtonTitleMaxChars: 12
+  actionButtonTitleMaxChars: 30

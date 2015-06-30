@@ -1,7 +1,16 @@
 text:
   title: FOOTER_TITLE
   body: FOOTER_BODY
+  actionTitle: FOOTER_ACTION_TITLE
+  contactTitle: FOOTER_CONTACT_TITLE
+  contactNamePlaceholder: FOOTER_CONTACT_NAME_PLACEHOLDER
+  contactEmailPlaceholder: FOOTER_CONTACT_EMAIL_PLACEHOLDER
+  contactMessagePlaceHolder: FOOTER_CONTACT_MESSAGE_PLACEHOLDER
+  contactButtonTitle: FOOTER_CONTACT_BUTTON_TITLE
 variables:
-  titleMaxChars: 24
-  bodyMaxChars: 200
-  pageName: Facebook
+  titleMaxChars: 32
+  bodyMaxChars: 500
+  contactNamePlaceHolderMaxChars: 48
+  contactEmailPlaceHolderMaxChars: 48
+  contactMessagePlaceHolderMaxChars: 100
+  contactButtonTitleMaxCharsMaxChars: 32
