@@ -1,0 +1,7 @@
+style:
+
+text:
+  - title: Article Title
+  - body: Article Body
+variables:
+  maxChars: 50
