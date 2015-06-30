@@ -18,9 +18,9 @@ links:
 menu:
 - page: home
   text: HOME_MENU_ITEM
-- page: about
+- page: docs
   text: ABOUT_MENU_ITEM
-- page: action
+- page: install
   text: ACTION_MENU_ITEM
 
 pages:
@@ -43,7 +43,7 @@ pages:
   - archive
   - footer
 
-- page: about
+- page: docs
   layout: default
   action: secondary
   components:
@@ -55,7 +55,7 @@ pages:
   - quote
   - footer
 
-- page: action
+- page: install
   layout: default
   action: primary
   components:

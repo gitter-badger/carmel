@@ -1,7 +1,7 @@
 ---
-HOME_MENU_ITEM: Bonjour
-STORY_MENU_ITEM: Notre histoire
-ACTION_MENU_ITEM: Télécharger
+HOME_MENU_ITEM: Intro
+STORY_MENU_ITEM: Documentation
+ACTION_MENU_ITEM: Installation
 HERO_TITLE: Bienvenue à Carmel
 HERO_SUBTITLE: La façon la plus simple de construire un site web à partir de zéro
 HERO_ACTION_TITLE: Essayez-le
