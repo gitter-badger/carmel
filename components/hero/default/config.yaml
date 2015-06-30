@@ -2,7 +2,7 @@ style:
 - height: 550px
 - heading-text-color: "#ffffff"
 - background-color: "#2ecc71"
-- main-button-text-color: "#ffffff"
+- main-button-text-color: "#eee"
 - main-button-background-color: "#f1c40f"
 - main-font-name: "\"Josefin Sans\""
 - second-font-family: "\"Railway\""

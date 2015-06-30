@@ -97,6 +97,7 @@ $carmel-global-desktop-width: 1024px;
    h2 {
     text-shadow: 0px 1px darkgrey;
     font-family: $font-name;
+    color:$color;
     font-weight: 400;
     @include carmel-text-size (1.5, 2.0);
     margin-top: 1.0rem;
@@ -112,13 +113,20 @@ $carmel-global-desktop-width: 1024px;
 
 }
 $carmel-global-button-bg-color: #2ecc71;
-
-$carmel-global-button-text-color: #fff;
+$carmel-global-button-text-color: #eee;
 
 @mixin carmel-button ($background:$carmel-global-button-bg-color,$new-background:#208F4F,
-$color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,$bottom:0.5rem,$font-name: 'Josefin Sans') {
+$color: $carmel-global-button-text-color,$radius:0, $border:#fff, $width:100%,$top:0.5rem,$bottom:0.5rem,$font-name: 'Josefin Sans') {
     .btn {
-      background-color: $background;
+      background: $background;
+      -moz-transition-property: background;
+      -o-transition-property: background;
+      -webkit-transition-property: background;
+      transition-property: background;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
       color: $color;
       font-family: $font-name;
       border: 1px solid $border;
@@ -127,7 +135,9 @@ $color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,
       padding-bottom: $bottom;
       @include carmel-text-size(2.0, 3.0);
       text-shadow: 0px 1px #ccc;
-
+      -webkit-border-radius:$radius;
+      -moz-border-radius:$radius;
+      border-radius: $radius;
       @include carmel-device-tablet {
         @include carmel-text-size (1.8, 2.2);
       }
@@ -138,6 +148,7 @@ $color: $carmel-global-button-text-color, $border:#fff, $width:100%,$top:0.5rem,
 
       &:hover {
         background-color: $new-background;
+        color:#fff;
       }
     }
 }
