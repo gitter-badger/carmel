@@ -1,7 +1,6 @@
 
-  padding: 4.0rem 0;
+@include carmel-setup(4,0,4,0);
   background-color:  $bg;
-
 
   h1 {
   margin: 0;
@@ -31,32 +30,15 @@
   p {
   text-align: justify;
   padding: 1.0rem 0;
-  // margin: 1.0rem 0;
   -webkit-font-smoothing: antialiased;
   color:  $text-color;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.2rem;
-  // line-height:0.5rem;
   font-weight:300;
 }
 
 .story-btn {
-  @include carmel-button($button-background,#D9B00E,#eee,0,$button-background);
-  // .story-btn:first-child {
-  //   text-decoration: none;
-  // }
-  //
-  // .btn {
-  //     background-color: $button-background;
-  //     color:  $text-color;
-  //     width: 100%;
-  //     padding:14px 0px;
-  //     -webkit-border-radius:0;
-  //     -moz-border-radius:0;
-  //     border-radius: 0;
-  //     font-size: 1.0rem;
-  //     overflow: hidden;
-  // }
+  @include carmel-button($button-background,#D9B00E,#eee,0);
 }
 
 .video-link {

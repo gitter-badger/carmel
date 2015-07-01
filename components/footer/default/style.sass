@@ -1,5 +1,5 @@
 
-  padding-top: 2.0rem;
+@include carmel-setup (4,0,0,0);
   margin-bottom: 0;
   color: #ffffff;
   background-color:#34495E;
@@ -23,7 +23,7 @@ textarea {
 }
 
 .footer-button {
-  @include carmel-button(#f1c40f,#D9B00E,#fff,0,#f1c40f,250px,0rem,0rem);
+  @include carmel-button(#f1c40f,#D9B00E);
   margin-top: 5px;
 }
 
@@ -57,9 +57,9 @@ textarea {
 
 @media (min-height: 665px) and (max-width:480px) {
   input[name="carmel-input"] {
-  @include input(#000,#ccc,0,300px);
-  margin-bottom: 10px;
-}
+    @include input(#000,#ccc,0,300px);
+    margin-bottom: 10px;
+  }
 
   textarea {
     @include input(#000,#ccc,0,300px,200px);
@@ -67,29 +67,28 @@ textarea {
   }
 
   .footer-button {
-    @include carmel-button(#f1c40f,#D9B00E,#fff,0,#f1c40f,300px,0rem,0rem);
+    @include carmel-button(#f1c40f,#D9B00E);
     margin-top: 5px;
   }
 
   .sponsor {
     margin-top: 20px;
+
+    p {
+      width: 300px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      line-height: 1.8rem;
+
+    }
   }
-
-  .sponsor p {
-    width: 300px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    line-height: 1.8rem;
-  }
-
-
 }
 
 @media (min-width: 768px) {
 
-  padding-top: 3.0rem;
+
   input[name="carmel-input"] {
-  @include input(#000,#ccc,0,350px);
+  @include input(#000,#ccc,0,350px,58px);
   margin-bottom: 10px;
 }
 
@@ -99,7 +98,7 @@ textarea {
   }
 
   .footer-button {
-    @include carmel-button(#f1c40f,#D9B00E,#fff,0,#f1c40f,350px,0rem,0rem);
+    @include carmel-button(#f1c40f,#D9B00E,#eee,0,350px);
     margin-top: 5px;
   }
 
@@ -109,9 +108,6 @@ textarea {
 
   .sponsor p {
     width: 345px;
-  }
-    margin-top: 10px;
-    line-height: 1.2rem;
   }
 
   .support {
@@ -131,6 +127,7 @@ textarea {
     .right {
       float: right;
     }
+  }
 }
 
 @media (min-width: 1200px) {

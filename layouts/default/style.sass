@@ -116,7 +116,7 @@ $carmel-global-button-bg-color: #2ecc71;
 $carmel-global-button-text-color: #eee;
 
 @mixin carmel-button ($background:$carmel-global-button-bg-color,$new-background:#208F4F,
-$color: $carmel-global-button-text-color,$radius:0, $border:#fff, $width:100%,$top:0.5rem,$bottom:0.5rem,$size:1.2,$line:2.0rem,$font-name: 'Railway') {
+$color: $carmel-global-button-text-color,$radius:0,$width:100%,$top:0.5rem,$bottom:0.5rem,$size:1.6,$line:2.0rem,$font-name: 'Railway') {
     .btn {
       background: $background;
       -moz-transition-property: background;
@@ -129,21 +129,20 @@ $color: $carmel-global-button-text-color,$radius:0, $border:#fff, $width:100%,$t
       transition-duration: 0.3s;
       color: $color;
       font-family: $font-name,sans-serif;
-      border: 1px solid $border;
       width: $width;
       padding-top: $top;
       padding-bottom: $bottom;
       @include carmel-text-size($size, $line);
-      // text-shadow: 0px 1px #ccc;
+      text-shadow: 0px 2px 1px #9a9a9a;
       -webkit-border-radius:$radius;
       -moz-border-radius:$radius;
       border-radius: $radius;
       @include carmel-device-tablet {
-        @include carmel-text-size (1.8, 2.2);
+        @include carmel-text-size (1.6, 2.2);
       }
 
       @include carmel-device-desktop {
-        @include carmel-text-size (1.2, 2.0);
+        @include carmel-text-size (1.0, 2.0);
       }
 
       &:hover {
@@ -173,4 +172,11 @@ $color: $carmel-global-button-text-color,$radius:0, $border:#fff, $width:100%,$t
       width: $width;
       font-size:$size;
       font-weight: 400;
+}
+
+@mixin carmel-setup ($top:4,$right:4,$bottom:4,$left:4) {
+  padding-top: #{$top}rem;
+  padding-right: #{$right}rem;
+  padding-bottom: #{$bottom}rem;
+  padding-left: #{$left}rem;
 }
