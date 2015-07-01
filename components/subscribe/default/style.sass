@@ -17,21 +17,23 @@
   .subscribe-name {
     margin: 10px 0;
     input[type="text"] {
-      @include input(#fff,#ccc,0);
+      @include input(#000,#ccc,0,100%);
   }
+}
 
  .subscribe-email {
    margin: 10px 0;
 
    input[type="email"] {
-    @include input(#fff,#ccc,0);
+    @include input(#000,#ccc,0,100%);
    }
  }
 
   .subscribe-submit {
-    @include carmel-button();
-    }
+    margin: 10px 0;
+    @include carmel-button($submit-bg,#D9B00E,#eee,0,$submit-bg,100%,1.5rem,1.5rem,1.2,0);
   }
+
     .subscribe-info {
       p {
         color:$text-color;
@@ -45,40 +47,9 @@
 
     display: flex;
 
-    .subscribe-name {
-      float: left;
-
-      input[type="text"] {
-        padding:0.3rem;
-        height: 48px;
-        width:300px;
-        font-size:1.0rem;
-        font-weight: 300;
-      }
-    }
-
-    .subscribe-email {
-      float: left;
-
-      input[type="email"] {
-        padding:0.3rem;
-        height: 48px;
-        width:300px;
-        font-size:1.0rem;
-        font-weight: 300;
-      }
-    }
-
-    .subscribe-submit {
-
-      input[type="button"] {
-        padding:0.5rem;
-        height: 48px;
-        width:250px;
-        font-size:0.9rem;
-      }
-    }
-
+  .subscribe-submit {
+    @include carmel-button($submit-bg,#D9B00E,#eee,0,$submit-bg,100%,0,0,1.2,2.0);
+  }
 }
 
 @media (min-width:768px) {
@@ -90,37 +61,6 @@
       text-align: center;
     }
 
-    .subscribe-name {
-
-      input[type="text"] {
-        padding:0.3rem;
-        height: 48px;
-        width:560px;
-        font-size:1.0rem;
-        font-weight: 300;
-      }
-    }
-
-    .subscribe-email {
-
-      input[type="email"] {
-        padding:0.3rem;
-        height: 48px;
-        width:560px;
-        font-size:1.0rem;
-        font-weight: 300;
-      }
-    }
-
-    .subscribe-submit {
-      input[type="button"] {
-        padding:0.5rem;
-        height: 48px;
-        width:560px;
-        font-size:0.9rem;
-      }
-    }
-
 }
 
 @media (min-width:992px) {
@@ -130,37 +70,6 @@
 
     .row{
       text-align: center;
-    }
-
-    .subscribe-name {
-
-      input[type="text"] {
-        padding:0.3rem;
-        height: 48px;
-        width:900px;
-        font-size:1.0rem;
-        font-weight: 300;
-      }
-    }
-
-    .subscribe-email {
-
-      input[type="email"] {
-        padding:0.3rem;
-        height: 48px;
-        width:900px;
-        font-size:1.0rem;
-        font-weight: 300;
-      }
-    }
-
-    .subscribe-submit {
-      input[type="button"] {
-        padding:0.5rem;
-        height: 48px;
-        width:900px;
-        font-size:0.9rem;
-      }
     }
 
 }
@@ -177,39 +86,4 @@
       font-size: 2.0rem;
       margin-bottom: 2.0rem;
     }
-
-    .subscribe-name {
-
-      input[type="text"] {
-        padding:0.3rem;
-        height: 48px;
-        width:250px;
-        font-size:0.8rem;
-        font-weight: 300;
-      }
-    }
-
-    .subscribe-email {
-      padding-left: 40px;
-      input[type="email"] {
-        padding:0.3rem;
-        height: 48px;
-        width:250px;
-        font-size:0.8rem;
-        font-weight: 300;
-      }
-    }
-
-    .subscribe-submit {
-
-      input[type="button"] {
-        padding:0.5rem;
-        height: 48px;
-        width:340px;
-        font-size:0.9rem;
-      }
-    }
-
-
-
 }
