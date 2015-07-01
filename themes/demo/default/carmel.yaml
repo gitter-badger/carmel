@@ -7,39 +7,45 @@ content:
     first-feature: heart.png
     second-feature: map.png
     third-feature: calendar.png
+
 style:
 
 settings:
   videointro-id: UjXi6X-moxE
 
 links:
-  primary-link: join
 
 menu:
-- page: welcome
+- page: home
   text: HOME_MENU_ITEM
-- page: story
-  text: STORY_MENU_ITEM
-- page: join
+- page: docs
+  text: ABOUT_MENU_ITEM
+- page: install
   text: ACTION_MENU_ITEM
 
 pages:
-- page: welcome
+- page: home
   layout: default
   root: true
   components:
   - topbar
   - navbar
   - hero
-  - summary
+  - summary:
+      text:
+        title: SUMMARY_TITLE_HOME
+        body: SUMMARY_BODY_HOME
+        buttonTitle: SUMMARY_BUTTON_TITLE_HOME
+        linkTitle: SUMMARY_LINK_TITLE_HOME
   - videointro
   - features
   - subscribe
   - archive
   - footer
 
-- page: story
+- page: docs
   layout: default
+  action: secondary
   components:
   - topbar
   - navbar
@@ -49,8 +55,9 @@ pages:
   - quote
   - footer
 
-- page: join
+- page: install
   layout: default
+  action: primary
   components:
   - topbar
   - navbar

@@ -5,10 +5,10 @@ style:
 text:
   title: SUMMARY_TITLE
   body: SUMMARY_BODY
-  buttonTitle: SUMMARY_BODY_TITLE
+  buttonTitle: SUMMARY_BUTTON_TITLE
   linkTitle: SUMMARY_LINK_TITLE
 variables:
-  titleMaxChars: 24
-  bodyMaxChars: 256
+  titleMaxChars: 50
+  bodyMaxChars: 500
   buttonTitleMaxChars: 24
   linkTitleMaxChars: 32

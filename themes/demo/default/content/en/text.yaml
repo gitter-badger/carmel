@@ -1,10 +1,14 @@
 ---
-HOME_MENU_ITEM: Welcome
-STORY_MENU_ITEM: Our Story
-ACTION_MENU_ITEM: Download
+HOME_MENU_ITEM: Intro
+ABOUT_MENU_ITEM: Documentation
+ACTION_MENU_ITEM: Install
 HERO_TITLE: Welcome To Carmel
 HERO_SUBTITLE: The easiest way to build a website from scratch
 HERO_ACTION_TITLE: Try It Out
+SUMMARY_TITLE_HOME: Create Websites Without Coding
+SUMMARY_BODY_HOME: Carmel enables you to create beautiful websites in a matter of minutes. You can start with a prebuilt theme and simply add your text and images then build, preview and publish. It's as easy as that. You don't need to know HTML, CSS or JavaScript. Carmel does all the heavylifting for you and humbly hides behind the scenes.
+SUMMARY_BUTTON_TITLE_HOME: Learn More
+SUMMARY_LINK_TITLE_HOME: Give it a try yourself
 FOOTER_TITLE: See For Yourself
 FOOTER_BODY: This is a free and open-source project that you can start using right away in your next project.
 FOOTER_ACTION_TITLE: Browse The Code
