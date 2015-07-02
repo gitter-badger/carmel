@@ -1,0 +1,13 @@
+@mixin input ($color:#000,$border:#ccc,$radius:4px,$width:250px,$height:48px,$size:0.8rem) {
+      color:$color;
+      border:none;
+      border:1px solid $border;
+      -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+      border-radius: $radius;
+      padding:0.3rem;
+      height: $height;
+      width: $width;
+      font-size:$size;
+      font-weight: 400;
+}

@@ -8,7 +8,7 @@ style:
 - second-font-family: "\"Railway\""
 - h1-color: "#4a4a4a"
 - h2-color: "#4a4a4a"
-- action-bg-color: "#f1c40f"
+- action-bg-color: "#f39c12"
 - action-color: "#fff"
 - action-shadow: "#4a4a4a"
 - action-border: "#fff"

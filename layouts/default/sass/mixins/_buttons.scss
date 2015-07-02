@@ -1,0 +1,30 @@
+@mixin carmel-button ($background:$carmel-global-button-bg-color,$new-background:#208F4F,
+$color: $carmel-global-button-text-color,$radius:0,$width:100%,$top:0.5rem,$bottom:0.5rem,$size:1.6,$line:2.0rem,$font-name: 'Railway') {
+    .btn {
+      background: $background;
+      @extend carmel-transition;
+      color: $color;
+      font-family: $font-name,sans-serif;
+      width: $width;
+      padding-top: $top;
+      padding-bottom: $bottom;
+      @include carmel-text-size($size, $line);
+      text-shadow: 0px 2px 1px #9a9a9a;
+      -webkit-border-radius:$radius;
+      -moz-border-radius:$radius;
+      border-radius: $radius;
+
+      @include carmel-device-tablet {
+        @include carmel-text-size (1.6, 2.2);
+      }
+
+      @include carmel-device-desktop {
+        @include carmel-text-size (1.0, 2.0);
+      }
+
+      &:hover {
+        background-color: $new-background;
+        color:#fff;
+      }
+    }
+}

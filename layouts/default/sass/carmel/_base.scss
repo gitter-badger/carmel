@@ -1,0 +1,5 @@
+@mixin carmel-base($background: #FFFF00) {
+  background: $background;
+  width: 100%;
+  min-height: 200px;
+}

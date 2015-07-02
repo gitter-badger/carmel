@@ -1,0 +1,6 @@
+@mixin carmel-setup ($top:4,$right:4,$bottom:4,$left:4) {
+  padding-top: #{$top}rem;
+  padding-right: #{$right}rem;
+  padding-bottom: #{$bottom}rem;
+  padding-left: #{$left}rem;
+}
