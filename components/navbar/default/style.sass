@@ -1,13 +1,17 @@
 .navbar {
   background: $background-color;
   height: $height;
-  border: 1px solid transparent;
+  border: 1px solid $background-color;
   -webkit-font-smoothing: antialiased;
   z-index: 1;
 }
 
 .second-fixed {
   top:$top!important;
+}
+
+.navbar-collapse {
+  border-top: 1px solid $background-color !important;
 }
 
 .navbar .navbar-header button {
@@ -34,11 +38,11 @@
 @media only screen and (max-width: 766px) {
 
   .navbar .collapsing, .navbar .in {
-    background-color: #f7f7f7;
+    background-color: $background-color !important;
   }
 
   .navbar .collapsing ul li a, .navbar .in ul li a {
-    color: #555 !important;
+    color: #eee !important;
   }
 
   .navbar .collapsing ul li a:hover, .navbar .in ul li a:hover {
