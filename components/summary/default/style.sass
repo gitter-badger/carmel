@@ -1,61 +1,63 @@
-  @include carmel-setup(4,0,4,0);
-  font-family: 'Josefin Sans', sans-serif;
-  color: $color;
-  text-align: justify;
-
-  h1 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2rem;
-    hyphens: auto;
-  }
-
-  p {
-    font-size: 1.2rem;
-    line-height:1.6rem;
-    font-weight:300;
-    @include carmel-setup(1.0,0,1.0,0);
-  }
-
-
-.summary-btn  {
-  text-align: center;
-  @include carmel-button($btn-background2,#429EB6);
-}
-  .summary-link {
-    margin-top: 20px;
-    a{
-    color:  $btn-background2;
-    font-size: 0.7rem;
-    font-weight: 300;
-    border-bottom: 1px solid   $btn-background2;
-
-      &:hover {
-        color:  $btn-background2;
-        text-decoration: none;
-      }
-    }
-  }
-
-
-@media (min-width: 1200px) {
-
-    font-family: 'Josefin Sans', sans-serif;
-    color: $color;
-    text-align: justify;
-
-    h1 {
-      text-align: center;
-      font-weight: 700;
-      font-size: 2rem;
-      line-height: 2rem;
-      hyphens: auto;
-    }
-
-    p {
-      font-size: 0.9rem;
-      line-height:1.6rem;
-      font-weight:300;
-    }
-  }
+@include carmel-base();
+color: $carmel-color-gray-9;
+//   @include carmel-setup(4,0,4,0);
+//   font-family: 'Josefin Sans', sans-serif;
+//   color: $color;
+//   text-align: justify;
+//
+//   h1 {
+//     text-align: center;
+//     font-weight: 700;
+//     font-size: 2rem;
+//     line-height: 2rem;
+//     hyphens: auto;
+//   }
+//
+//   p {
+//     font-size: 1.2rem;
+//     line-height:1.6rem;
+//     font-weight:300;
+//     @include carmel-setup(1.0,0,1.0,0);
+//   }
+//
+//
+// .summary-btn  {
+//   text-align: center;
+//   @include carmel-button($btn-background2,#429EB6);
+// }
+//   .summary-link {
+//     margin-top: 20px;
+//     a{
+//     color:  $btn-background2;
+//     font-size: 0.7rem;
+//     font-weight: 300;
+//     border-bottom: 1px solid   $btn-background2;
+//
+//       &:hover {
+//         color:  $btn-background2;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+//
+//
+// @media (min-width: 1200px) {
+//
+//     font-family: 'Josefin Sans', sans-serif;
+//     color: $color;
+//     text-align: justify;
+//
+//     h1 {
+//       text-align: center;
+//       font-weight: 700;
+//       font-size: 2rem;
+//       line-height: 2rem;
+//       hyphens: auto;
+//     }
+//
+//     p {
+//       font-size: 0.9rem;
+//       line-height:1.6rem;
+//       font-weight:300;
+//     }
+//   }
