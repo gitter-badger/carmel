@@ -1,7 +1,5 @@
-@include carmel-base();
-
 .navbar {
-  background: $carmel-color-navigation;
+  background: $background-color;
   height: $height;
   border: 1px solid $background-color;
   -webkit-font-smoothing: antialiased;

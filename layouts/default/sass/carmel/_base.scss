@@ -1,9 +1,9 @@
 @mixin carmel-base() {
-  background: #ffffff;
-  width: 100%;
-  min-height: 200px;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin: 0;
-  text-align: center;
+  width:              100%;
+  min-height:         50px;
+  padding-top:        4rem;
+  padding-bottom:     4rem;
+  margin:             0;
+  text-align:         center;
+  color:              #ffffff;
 }
