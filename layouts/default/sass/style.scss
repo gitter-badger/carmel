@@ -1,5 +1,11 @@
-@import 'variables';
+@import 'carmel/colors';
+@import 'carmel/fonts';
+@import 'carmel/defaults';
+
 @import 'bootstrap';
 @import 'compass';
 
+__STYLE__
+
 @import 'carmel/base';
+@import 'carmel/typography';
