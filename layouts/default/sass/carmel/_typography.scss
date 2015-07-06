@@ -1,15 +1,31 @@
+html {
+  font-size: 12px;
+
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $screen-lg-min) {
+    font-size: 18px;
+  }
+}
+
 h1 {
   font-family:  $carmel-font-sans, sans-serif;
   font-weight:  700;
-  font-size:    4rem;
-  line-height:  4.5rem;
+  font-size:    3rem;
+  line-height:  3.5rem;
   -webkit-font-smoothing: antialiased;
 }
 
 h2 {
   font-family:  $carmel-font-sans, sans-serif;
   font-weight:  300;
-  font-size:    3rem;
-  line-height:  3.5rem;
+  font-size:    2rem;
+  line-height:  2.5rem;
   -webkit-font-smoothing: antialiased;
 }
