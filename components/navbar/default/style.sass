@@ -1,9 +1,7 @@
-// @include carmel-base();
-
 .navbar {
   background: $carmel-color-navigation;
-  height: $height;
-  border: 1px solid $background-color;
+  height: 68px;
+  border: 1px solid $carmel-color-navigation;
   -webkit-font-smoothing: antialiased;
   z-index: 1;
 }
@@ -13,7 +11,7 @@
 }
 
 .navbar-collapse {
-  border-top: 1px solid $background-color !important;
+  border-top: 1px solid $carmel-color-navigation !important;
 }
 
 .navbar .navbar-header button {
@@ -21,26 +19,22 @@
   height: 44px;
   padding: 10px;
   margin: 10px;
-  border: 1px solid $default-color;
-}
-
-.navbar .navbar-header button .icon-bar {
-  background: $button-background;
+  border: 1px solid $carmel-color-gray-0;
 }
 
 .navbar .navbar-default .navbar-nav > li > a, .navbar .navbar-default .navbar-brand {
-  color: $default-color;
+  color: $carmel-color-gray-0;
 }
 
 .navbar .navbar-default .navbar-nav > li > a:hover,
 .navbar .navbar-default .navbar-nav > li > a:focus {
-  color: $default-color;
+  color: $carmel-color-gray-0;
 
 }
 @media only screen and (max-width: 766px) {
 
   .navbar .collapsing, .navbar .in {
-    background-color: $background-color !important;
+    background-color: $carmel-color-navigation !important;
   }
 
   .navbar .collapsing ul li a, .navbar .in ul li a {
@@ -69,46 +63,31 @@
 
 .navbar .navbar-nav li a {
   color: #eee;
-  font-family: $font-name, sans-serif;
-  font-weight: $font-weight;
-  font-size: $font-size;
+  font-family: $carmel-font-sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
   margin-left: 4px;
   height: 44px;
   padding: 14px;
 }
 
 .navbar .navbar-nav li a:hover {
- color: $default-color;
-   background: darken($background-color, 15%);
-  -moz-transition-property: color;
-  -o-transition-property: color;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -moz-transition-property: background;
-  -o-transition-property: background;
-  -webkit-transition-property: background;
-  transition-property: background;
-  -moz-transition-duration: 0.75s;
-  -o-transition-duration: 0.75s;
-  -webkit-transition-duration: 0.75s;
-  transition-duration: 0.75s;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+ color: $carmel-color-gray-0;
+   background: darken($carmel-color-navigation, 15%);
+   @include transition-duration(0.75s);
+   @include transition-property(color);
+   @include transition-property(background);
+   @include border-radius(4px);
 }
 
 .navbar .navbar-nav li.current a {
-  color: $default-color;
-  background: darken($background-color, 15%);
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  color: $carmel-color-gray-0;
+  background: darken($carmel-color-navigation, 15%);
+  @include border-radius(4px);
 }
 
 .navbar .navbar-nav li.action a {
   color: white;
-  background: $primary-background-color;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  background: $carmel-color-action;
+  @include border-radius(4px);
 }
