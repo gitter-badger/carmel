@@ -7,16 +7,16 @@
   }
 }
 
-@mixin carmel-base ($background: $carmel-color-gray-0, $height:50px) {
+@mixin carmel-base ($background: $carmel-color-gray-0, $height:50px,$top:5,$bottom:5) {
 
   min-height:         $height;
   width:              100%;
-  padding-top:        5rem;
-  padding-bottom:     5rem;
+  padding-top:        #{$top}rem;
+  padding-bottom:     #{$bottom}rem;
   margin:             0;
   text-align:         center;
   background:         $background;
-  
+
   h1, h2, p {
     @include carmel-text-readability ($background, $carmel-color-text);
   }
