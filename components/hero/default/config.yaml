@@ -1,23 +1,7 @@
 style:
 - height: 550px
-- heading-text-color: "#ffffff"
-- background-color: "#2ecc71"
-- main-button-text-color: "#eee"
-- main-button-background-color: "#f1c40f"
-- main-font-name: "\"Josefin Sans\""
-- second-font-family: "\"Railway\""
-- h1-color: "#4a4a4a"
-- h2-color: "#4a4a4a"
-- action-bg-color: "#f39c12"
-- action-color: "#fff"
-- action-shadow: "#4a4a4a"
-- action-border: "#fff"
-- arrow-down-color: "#fff"
 text:
   title: HERO_TITLE
   subtitle: HERO_SUBTITLE
   actionTitle: HERO_ACTION_TITLE
 variables:
-  titleMaxChars: 50
-  subtitleMaxChars: 256
-  actionButtonTitleMaxChars: 30

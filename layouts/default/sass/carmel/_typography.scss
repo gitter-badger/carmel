@@ -14,30 +14,36 @@ html {
   }
 }
 
-h1 {
-  font-family:  $carmel-font-sans, sans-serif;
-  font-weight:  700;
-  font-size:    3rem;
-  line-height:  3.5rem;
+%font-smoothing {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%carmel-text-base {
+  @extend %font-smoothing;
+  font-family:  $carmel-font-sans, sans-serif;
   margin:       1.0rem 0 2.0rem 0;
+  font-size:    1.2rem;
+  line-height:  1.5rem;
+  font-weight:  300;
+  text-align:   center;
+}
+
+h1 {
+  @extend %carmel-text-base;
+  font-weight:  700;
+  font-size:    3.0rem;
+  line-height:  3.5rem;
 }
 
 h2 {
-  font-family:  $carmel-font-sans, sans-serif;
+  @extend %carmel-text-base;
   font-weight:  400;
-  font-size:    2rem;
+  font-size:    2.0rem;
   line-height:  2.5rem;
-  -webkit-font-smoothing: antialiased;
-  margin:       1.0rem 0 2.0rem 0;
 }
 
 p {
-  font-family:  $carmel-font-sans, sans-serif;
-  font-weight:  300;
-  font-size:    1.2rem;
-  line-height:  1.5rem;
-  -webkit-font-smoothing: antialiased;
-  margin:       1.0rem 0 2.0rem 0;
+  @extend %carmel-text-base;
   text-align:   justify;
 }

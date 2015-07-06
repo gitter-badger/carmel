@@ -1,7 +1,7 @@
 .navbar {
-  background: $carmel-color-navigation;
+  background: $carmel-color-menu;
   height: 68px;
-  border: 1px solid $carmel-color-navigation;
+  border: 1px solid $carmel-color-menu;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .navbar-collapse {
-  border-top: 1px solid $carmel-color-navigation !important;
+  border-top: 1px solid $carmel-color-menu !important;
 }
 
 .navbar .navbar-header button {
@@ -37,7 +37,7 @@
 @media only screen and (max-width: 766px) {
 
   .navbar .collapsing, .navbar .in {
-    background-color: $carmel-color-navigation !important;
+    background-color: $carmel-color-menu !important;
   }
 
   .navbar .collapsing ul li a, .navbar .in ul li a {
@@ -76,7 +76,7 @@
 
 .navbar .navbar-nav li a:hover {
  color: $carmel-color-gray-0;
-   background: darken($carmel-color-navigation, 15%);
+   background: darken($carmel-color-menu, 15%);
    @include transition-duration(0.75s);
    @include transition-property(color);
    @include transition-property(background);
@@ -85,12 +85,12 @@
 
 .navbar .navbar-nav li.current a {
   color: $carmel-color-gray-0;
-  background: darken($carmel-color-navigation, 15%);
+  background: darken($carmel-color-menu, 15%);
   @include border-radius(4px);
 }
 
 .navbar .navbar-nav li.action a {
   color: white;
-  background: $carmel-color-action-primary;
+  background: $carmel-color-button;
   @include border-radius(4px);
 }

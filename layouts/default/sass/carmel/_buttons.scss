@@ -8,31 +8,26 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
+
+  @include border-radius(3px);
+  border: none;
 }
 
 .primary {
   @extend .btn-primary;
 }
 
-.secondary {
-  @extend .btn-success;
-}
-
 .link-action {
   @extend .btn;
   @extend .btn-link;
 
-  margin-top: 0.5rem;
-  margin-bottom: 1.0rem;
-  font-size: 0.8rem;
-  line-height: 1.0rem;
-  background: $carmel-color-gray-0;
-  color: $carmel-color-action-secondary;
-  text-decoration: none;
+  margin-top:       0.2rem;
+  margin-bottom:    1.0rem;
+  font-size:        0.9rem;
+  line-height:      1.0rem;
+  text-decoration:  none;
 
   &:hover {
-    color: $carmel-color-gray-0;
-    background: lighten($carmel-color-action-secondary, 25%);
     text-decoration: none;
   }
 }

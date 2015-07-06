@@ -1,7 +1,6 @@
 style:
-- color: "#ffffff"
+- height: 200px
 text:
-  title: Small Title
-  subtitle: Small Subtitle
+  title: HERO_TITLE
+  subtitle: HERO_SUBTITLE
 variables:
-  maxChars: 50

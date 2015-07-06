@@ -1,4 +1,14 @@
+@mixin carmel-text-readability ($background, $color){
+  background: $background;
+  color:      $carmel-color-gray-0;
+
+  @if (lightness($background) > 70) {
+    color: $color;
+  }
+}
+
 @mixin carmel-base ($background: $carmel-color-gray-0, $height:50px) {
+
   min-height:         $height;
   width:              100%;
   padding-top:        5rem;
@@ -6,13 +16,13 @@
   margin:             0;
   text-align:         center;
   background:         $background;
-
-  h1 {
-    background: $background;
-    color: $carmel-color-gray-0;
-
-    @if (lightness($background) > 70) {
-      color: $carmel-color-gray-7;
-    }
+  
+  h1, h2, p {
+    @include carmel-text-readability ($background, $carmel-color-text);
   }
+
+  .link-action {
+    @include carmel-text-readability ($background, $carmel-color-link);
+  }
+
 }
