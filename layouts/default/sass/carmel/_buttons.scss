@@ -1,0 +1,18 @@
+.btn-action {
+  @extend .btn;
+  @extend .btn-lg;
+  @extend .btn-block;
+
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 2.0rem;
+  margin-bottom: 2.0rem;
+}
+
+.primary {
+  @extend .btn-primary;
+}
+
+.secondary {
+  @extend .btn-success;
+}
