@@ -25,9 +25,20 @@ h1 {
 
 h2 {
   font-family:  $carmel-font-sans, sans-serif;
-  font-weight:  300;
+  font-weight:  400;
   font-size:    2rem;
   line-height:  2.5rem;
   -webkit-font-smoothing: antialiased;
   margin:       1.0rem 0 2.0rem 0;
+}
+
+p {
+  font-family:  $carmel-font-sans, sans-serif;
+  font-weight:  300;
+  font-size:    1.2rem;
+  line-height:  1.5rem;
+  -webkit-font-smoothing: antialiased;
+  margin:       1.0rem 0 2.0rem 0;
+  color:        $carmel-color-gray-7;
+  text-align:   justify;
 }

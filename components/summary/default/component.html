@@ -1,18 +1,14 @@
   <div class="container">
     <div class="row">
-      <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+      <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
         <h1>$carmel.text(title, titleMaxChars)</h1>
         <p>
           $carmel.text(body, bodyMaxChars)
         </p>
       </div>
       <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-        <div class="summary-btn">
-            <a href="$carmel.action(secondary)" class="btn-action secondary">$carmel.text(buttonTitle, buttonTitleMaxChars)</a>
-          <div class="summary-link">
-            <a href="$carmel.action(primary)">$carmel.text(linkTitle, linkTitleMaxChars)</a>
-          </div>
-        </div>
+          <a href="$carmel.action(secondary)" class="btn-action secondary">$carmel.text(buttonTitle, buttonTitleMaxChars)</a>
+          <a href="$carmel.action(primary)" class="link-action">$carmel.text(linkTitle, linkTitleMaxChars)</a>
       </div>
     </div>
   </div>
