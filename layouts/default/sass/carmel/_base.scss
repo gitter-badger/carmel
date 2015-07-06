@@ -1,9 +1,18 @@
-@mixin carmel-base($height:50px) {
-  width:              100%;
+@mixin carmel-base ($background: $carmel-color-gray-0, $height:50px) {
   min-height:         $height;
+  width:              100%;
   padding-top:        5rem;
   padding-bottom:     5rem;
   margin:             0;
   text-align:         center;
-  color:              #ffffff;
+  background:         $background;
+
+  h1 {
+    background: $background;
+    color: $carmel-color-gray-0;
+
+    @if (lightness($background) > 70) {
+      color: $carmel-color-gray-7;
+    }
+  }
 }
