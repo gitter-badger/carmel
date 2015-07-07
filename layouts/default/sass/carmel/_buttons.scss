@@ -13,6 +13,42 @@
   border: none;
 }
 
+.btn-subscribe {
+  @extend .btn;
+  @extend .btn-lg;
+  @extend .btn-block;
+
+  padding-top: 1.0rem;
+  padding-bottom: 1.0rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+
+  @include border-radius(3px);
+  border: none;
+}
+
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .btn-subscribe {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .btn-subscribe {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: $screen-lg-min) {
+  .btn-subscribe {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .primary {
   @extend .btn-primary;
 }
