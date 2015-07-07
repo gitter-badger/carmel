@@ -1,86 +1,153 @@
-@include carmel-setup(4,0,4,0);
-  .archive-post {
+@include carmel-base();
+
+.archive-post {
     padding: 2rem 0;
-    text-align: center;
-    border-bottom: 1px solid black;
-    font-family: 'Lato', sans-serif;
+    border-bottom: 1px solid $carmel-color-gray-9;
 
     a {
-      color:#fff;
       text-decoration: none;
     }
+}
+  .post-img {
+    position: relative;
+    height:200px;
+    background-color: transparent;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+    img {
+      top:0;
+      left:0;
+      height: 200px;
+      width:100%;
+      position: absolute;
+      z-index: -100;
+    }
 
-    .post-img {
-      position: relative;
-      height:200px;
-      background-color: transparent;
+  h2 {
+     position: relative;
+     top: 50%;
+     transform: translateY(-50%);
+     color: $carmel-color-gray-0;
+  }
 
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
+      time {
+        float: left;
+        font-size: 0.8rem;
+        margin:10px 0;
+        font-weight: 300;
       }
 
-      img {
-        top:0;
-        left:0;
-        height: 200px;
-        width:100%;
-        position: absolute;
-        z-index: -100;
-      }
-    }
+        .archive-btn {
+          padding: 2rem 0;
+        }
 
-    h1 {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #fff;
-      padding:0 100px;
-      hyphens: auto;
-      font-weight: 400;
-      text-shadow:2px 2px 2px grey;
-      font-size: 1.5rem;
-      padding:5px;
-    }
+        .archive-preview {
 
-    time {
-      float: left;
-      font-size: 0.8rem;
-      margin:10px 0;
-      font-family: 'Lato', sans-serif;
-      font-weight: 300;
-    }
+          .preview-btn {
+            padding:0.5rem 2.5rem;
+            float: left;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size:0.8rem;
+          }
 
-    p {
-      margin-top: 3rem;
-      font-size:0.9rem;
-      line-height: 1.4rem;
-      text-align: left;
-      font-weight: 300;
-      color:lighten(black, 30%);
-    }
-  }
+        }
 
-  .archive-btn {
-    padding: 2rem 0;
-  }
+        .archive-next {
 
-  .archive-preview {
+          .next-btn {
+            padding:0.5rem 2.5rem;
+            float: right;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size:0.8rem;
+          }
+        }
 
-    .preview-btn {
-      padding:0.5rem 2.5rem;
-      float: left;
-      font-family: 'Josefin Sans', sans-serif;
-      font-size:0.8rem;
-    }
 
-  }
-
-  .archive-next {
-
-    .next-btn {
-      padding:0.5rem 2.5rem;
-      float: right;
-      font-family: 'Josefin Sans', sans-serif;
-      font-size:0.8rem;
-    }
-  }
+// @include carmel-setup(4,0,4,0);
+//   .archive-post {
+//     padding: 2rem 0;
+//     text-align: center;
+//     border-bottom: 1px solid black;
+//     font-family: 'Lato', sans-serif;
+//
+//     a {
+//       color:#fff;
+//       text-decoration: none;
+//     }
+//
+//     .post-img {
+//       position: relative;
+//       height:200px;
+//       background-color: transparent;
+//
+//       &:hover {
+//         background-color: rgba(255, 255, 255, 0.2);
+//       }
+//
+//       img {
+//         top:0;
+//         left:0;
+//         height: 200px;
+//         width:100%;
+//         position: absolute;
+//         z-index: -100;
+//       }
+//     }
+//
+//     h1 {
+//       position: relative;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       color: #fff;
+//       padding:0 100px;
+//       hyphens: auto;
+//       font-weight: 400;
+//       text-shadow:2px 2px 2px grey;
+//       font-size: 1.5rem;
+//       padding:5px;
+//     }
+//
+//     time {
+//       float: left;
+//       font-size: 0.8rem;
+//       margin:10px 0;
+//       font-family: 'Lato', sans-serif;
+//       font-weight: 300;
+//     }
+//
+//     p {
+//       margin-top: 3rem;
+//       font-size:0.9rem;
+//       line-height: 1.4rem;
+//       text-align: left;
+//       font-weight: 300;
+//       color:lighten(black, 30%);
+//     }
+//   }
+//
+//   .archive-btn {
+//     padding: 2rem 0;
+//   }
+//
+//   .archive-preview {
+//
+//     .preview-btn {
+//       padding:0.5rem 2.5rem;
+//       float: left;
+//       font-family: 'Josefin Sans', sans-serif;
+//       font-size:0.8rem;
+//     }
+//
+//   }
+//
+//   .archive-next {
+//
+//     .next-btn {
+//       padding:0.5rem 2.5rem;
+//       float: right;
+//       font-family: 'Josefin Sans', sans-serif;
+//       font-size:0.8rem;
+//     }
+//   }

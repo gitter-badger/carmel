@@ -1,9 +1,8 @@
 @mixin carmel-text-readability ($background, $color){
-  background: $background;
-  color:      $carmel-color-gray-0;
+  color:      $color;
 
-  @if (lightness($background) > 70) {
-    color: $color;
+  @if (lightness($background) < 70) {
+    color: $carmel-color-gray-0;
   }
 }
 
