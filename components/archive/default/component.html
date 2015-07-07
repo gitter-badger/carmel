@@ -1,39 +1,31 @@
     <div class="container">
         <div class="col-lg-10 col-lg-offset-1">
 
+            {{#each articles}}
+
             <div class="archive-post">
-                <a href="#">
+                <a href="{{link}}">
                     <div class="post-img">
-                        <img src="https://download.unsplash.com/photo-1430132594682-16e1185b17c5" alt="Post Image"/>
-                        <h2>This is a title for a post! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                        <img src="{{image}}" alt="Post Image"/>
+                        <h2> {{title}} </h2>
                     </div>
                 </a>
-                <time datetime="2015-May-7">2015-May-7</time>
+                <time> {{date}} </time>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto at eaque error esse neque, nesciunt nihil non optio perspiciatis tempora tempore temporibus ut? Accusantium delectus eligendi minus nihil quo?
+                    {{body}}
                 </p>
             </div>
 
-            <div class="archive-post">
-                <a href="#">
-                    <div class="post-img">
-                        <img src="https://download.unsplash.com/photo-1429043794791-eb8f26f44081" alt="Post Image"/>
-                        <h2>This is a title for a post! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                    </div>
-                </a>
-                <time datetime="2015-May-7">2015-May-7</time>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto at eaque error esse neque, nesciunt nihil non optio perspiciatis tempora tempore temporibus ut? Accusantium delectus eligendi minus nihil quo?
-                </p>
-            </div>
+            {{/each}}
 
             <div class="archive-btn">
                 <div class="col-lg-6  archive-preview">
-                    <a href="" class="btn btn-default preview-btn"><i class="fa fa-angle-left"></i> Preview</a>
+                    <a href="" class="btn btn-default preview-btn"><i class="fa fa-angle-left"></i> Older </a>
                 </div>
                 <div class="col-lg-6  archive-next">
-                    <a href="" class="btn btn-default next-btn">Next <i class="fa fa-angle-right"></i></a>
+                    <a href="" class="btn btn-default next-btn"> Newer <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
+
         </div>
     </div>
