@@ -9,10 +9,9 @@ text:
   second-feature-body: Second Body,Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
   third-feature-title: Third Title
   third-feature-body: Third Body,Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  button: Learn More About Our Mission
+  button: More About Our Mission
 images:
   first-feature: heart.png
   second-feature: map.png
   third-feature: calendar.png
 variables:
-  maxChars: 100
