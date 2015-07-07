@@ -1,26 +1,4 @@
 //create forms file in carmel sass and move this mixin there
-
-@mixin input () {
-  height:47px;
-  margin:1.5rem 0;
-  padding: 1rem 0.5rem;
-  font-size: 1.2rem;
-  font-family: $carmel-font-sans, sans-serif;
-  @include border-radius(3px);
-
-  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    height:47px;
-  }
-
-  @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    height:63px;
-  }
-
-  @media screen and (min-width: $screen-lg-min) {
-    height:71px;
-  }
-}
-
 @include carmel-base($carmel-color-background);
 .form-control {
 @include input();
