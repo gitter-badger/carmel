@@ -2,7 +2,7 @@
         <div class="col-lg-10 col-lg-offset-1">
 
             <div class="archive-post" ng-repeat="article in articles">
-                <a href="{{link}}">
+                <a href="((link))">
                     <div class="post-img">
                         <img src="((article.image))" alt="Post Image"/>
                         <h2> ((article.title)) </h2>
@@ -15,14 +15,14 @@
             </div>
 
             <div class="archive-btn">
-                <div class="col-lg-4  archive-preview">
+                <div class="col-xs-4 col-sm-4 col-lg-4  archive-preview">
                     <a href="" class="btn btn-default preview-btn"><i class="fa fa-angle-left"></i> Older </a>
                 </div>
-              <div class="col-lg-4 length">
-               ((articles.length)) Articles
+              <div class="col-xs-4 col-sm-4 col-lg-4 length">
+               ((articles.length)) <span>Articles</span>
               </div>
 
-                <div class="col-lg-4  archive-next">
+                <div class="col-xs-4 col-sm-4 col-lg-4  archive-next">
                     <a href="" class="btn btn-default next-btn"> Newer <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>

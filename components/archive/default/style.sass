@@ -66,8 +66,28 @@
           font-family: $carmel-font-sans, sans-serif;
           font-weight: 300;
           color:$carmel-color-gray-8;
-        }
 
+          span {
+            display: none;
+          }
+        }
+          @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            .length span {
+              display:inline-block;
+            }
+          }
+          @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+              .length span {
+                display:inline-block;
+              }
+          }
+
+          @media screen and (min-width: $screen-lg-min) {
+            .length span {
+              display:inline-block;
+            }
+          }
+          
         .archive-next {
 
           .next-btn {
