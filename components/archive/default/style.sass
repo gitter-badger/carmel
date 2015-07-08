@@ -54,8 +54,8 @@
           .preview-btn {
             padding:0.5rem 2.5rem;
             float: left;
-            font-family: 'Josefin Sans', sans-serif;
             font-size:0.8rem;
+            @include border-radius(3px);
           }
 
         }
@@ -63,97 +63,9 @@
         .archive-next {
 
           .next-btn {
+            @include border-radius(3px);
             padding:0.5rem 2.5rem;
             float: right;
-            font-family: 'Josefin Sans', sans-serif;
             font-size:0.8rem;
           }
         }
-
-
-// @include carmel-setup(4,0,4,0);
-//   .archive-post {
-//     padding: 2rem 0;
-//     text-align: center;
-//     border-bottom: 1px solid black;
-//     font-family: 'Lato', sans-serif;
-//
-//     a {
-//       color:#fff;
-//       text-decoration: none;
-//     }
-//
-//     .post-img {
-//       position: relative;
-//       height:200px;
-//       background-color: transparent;
-//
-//       &:hover {
-//         background-color: rgba(255, 255, 255, 0.2);
-//       }
-//
-//       img {
-//         top:0;
-//         left:0;
-//         height: 200px;
-//         width:100%;
-//         position: absolute;
-//         z-index: -100;
-//       }
-//     }
-//
-//     h1 {
-//       position: relative;
-//       top: 50%;
-//       transform: translateY(-50%);
-//       color: #fff;
-//       padding:0 100px;
-//       hyphens: auto;
-//       font-weight: 400;
-//       text-shadow:2px 2px 2px grey;
-//       font-size: 1.5rem;
-//       padding:5px;
-//     }
-//
-//     time {
-//       float: left;
-//       font-size: 0.8rem;
-//       margin:10px 0;
-//       font-family: 'Lato', sans-serif;
-//       font-weight: 300;
-//     }
-//
-//     p {
-//       margin-top: 3rem;
-//       font-size:0.9rem;
-//       line-height: 1.4rem;
-//       text-align: left;
-//       font-weight: 300;
-//       color:lighten(black, 30%);
-//     }
-//   }
-//
-//   .archive-btn {
-//     padding: 2rem 0;
-//   }
-//
-//   .archive-preview {
-//
-//     .preview-btn {
-//       padding:0.5rem 2.5rem;
-//       float: left;
-//       font-family: 'Josefin Sans', sans-serif;
-//       font-size:0.8rem;
-//     }
-//
-//   }
-//
-//   .archive-next {
-//
-//     .next-btn {
-//       padding:0.5rem 2.5rem;
-//       float: right;
-//       font-family: 'Josefin Sans', sans-serif;
-//       font-size:0.8rem;
-//     }
-//   }

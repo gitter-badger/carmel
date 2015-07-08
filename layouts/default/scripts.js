@@ -8,5 +8,4 @@ app.config(function($interpolateProvider){
 });
 
 app.controller('MainController', ['$scope', function($scope) {
-
 }]);
