@@ -1,7 +1,8 @@
 ---
 HOME_MENU_ITEM: Intro
-STORY_MENU_ITEM: Documentation
+ABOUT_MENU_ITEM: Documentation
 ACTION_MENU_ITEM: Installation
+BLOG_MENU_ITEM: Blog
 HERO_TITLE: Bienvenue à Carmel
 HERO_SUBTITLE: La façon la plus simple de construire un site web à partir de zéro
 HERO_ACTION_TITLE: Essayez-le
@@ -9,11 +10,18 @@ SUMMARY_TITLE_HOME: Créez des sites Web sans codage
 SUMMARY_BODY_HOME: Carmel vous permet de créer de superbes sites Web en quelques minutes. Vous pouvez commencer avec un thème prédéfini et il suffit d'ajouter votre texte et images puis de construire, prévisualiser et publier. Il est aussi facile que cela. Vous ne devez pas connaître le langage HTML, CSS ou JavaScript. Carmel fait tout le heavylifting pour vous et se cache derrière les scènes humblement.
 SUMMARY_BUTTON_TITLE_HOME: Apprendre Plus
 SUMMARY_LINK_TITLE_HOME: Faire un essai-vous
+ABOUT_PAGE_TITLE: Carmel Documentation
+ABOUT_PAGE_SUBTITLE: Lisez attentivement les instructions
+ACTION_PAGE_TITLE: Installez Carmel
+ACTION_PAGE_SUBTITLE: Il est si facile d'un bébé pourrait l'installer
+BLOG_PAGE_TITLE: Le Blog
+BLOG_PAGE_SUBTITLE: Est tres gentil
 FOOTER_TITLE: Voyez pour vous-même
 FOOTER_BODY: C'est un logiciel gratuit et open-source du projet que vous pouvez commencer à utiliser immédiatement dans votre prochain projet.
 FOOTER_ACTION_TITLE: Parcourir le Code
-FOOTER_CONTACT_TITLE: Entrer en contact avec nous
-FOOTER_CONTACT_NAME_PLACEHOLDER: Votre nom
-FOOTER_CONTACT_EMAIL_PLACEHOLDER: Votre adresse e-mail
-FOOTER_CONTACT_MESSAGE_PLACEHOLDER: Bonjour, Carmel!
-FOOTER_CONTACT_BUTTON_TITLE: Envoyer message maintenant
+FOOTER_TITLE: Voir Par Vous-Même
+FOOTER_BODY: Il vous faudra moins de 2 minutes pour construire votre premier site Web. Promise.
+FOOTER_ACTION_TITLE: Parcourir Le Code
+FOOTER_ABOUT_TITLE: à propos de Carmel
+FOOTER_ABOUT_BODY:  Carmel est un projet libre et open-source que vous pouvez commencer à utiliser immédiatement dans votre prochain projet. Il a été conçu à partir du sol jusqu'à faire construire des sites Web aussi facile que possible.
+FOOTER_COPYRIGHT: Copyright 2015, Carmel.io

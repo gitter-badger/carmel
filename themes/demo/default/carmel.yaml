@@ -10,9 +10,16 @@ content:
 
 style:
   fonts:
-    mono: ubuntu
-    sans: roboto
-    cursive: kaushan
+    mono: source
+    sans: lato
+    cursive: comfortaa
+  colors:
+    menu: green-1
+    background: green-0
+    button: orange-0
+    link: blue-0
+    text: gray-8
+    container: gray-7
 
 settings:
   videointro-id: UjXi6X-moxE
@@ -24,6 +31,8 @@ menu:
   text: HOME_MENU_ITEM
 - page: docs
   text: ABOUT_MENU_ITEM
+- page: blog
+  text: BLOG_MENU_ITEM
 - page: install
   text: ACTION_MENU_ITEM
 
@@ -41,10 +50,7 @@ pages:
         body: SUMMARY_BODY_HOME
         buttonTitle: SUMMARY_BUTTON_TITLE_HOME
         linkTitle: SUMMARY_LINK_TITLE_HOME
-  - videointro
-  - features
   - subscribe
-  - archive
   - footer
 
 - page: docs
@@ -53,10 +59,12 @@ pages:
   components:
   - topbar
   - navbar
-  - carmel/hero/small
-  - summary
+  - carmel/hero/small:
+      text:
+        title: ABOUT_PAGE_TITLE
+        subtitle: ABOUT_PAGE_SUBTITLE
+  - article
   - subscribe
-  - quote
   - footer
 
 - page: install
@@ -65,8 +73,27 @@ pages:
   components:
   - topbar
   - navbar
-  - carmel/hero/small
-  - summary
+  - carmel/hero/small:
+       text:
+          title: ACTION_PAGE_TITLE
+          subtitle: ACTION_PAGE_SUBTITLE
+  - summary:
+      text:
+        title: SUMMARY_TITLE_HOME
+        body: SUMMARY_BODY_HOME
+        buttonTitle: SUMMARY_BUTTON_TITLE_HOME
+        linkTitle: SUMMARY_LINK_TITLE_HOME
   - subscribe
-  - quote
+  - footer
+
+- page: blog
+  layout: default
+  components:
+  - topbar
+  - navbar
+  - carmel/hero/small:
+      text:
+        title: BLOG_PAGE_TITLE
+        subtitle: BLOG_PAGE_SUBTITLE
+  - archive
   - footer

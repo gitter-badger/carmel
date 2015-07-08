@@ -2,6 +2,7 @@
 HOME_MENU_ITEM: Intro
 ABOUT_MENU_ITEM: Documentation
 ACTION_MENU_ITEM: Install
+BLOG_MENU_ITEM: Blog
 HERO_TITLE: Welcome To Carmel
 HERO_SUBTITLE: The easiest way to build a website from scratch
 HERO_ACTION_TITLE: Try It Out
@@ -9,11 +10,15 @@ SUMMARY_TITLE_HOME: Create Websites Without Coding
 SUMMARY_BODY_HOME: Carmel enables you to create beautiful websites in a matter of minutes. You can start with a prebuilt theme and simply add your text and images then build, preview and publish. It's as easy as that. You don't need to know HTML, CSS or JavaScript. Carmel does all the heavylifting for you and humbly hides behind the scenes.
 SUMMARY_BUTTON_TITLE_HOME: Learn More
 SUMMARY_LINK_TITLE_HOME: Give it a try yourself
+ABOUT_PAGE_TITLE: Carmel Documentation
+ABOUT_PAGE_SUBTITLE: Read the instructions carefully
+ACTION_PAGE_TITLE: Install Carmel
+ACTION_PAGE_SUBTITLE: It's so easy a baby could install it
+BLOG_PAGE_TITLE: This is The Blog
+BLOG_PAGE_SUBTITLE: Very nice.
 FOOTER_TITLE: See For Yourself
-FOOTER_BODY: This is a free and open-source project that you can start using right away in your next project.
+FOOTER_BODY: It will take you less than 2 minutes to build your first website. Promise.
 FOOTER_ACTION_TITLE: Browse The Code
-FOOTER_CONTACT_TITLE: Get In Touch With Us
-FOOTER_CONTACT_NAME_PLACEHOLDER: Your Name
-FOOTER_CONTACT_EMAIL_PLACEHOLDER: Your Email Address
-FOOTER_CONTACT_MESSAGE_PLACEHOLDER: Hello, Carmel!
-FOOTER_CONTACT_BUTTON_TITLE: Send Message Now
+FOOTER_ABOUT_TITLE: About Carmel
+FOOTER_ABOUT_BODY:  Carmel is a free and open-source project that you can start using right away in your next project. It was designed from the ground up to make building websites as easy as possible.
+FOOTER_COPYRIGHT: Copyright 2015, Carmel.io
