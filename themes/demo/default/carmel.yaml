@@ -50,6 +50,7 @@ pages:
         body: SUMMARY_BODY_HOME
         buttonTitle: SUMMARY_BUTTON_TITLE_HOME
         linkTitle: SUMMARY_LINK_TITLE_HOME
+  - quiz
   - subscribe
   - footer
 
@@ -63,7 +64,12 @@ pages:
       text:
         title: ABOUT_PAGE_TITLE
         subtitle: ABOUT_PAGE_SUBTITLE
-  - article
+  - summary:
+      text:
+        title: SUMMARY_TITLE_HOME
+        body: SUMMARY_BODY_HOME
+        buttonTitle: SUMMARY_BUTTON_TITLE_HOME
+        linkTitle: SUMMARY_LINK_TITLE_HOME
   - subscribe
   - footer
 
@@ -88,6 +94,7 @@ pages:
 
 - page: blog
   layout: default
+  articles: true
   components:
   - topbar
   - navbar
