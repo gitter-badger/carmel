@@ -1,1 +1,15 @@
-@include carmel-base();
+.heading {
+  @include carmel-base($carmel-color-background, $height);
+  @include background-size(cover);
+  background-repeat:   no-repeat;
+  background-position: center;
+  position:            relative;
+  margin-top:          5.0rem;
+}
+
+.article {
+  h1, h2, h3, h4, p, code, pre {
+      text-align: left;
+  }
+  @include carmel-base();
+}

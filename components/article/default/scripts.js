@@ -24,5 +24,12 @@ module.exports = function ($, app)  {
       }).
       error(function(data, status, headers, config) {
       });
+
+   $http.get('/data/articles/' + articleId + '.json').
+     success(function(data, status, headers, config) {
+       $scope.article.meta = data;
+     }).
+     error(function(data, status, headers, config) {
+     });
    }
 }

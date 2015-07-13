@@ -1,7 +1,4 @@
 style:
-
+- height: 200px
 text:
-  - title: Article Title
-  - body: Article Body
 variables:
-  maxChars: 50
