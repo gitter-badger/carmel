@@ -1,4 +1,4 @@
-module.exports = function ($, app)  {
+module.exports = function ($, app, localeId)  {
 
   return function($scope, $http) {
     var allArticles         = [];
@@ -42,7 +42,7 @@ module.exports = function ($, app)  {
       return ($scope.page > 1);
     }
 
-    $http.get('/data/articles/all.json').
+    $http.get('/' + (localeId ? localeId  + '/': '') + 'data/articles/all.json').
       success(function(data, status, headers, config) {
         allArticles           = data;
         $scope.page           = 1;
