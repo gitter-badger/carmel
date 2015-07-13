@@ -20,7 +20,7 @@ module.exports = function ($, app)  {
 
     $http.get('/data/articles/' + articleId + '.html').
       success(function(data, status, headers, config) {
-        $scope.article = $sce.trustAsHtml(data);
+        $scope.article.body = $sce.trustAsHtml(data);
       }).
       error(function(data, status, headers, config) {
       });

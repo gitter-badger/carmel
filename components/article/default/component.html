@@ -1,7 +1,10 @@
+
+   <img src="((article.image))">
+
     <div class="container">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-          <div class="row" ng-bind-html="article" ng-model="article.id" ng-init="article.id=__ARTICLE_ID__">
-                ((article))
+          <div class="row" ng-bind-html="article.body" ng-model="article.id" ng-init="article.id=__ARTICLE_ID__">
+                ((article.body))
           </div>
         </div>
     </div>
