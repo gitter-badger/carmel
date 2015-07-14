@@ -1,8 +1,10 @@
 module.exports = function ($, app, localeId)  {
-
+  $window = $(window).width();
   var time = 50;
+
   $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
+
       $('.carmel-navbar-default nav').stop().animate({
         height : '56px',
         top : '0'
@@ -11,6 +13,12 @@ module.exports = function ($, app, localeId)  {
         height : '45px'
       }, time);
 
+      if ($window < 765) {
+        $('#navbar-collapse').css({
+          position: 'relative',
+          top      : '-11px'
+        });
+      }
       $('.navbar .navbar-nav li a').stop().animate({
         padding : '10px'
       }, time);
@@ -24,8 +32,8 @@ module.exports = function ($, app, localeId)  {
         height : '38px'
       }, time);
 
-
     } else {
+
       $('.carmel-navbar-default nav').stop().animate({
         height : '72px',
         top : '2rem'
@@ -33,6 +41,13 @@ module.exports = function ($, app, localeId)  {
       $('.carmel-navbar-default .navbar .navbar-brand img').stop().animate({
         height : '60px'
       }, time);
+
+      if ($window > 765) {
+        $('#navbar-collapse').css({
+          position: 'relative',
+          top      : '0'
+        });
+      }
       $('.navbar .navbar-nav li a').stop().animate({
         padding : '14px'
       }, time);
@@ -45,6 +60,7 @@ module.exports = function ($, app, localeId)  {
       $('.navbar .navbar-header button').stop().animate({
         height : '44px'
       }, time);
+
     }
   });
 
