@@ -6,6 +6,16 @@
   }
 }
 
+@mixin carmel-text-link ($background, $color){
+  color:      $color;
+  text-decoration: none;
+
+  @if (lightness($background) < 70) {
+    color: $carmel-color-gray-0;
+    text-decoration: underline;
+  }
+}
+
 @mixin carmel-base ($background: $carmel-color-gray-0, $height:50px,$top:5,$bottom:5) {
 
   min-height:         $height;
@@ -23,5 +33,7 @@
   .link-action {
     @include carmel-text-readability ($background, $carmel-color-link);
   }
-
+  .carmel-link {
+    @include carmel-text-link ($background, $carmel-color-text);
+  }
 }
