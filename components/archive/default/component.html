@@ -20,13 +20,13 @@
             <div class="archive-post" ng-repeat="article in articles">
                 <a href="((article.slug))">
                     <div class="post-img">
-                        <img src="((article.image))" alt="Post Image"/>
+                        <img src="((article.image))"/>
                         <h2> ((article.title)) </h2>
                     </div>
                 </a>
                 <time> ((article.date)) </time>
                 <p>
-                    ((article.body))
+                    ((article.summary))
                 </p>
             </div>
 
