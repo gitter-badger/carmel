@@ -1,101 +1,114 @@
-@include carmel-base(transparent);
-  position: relative;
-
-.archive-post {
-    padding: 2rem 0;
-    border-bottom: 1px solid $carmel-color-gray-9;
-
-    a {
-      text-decoration: none;
-
-    }
-    .post-img {
-      position: relative;
-      height:200px;
-      background-color: transparent;
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-    }
+.tags {
+  @include carmel-base($carmel-color-gray-0,auto,0.3,0.3);
+  text-align:center;
+  ul, li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding:5px 10px;
+  }
 }
 
-    img {
-      top:0;
-      left:0;
-      height: 200px;
-      width:100%;
-      position: absolute;
-      z-index: -100;
-      background-color: $carmel-color-background;
-    }
+.articles {
+  @include carmel-base(transparent);
+    position: relative;
 
-  h2 {
-     position: relative;
-     top: 50%;
-     transform: translateY(-50%);
-     color: $carmel-color-gray-0;
+  .archive-post {
+      padding: 2rem 0;
+      border-bottom: 1px solid $carmel-color-gray-9;
+
+      a {
+        text-decoration: none;
+
+      }
+      .post-img {
+        position: relative;
+        height:200px;
+        background-color: transparent;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
   }
 
-  p {
-    color:$carmel-color-gray-8;
-    margin-top: 50px;
-  }
-
-      time {
-        float: left;
-        font-size: 0.8rem;
-        margin:10px 0;
-        font-weight: 300;
+      img {
+        top:0;
+        left:0;
+        height: 200px;
+        width:100%;
+        position: absolute;
+        z-index: -100;
+        background-color: $carmel-color-background;
       }
 
-        .archive-btn {
-          padding: 2rem 0;
-        }
+    h2 {
+       position: relative;
+       top: 50%;
+       transform: translateY(-50%);
+       color: $carmel-color-gray-0;
+    }
 
-        .archive-preview {
+    p {
+      color:$carmel-color-gray-8;
+      margin-top: 50px;
+    }
 
-          .preview-btn {
-            padding:0.5rem 2.5rem;
-            float: left;
-            font-size:0.8rem;
-            @include border-radius(3px);
-          }
-
-        }
-
-        .length {
-          font-size: 1rem;
-          font-family: $carmel-font-sans, sans-serif;
+        time {
+          float: left;
+          font-size: 0.8rem;
+          margin:10px 0;
           font-weight: 300;
-          color:$carmel-color-gray-8;
-
-          span {
-            display: none;
-          }
         }
-          @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-            .length span {
-              display:inline-block;
+
+          .archive-btn {
+            padding: 2rem 0;
+          }
+
+          .archive-preview {
+
+            .preview-btn {
+              padding:0.5rem 2.5rem;
+              float: left;
+              font-size:0.8rem;
+              @include border-radius(3px);
+            }
+
+          }
+
+          .length {
+            font-size: 1rem;
+            font-family: $carmel-font-sans, sans-serif;
+            font-weight: 300;
+            color:$carmel-color-gray-8;
+
+            span {
+              display: none;
             }
           }
-          @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
               .length span {
                 display:inline-block;
               }
-          }
+            }
+            @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                .length span {
+                  display:inline-block;
+                }
+            }
 
-          @media screen and (min-width: $screen-lg-min) {
-            .length span {
-              display:inline-block;
+            @media screen and (min-width: $screen-lg-min) {
+              .length span {
+                display:inline-block;
+              }
+            }
+
+          .archive-next {
+
+            .next-btn {
+              @include border-radius(3px);
+              padding:0.5rem 2.5rem;
+              float: right;
+              font-size:0.8rem;
             }
           }
-
-        .archive-next {
-
-          .next-btn {
-            @include border-radius(3px);
-            padding:0.5rem 2.5rem;
-            float: right;
-            font-size:0.8rem;
-          }
-        }
+}

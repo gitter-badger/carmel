@@ -1,3 +1,14 @@
+<div class="tags">
+  <div class="container">
+    <div class="col-lg-10 col-lg-offset-1">
+      <ul ng-repeat="tag in tags">
+        <li><a href="((tag.link))" class="carmel-link">((tag.title))</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="articles">
     <div class="container">
 
         <div class="col-lg-2 col-lg-offset-6" ng-hide="showArticles">
@@ -5,6 +16,7 @@
         </div>
 
         <div class="col-lg-10 col-lg-offset-1" ng-show="showArticles">
+
             <div class="archive-post" ng-repeat="article in articles">
                 <a href="((article.slug))">
                     <div class="post-img">
@@ -33,3 +45,4 @@
 
         </div>
     </div>
+</div>
