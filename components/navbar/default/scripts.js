@@ -25,9 +25,6 @@ module.exports = function ($, app, localeId)  {
       $('.navbar .navbar-nav').stop().animate({
         padding : '5px'
       }, time);
-      $('.navbar .navbar-brand').stop().animate({
-        padding : '5px'
-      }, time);
       $('.navbar .navbar-header button').stop().animate({
         height : '38px'
       }, time);
@@ -52,9 +49,6 @@ module.exports = function ($, app, localeId)  {
         padding : '14px'
       }, time);
       $('.navbar .navbar-nav').stop().animate({
-        padding : '10px'
-      }, time);
-      $('.navbar .navbar-brand').stop().animate({
         padding : '10px'
       }, time);
       $('.navbar .navbar-header button').stop().animate({
