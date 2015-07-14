@@ -1,12 +1,16 @@
 module.exports = function ($, app, localeId)  {
 
   return function($scope, $http) {
+    $scope.tags = [];
 
-    $scope.tags = [
-      "Intro","Description","Browse","asdasd",
-      "Intdsdsdro","Descrsaiption","Brosdwse","Featdsures",
-      "Intsro","Desasscription","Broawse","Featurases"
-    ];
+    $http.get('/' + (localeId ? localeId  + '/': '') + 'data/articles/tags.json').
+      success(function(data, status, headers, config) {
+        data.forEach(function(tag){
+          $scope.tags.push({title: tag.tag, link: "tag-" + tag.tag});
+        });
+      }).
+      error(function(data, status, headers, config) {
+      });
 
    }
 }
