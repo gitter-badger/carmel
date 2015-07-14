@@ -1,0 +1,25 @@
+---
+HOME_MENU_ITEM: Introducere
+ACTION_MENU_ITEM: Instalare
+BLOG_MENU_ITEM: Documentație
+HERO_TITLE: Bine ai venit la Carmel
+HERO_SUBTITLE: Cel mai simplu mod de a construi un website
+HERO_ACTION_TITLE: Să începem
+SUMMARY_TITLE_HOME: Crează site-uri fără să programezi
+SUMMARY_BODY_HOME: Carmel vă permite să creați site-uri web frumoase într-o chestiune de minute. Puteți începe cu o temă precompilate și pur și simplu adăugați text și imagini, apoi construi, previzualizare și publică. Este la fel de ușor ca asta. Nu aveți nevoie să știe HTML, CSS sau JavaScript. Carmel face toate heavylifting pentru tine și cu umilință ascunde în spatele scenei.
+SUMMARY_BUTTON_TITLE_HOME: Vezi cum merge
+SUMMARY_LINK_TITLE_HOME: Vezi documentația
+SUMMARY_TITLE_ACTION: npm install -g carmel
+SUMMARY_BODY_ACTION: <strong> Asta e tot. Doar atât. </strong> Carmel instalează ca un instrument global de linie de comandă pe care le puteți accesa cu <code> Carmel </ code> comanda de oriunde de pe filesytem dumneavoastră. Nu e absolut nimic altceva ce trebuie să faceți pentru a instala. Totul vine ambalate în modul NPM, gata pentru a merge. Deci, mergeți mai departe și a instala it și apoi tastați <code> Carmel </ code> pentru a verifica ești sus și să fie difuzate. <br> Gata pentru a crea primul site-ul dvs. Carmel?
+SUMMARY_BUTTON_TITLE_ACTION: Vezi documentația
+SUMMARY_LINK_TITLE_ACTION: Vezi codul
+ACTION_PAGE_TITLE: Instalează Carmel în mai puțin de un minut
+ACTION_PAGE_SUBTITLE: Este atât de ușor, e ridicol (aproape că nu e corect)
+BLOG_PAGE_TITLE: Tot Ce Trebuie Să Știi Despre Carmel
+BLOG_PAGE_SUBTITLE: Te rog să ne dai de știre dacă ai nevoie de mai multe detalii
+FOOTER_TITLE: Instaleaza Carmel
+FOOTER_BODY: Instalați Carmel și mergeți mai departe și de a construi ceva frumos. Este nevoie de literalmente câteva minute de la nimic pentru a-un site web plina floare. Nu uitați să vină înapoi și să ne spui ce crezi. Distrează-te!
+FOOTER_ACTION_TITLE: Install Carmel
+FOOTER_ABOUT_TITLE: Ce este Carmel?
+FOOTER_ABOUT_BODY: Carmel este un proiect gratuit și open-source pe care le puteți începe să utilizați imediat in urmatorul tau proiect. Acesta a fost proiectat de la sol până la a face site-uri de construcții la fel de ușor ca posibil. Este rapid, ușor și static - ceea ce înseamnă că nu are nevoie de un server backend pentru a rula site-ul dvs.. Doar alege o temă, personalizați-l pe gustul dvs., adăugați textul, să construiască, previzualizare și apoi să publice. Este la fel de ușor ca asta.
+FOOTER_COPYRIGHT: Copyright 2015 Dan Calinescu

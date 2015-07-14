@@ -1,14 +1,7 @@
 style:
-- color: "#4a4a4a"
-- btn-background2: "#53C5E3"
-- btn-color: "#fff"
 text:
   title: SUMMARY_TITLE
   body: SUMMARY_BODY
   buttonTitle: SUMMARY_BUTTON_TITLE
   linkTitle: SUMMARY_LINK_TITLE
-variables:
-  titleMaxChars: 50
-  bodyMaxChars: 500
-  buttonTitleMaxChars: 24
-  linkTitleMaxChars: 32
+variables:  

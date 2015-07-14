@@ -1,24 +1,25 @@
 ---
 HOME_MENU_ITEM: Intro
-ABOUT_MENU_ITEM: Documentation
-ACTION_MENU_ITEM: BROWSE
-BLOG_MENU_ITEM: Blog
+ACTION_MENU_ITEM: Install
+BLOG_MENU_ITEM: Documentation
 HERO_TITLE: Welcome To Carmel
 HERO_SUBTITLE: The easiest way to build a website from scratch
-HERO_ACTION_TITLE: Try It Out
+HERO_ACTION_TITLE: Get Started
 SUMMARY_TITLE_HOME: Create Websites Without Coding
 SUMMARY_BODY_HOME: Carmel enables you to create beautiful websites in a matter of minutes. You can start with a prebuilt theme and simply add your text and images then build, preview and publish. It's as easy as that. You don't need to know HTML, CSS or JavaScript. Carmel does all the heavylifting for you and humbly hides behind the scenes.
-SUMMARY_BUTTON_TITLE_HOME: Learn More
-SUMMARY_LINK_TITLE_HOME: Give it a try yourself
-ABOUT_PAGE_TITLE: Carmel Documentation
-ABOUT_PAGE_SUBTITLE: Read the instructions carefully
-ACTION_PAGE_TITLE: Install Carmel
-ACTION_PAGE_SUBTITLE: It's so easy a baby could install it
-BLOG_PAGE_TITLE: This is The Blog
-BLOG_PAGE_SUBTITLE: Very nice.
-FOOTER_TITLE: See For Yourself
-FOOTER_BODY: It will take you less than 2 minutes to build your first website. Promise.
-FOOTER_ACTION_TITLE: Browse The Code
-FOOTER_ABOUT_TITLE: About Carmel
-FOOTER_ABOUT_BODY:  Carmel is a free and open-source project that you can start using right away in your next project. It was designed from the ground up to make building websites as easy as possible.
-FOOTER_COPYRIGHT: Copyright 2015, Carmel.io
+SUMMARY_BUTTON_TITLE_HOME: Try It Out
+SUMMARY_LINK_TITLE_HOME: View the documentation
+SUMMARY_TITLE_ACTION: npm install -g carmel
+SUMMARY_BODY_ACTION: <strong> That's it. That's all it takes. </strong> Carmel installs as a global command line tool that you can access with the <code> carmel </code> command from anywhere on your filesytem. There's absolutely nothing else you need to do in order to install it. Everything comes packaged up in the npm module, ready to go. So go ahead and install it and then type <code> carmel </code> to verify you're up and running. <br><br> Ready to create your first carmel site?
+SUMMARY_BUTTON_TITLE_ACTION: View Detailed Docs
+SUMMARY_LINK_TITLE_ACTION: Browse the source code
+ACTION_PAGE_TITLE: Install Carmel In Less Than A Minute
+ACTION_PAGE_SUBTITLE: It's so easy, it's just plain ridiculous (and almost unfair)
+BLOG_PAGE_TITLE: Everything You Need To Know About Carmel
+BLOG_PAGE_SUBTITLE: Please let us know if you need more info
+FOOTER_TITLE: Get Started With Carmel
+FOOTER_BODY: Install Carmel and go ahead and build something beautiful. It literally takes a few minutes from nothing to a full-blown website. Don't forget to come back and let us know what you think. Have fun!
+FOOTER_ACTION_TITLE: Install Carmel
+FOOTER_ABOUT_TITLE: What Is Carmel?
+FOOTER_ABOUT_BODY:  Carmel is a free and open-source project that you can start using right away in your next project. It was designed from the ground up to make building websites as easy as possible. It's fast, lightweight and static - which means that it doesn't require a backend server to run your site. Just pick a theme, customize it to your liking, add your text, build, preview and then publish. It's as easy as that.
+FOOTER_COPYRIGHT:  Copyright 2015 Dan Calinescu

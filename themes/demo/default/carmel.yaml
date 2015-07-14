@@ -1,8 +1,10 @@
 ---
+publish:
+
 content:
   locales:
     - en: English
-    - fr: français
+    - ro: română
   images:
     first-feature: heart.png
     second-feature: map.png
@@ -22,7 +24,6 @@ style:
     container: gray-7
 
 settings:
-  videointro-id: UjXi6X-moxE
 
 links:
 
@@ -30,8 +31,6 @@ menu:
 - page: home
   text: HOME_MENU_ITEM
 - page: docs
-  text: ABOUT_MENU_ITEM
-- page: blog
   text: BLOG_MENU_ITEM
 - page: install
   text: ACTION_MENU_ITEM
@@ -43,34 +42,18 @@ pages:
   components:
   - topbar
   - navbar
-  - hero
+  - hero:
+      links:
+        button: install
   - summary:
       text:
         title: SUMMARY_TITLE_HOME
         body: SUMMARY_BODY_HOME
         buttonTitle: SUMMARY_BUTTON_TITLE_HOME
         linkTitle: SUMMARY_LINK_TITLE_HOME
-  - quiz
-  - subscribe
-  - footer
-
-- page: docs
-  layout: default
-  action: secondary
-  components:
-  - topbar
-  - navbar
-  - carmel/hero/small:
-      text:
-        title: ABOUT_PAGE_TITLE
-        subtitle: ABOUT_PAGE_SUBTITLE
-  - summary:
-      text:
-        title: SUMMARY_TITLE_HOME
-        body: SUMMARY_BODY_HOME
-        buttonTitle: SUMMARY_BUTTON_TITLE_HOME
-        linkTitle: SUMMARY_LINK_TITLE_HOME
-  - subscribe
+      links:
+        button: install
+        link: docs
   - footer
 
 - page: install
@@ -81,19 +64,22 @@ pages:
   - navbar
   - carmel/hero/small:
        text:
-          title: ACTION_PAGE_TITLE
-          subtitle: ACTION_PAGE_SUBTITLE
+         title: ACTION_PAGE_TITLE
+         subtitle: ACTION_PAGE_SUBTITLE
   - summary:
       text:
-        title: SUMMARY_TITLE_HOME
-        body: SUMMARY_BODY_HOME
-        buttonTitle: SUMMARY_BUTTON_TITLE_HOME
-        linkTitle: SUMMARY_LINK_TITLE_HOME
-  - subscribe
+        title: SUMMARY_TITLE_ACTION
+        body: SUMMARY_BODY_ACTION
+        buttonTitle: SUMMARY_BUTTON_TITLE_ACTION
+        linkTitle: SUMMARY_LINK_TITLE_ACTION
+      links:
+        button: docs
+        link: https://github.com/dancali/carmel
   - footer
 
-- page: blog
+- page: docs
   layout: default
+  action: secondary
   articles: true
   components:
   - topbar
