@@ -7,6 +7,10 @@ module.exports = function ($, app, localeId)  {
         height : '56px',
         top : '0'
       }, time);
+      $('.carmel-navbar-default .navbar .navbar-brand img').stop().animate({
+        height : '45px'
+      }, time);
+
       $('.navbar .navbar-nav li a').stop().animate({
         padding : '10px'
       }, time);
@@ -25,6 +29,9 @@ module.exports = function ($, app, localeId)  {
       $('.carmel-navbar-default nav').stop().animate({
         height : '72px',
         top : '2rem'
+      }, time);
+      $('.carmel-navbar-default .navbar .navbar-brand img').stop().animate({
+        height : '60px'
       }, time);
       $('.navbar .navbar-nav li a').stop().animate({
         padding : '14px'

@@ -4,7 +4,7 @@ module.exports = function ($, app, localeId)  {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $(".carmel-summary-default").offset().top - 50
-    }, 1000);
+    }, 600);
   });
 
 
