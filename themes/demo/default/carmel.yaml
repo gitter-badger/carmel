@@ -1,5 +1,8 @@
 ---
-publish:
+settings:
+  production:
+  development:
+    port: 8888
 
 content:
   locales:
@@ -13,7 +16,7 @@ content:
 style:
   fonts:
     mono: source
-    sans: lato
+    sans: roboto
     cursive: comfortaa
   colors:
     menu: green-1
@@ -22,10 +25,6 @@ style:
     link: blue-0
     text: gray-8
     container: gray-7
-
-settings:
-
-links:
 
 menu:
 - page: home
