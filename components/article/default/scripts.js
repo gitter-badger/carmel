@@ -1,5 +1,6 @@
 module.exports = function ($, app, localeId)  {
 
+
   return function($scope, $http, $location, $sce) {
 
     var urlPath       = window.location.pathname;

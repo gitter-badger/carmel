@@ -1,5 +1,6 @@
 'use strict';
 
+
 var app = angular.module('carmel', ['ngSanitize', 'ngRoute']);
 
 app.config(function($interpolateProvider, $routeProvider, $locationProvider) {
@@ -14,4 +15,7 @@ app.config(function($interpolateProvider, $routeProvider, $locationProvider) {
 });
 
 app.controller('MainController', ['$scope', function($scope) {
+	$scope.back = function(){
+		window.history.back();
+	}
 }]);
