@@ -9,6 +9,7 @@ module.exports = function ($, app, localeId)  {
     $scope.totalArticles    =  0;
     $scope.totalPages       =  0;
     $scope.showArticles     = false;
+    $scope.showButtons      = true;
 
     function update () {
       var start = ($scope.page-1) * $scope.perPage;
@@ -60,7 +61,7 @@ module.exports = function ($, app, localeId)  {
         $scope.totalArticles  = allArticles.length;
         $scope.showArticles   = true;
         $scope.totalPages     = Math.ceil($scope.totalArticles / $scope.perPage);
-
+        
         update();
       }).
       error(function(data, status, headers, config) {
