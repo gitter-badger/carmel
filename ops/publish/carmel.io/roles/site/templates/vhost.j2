@@ -1,0 +1,10 @@
+server {
+    listen 80;
+
+    server_name {{domain}};
+
+    location / {
+        root /home/{{user}}/www/{{domain}}/latest;
+        index index.html;
+    }
+}

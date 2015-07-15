@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row">
+	<div class="col-lg-10 col-lg-offset-1">
+		<h2>Contact Us</h2>	
+	</div>
+		<div class="col-lg-6">
+		<div class="alert alert-danger" role="alert" ng-show="danger">Oh snap! Change a few things up and try submitting again.</div>
+		<div class="alert alert-success" role="alert" ng-show="success">Well done! You successfully send this important alert message.</div>
+			<form>
+			  <div class="form-group">
+			    <input type="text" class="form-control" id="name" placeholder="Name" ng-model="contact.name" required="required">
+			  </div>
+			  <div class="form-group">
+			    <input type="email" class="form-control" id="email" placeholder="Your Email" ng-model="contact.email" required="required">
+			  </div>
+			  <div class="form-group">
+			    <textarea ng-model="contact.message" id="message" required="required">Your Message!</textarea>
+			  </div>
+			  
+			  <button type="submit" class="btn btn-success btn-lg pull-left" ng-click="send()">Submit</button>
+			</form>
+		</div>
+		<div class="col-lg-6">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d174851.95829338665!2d23.61651245!3d46.78338565000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sen!2sro!4v1436973063762" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
