@@ -46,10 +46,12 @@
     "jquery": "^2.1.4",
     "js-yaml": "^3.3.0",
     "merge-stream": "^0.1.7",
+    "python": "0.0.4",
     "shelljs": "^0.5.1",
     "through2": "^2.0.0",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "which": "^1.1.1"
   },
   "repository": {
     "type": "git",
