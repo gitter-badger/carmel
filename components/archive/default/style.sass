@@ -14,6 +14,27 @@
     display: inline-block;
     margin: 0;
     padding:5px 10px;
+
+    a {
+      padding: 0.5rem;
+    }
+
+    a.carmel-link {
+      color: $carmel-color-gray-4;
+      text-decoration: none;
+      .badge {
+        background: $carmel-color-gray-4;
+      }
+    }
+
+    a.carmel-link-current {
+      border-bottom: 2px solid $carmel-color-background;
+      color: $carmel-color-gray-9;
+      text-decoration: none;
+      .badge {
+        background: $carmel-color-gray-9;
+      }
+    }
   }
 }
 

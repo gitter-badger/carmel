@@ -10,7 +10,13 @@
   <div class="container">
     <div class="col-lg-10 col-lg-offset-1">
       <ul ng-repeat="tag in tags">
-        <li><a ng-click="showTag(tag)" href="((tag.link))" class="carmel-link">((tag.title)) <span class="badge">((tag.totalArticles))</span> </a></li>
+        <li>
+           <a ng-click="showTag(tag)" href="((tag.link))" ng-class="{'carmel-link-current': tag.current, 'carmel-link': !tag.current}">
+             <i class="fa fa-tags"></i>
+             ((tag.title))
+             <span class="badge">((tag.totalArticles))</span>
+           </a>
+        </li>
       </ul>
     </div>
   </div>

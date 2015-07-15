@@ -21,15 +21,23 @@ module.exports = function ($, app, localeId)  {
             });
             $scope.tags.unshift({title: 'all', totalArticles: allArticles.length});
             $scope.showArticles = true;
+            showArticles();
           }).
           error(function(data, status, headers, config) {
           });
     }
 
     function showArticles (tag) {
-      var start = ($scope.page-1) * $scope.perPage;
-      var end = ($scope.page-1) * $scope.perPage + $scope.perPage;
-      $scope.articles = articles.slice(start, end);
+      var start        = ($scope.page-1) * $scope.perPage;
+      var end          = ($scope.page-1) * $scope.perPage + $scope.perPage;
+      $scope.articles  = articles.slice(start, end);
+
+      $scope.tags.forEach(function(t) {
+        t.current = false;
+        if ((!tag && !t.articles) || (!tag.articles && !t.articles) || (tag && t.articles && tag.title === t.title)) {
+          t.current = true;
+        }
+      });
     }
 
     $scope.showTag = function(tag) {
@@ -51,7 +59,7 @@ module.exports = function ($, app, localeId)  {
         $scope.totalArticles = articles.length;
         $scope.totalPages    = Math.ceil($scope.totalArticles / $scope.perPage);
 
-        showArticles();
+        showArticles(tag);
     }
 
     $scope.fetchOlder = function() {
@@ -89,7 +97,6 @@ module.exports = function ($, app, localeId)  {
         $scope.totalArticles  = articles.length;
         $scope.totalPages     = Math.ceil($scope.totalArticles / $scope.perPage);
 
-        showArticles();
         showTags();
       }).
       error(function(data, status, headers, config) {
