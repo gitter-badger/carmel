@@ -14,7 +14,7 @@ module.exports = function ($, app, localeId)  {
         height : '45px'
       }, time);
 
-      if ($window < 765) {
+      if ($window < 750) {
         $('#navbar-collapse').css({
           position: 'relative',
           top      : '-11px'
@@ -40,7 +40,7 @@ module.exports = function ($, app, localeId)  {
         height : '60px'
       }, time);
 
-      if ($window >= 760) {
+      if ($window > 750) {
         $('#navbar-collapse').css({
           position: 'relative',
           top      : '0'
