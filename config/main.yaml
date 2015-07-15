@@ -1,0 +1,6 @@
+ngControllerArgs:
+- scope
+- http
+- location
+- sce
+- timeout
