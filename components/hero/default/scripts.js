@@ -7,7 +7,7 @@ module.exports = function ($, app, localeId)  {
     }, 600);
   });
 
-  return function($scope, $http) {
+  return function($scope, $http, $location, $sce, $timeout) {
 
    }
 }

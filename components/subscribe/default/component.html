@@ -2,19 +2,22 @@
     <div class="container">
         <div class="row">
           <h2 class="text-center">$carmel.text(title, maxChars)</h2>
+          <div class="alert alert-danger" role="alert" ng-show="warning">$carmel.text(alertDanger)</div>
+          <div class="alert alert-danger" role="alert" ng-show="emailDanger">((emailAlert))</div>
+          <div class="alert alert-success" role="alert" ng-show="success">$carmel.text(alertSuccess)</div>
           <form>
             <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
               <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Name">
+                <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Your Name" required="required" ng-model="name">
               </div>
             </div>
             <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
               <div class="form-group">
-                <input type="email" class="form-control input-lg input-block" id="exampleInputEmail1" placeholder="Your Email Address">
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Your Email Address" required="required" ng-model="email">
               </div>
             </div>
             <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
-              <a href="#" class="btn-subscribe primary">Subscribe</a>
+              <a href="#" class="btn-subscribe primary" ng-click="subscribe()">Subscribe</a>
           </div>
           <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
             <p class="text-center">
