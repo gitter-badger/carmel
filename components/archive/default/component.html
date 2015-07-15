@@ -1,8 +1,16 @@
+<div class="title">
+  <div class="container">
+    <div class="col-lg-10 col-lg-offset-1 posts-title">
+      <h2>$carmel.text(title)</h2>
+    </div>
+  </div>
+</div>
+
 <div class="tags">
   <div class="container">
     <div class="col-lg-10 col-lg-offset-1">
       <ul ng-repeat="tag in tags">
-        <li><a href="((tag.link))" class="carmel-link">((tag.title))</a></li>
+        <li><a ng-click="showTag(tag)" href="((tag.link))" class="carmel-link">((tag.title)) <span class="badge">((tag.totalArticles))</span> </a></li>
       </ul>
     </div>
   </div>
@@ -14,9 +22,7 @@
         <div class="col-lg-2 col-lg-offset-6" ng-hide="showArticles">
           <img src="../img/spinner.gif" style="width: 40px; height: 40px; display: block;"/>
         </div>
-              <div class="col-lg-10 col-lg-offset-1 posts-title">
-                <h2>$carmel.text(title)</h2>
-              </div>
+
         <div class="col-lg-10 col-lg-offset-1 posts" ng-show="showArticles">
 
             <div class="archive-post" ng-repeat="article in articles">

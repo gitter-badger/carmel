@@ -1,3 +1,11 @@
+.title {
+  @include carmel-base($carmel-color-gray-0,auto,0.3,0.3);
+  text-align:center;
+  .posts-title {
+      @include carmel-base($carmel-color-gray-0,auto,0.2,0.2);
+  }
+}
+
 .tags {
   @include carmel-base($carmel-color-gray-0,auto,0.3,0.3);
   text-align:center;
@@ -12,10 +20,6 @@
 .articles {
   @include carmel-base(transparent);
     position: relative;
-  
-  .posts-title {
-      @include carmel-base($carmel-color-gray-0,auto,0.2,0.2);
-  }
 
   .archive-post {
       padding: 2rem 0;
