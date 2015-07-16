@@ -1,15 +1,19 @@
 module.exports = function ($, app, localeId)  {
   
-  $window = $(window).width();
-  var time = 50;
+  $window    = $(window).width();
+  var topbar = $('.carmel-topbar-default .container-fluid');
+  var time   = 50;
+  var top    = topbar.outerHeight();
+
+    $('.carmel-navbar-default nav').css("top", top);
 
   $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
-
       $('.carmel-navbar-default nav').stop().animate({
-        height : '56px',
-        top : '0'
-      }, time);
+            height : '56px',
+            top : '0'
+        }, time);
+      
       $('.carmel-navbar-default .navbar .navbar-brand img').stop().animate({
         height : '45px'
       }, time);
@@ -31,11 +35,11 @@ module.exports = function ($, app, localeId)  {
       }, time);
 
     } else {
-
       $('.carmel-navbar-default nav').stop().animate({
-        height : '72px',
-        top : '2rem'
+          height : '72px',
+          top : top
       }, time);
+        
       $('.carmel-navbar-default .navbar .navbar-brand img').stop().animate({
         height : '60px'
       }, time);
