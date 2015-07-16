@@ -21,7 +21,7 @@ module.exports = function ($, app, localeId)  {
       if ($window < 750) {
         $('#navbar-collapse').css({
           position: 'relative',
-          top      : '-11px'
+          top      : '-10px'
         });
       }
       $('.navbar .navbar-nav li a').stop().animate({
@@ -44,10 +44,10 @@ module.exports = function ($, app, localeId)  {
         height : '60px'
       }, time);
 
-      if ($window > 750) {
+      if (!$window < 750) {
         $('#navbar-collapse').css({
           position: 'relative',
-          top      : '0'
+          top      : 0
         });
       }
       $('.navbar .navbar-nav li a').stop().animate({
