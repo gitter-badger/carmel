@@ -19,12 +19,12 @@ style:
     sans: roboto
     cursive: comfortaa
   colors:
-    menu: green-1
-    background: green-0
-    button: orange-0
-    link: blue-0
-    text: gray-8
-    container: gray-7
+    menu: material-green-a700
+    background: material-green-a400
+    button: material-amber-300
+    link: material-blue-300
+    text: flat-wet-asphalt
+    container: flat-midnight-blue
 
 menu:
 - page: home
