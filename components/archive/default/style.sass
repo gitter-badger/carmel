@@ -1,13 +1,13 @@
 .title {
-  @include carmel-base($carmel-color-gray-0,auto,0.3,0.3);
+  @include carmel-base($carmel-color-white,auto,0.3,0.3);
   text-align:center;
   .posts-title {
-      @include carmel-base($carmel-color-gray-0,auto,0.2,0.2);
+      @include carmel-base($carmel-color-white,auto,0.2,0.2);
   }
 }
 
 .tags {
-  @include carmel-base($carmel-color-gray-0,auto,0.3,0.3);
+  @include carmel-base($carmel-color-white,auto,0.3,0.3);
   text-align:center;
   ul, li {
     list-style: none;
@@ -20,19 +20,19 @@
     }
 
     a.carmel-link {
-      color: $carmel-color-gray-4;
+      color: $carmel-color-material-grey-300;
       text-decoration: none;
       .badge {
-        background: $carmel-color-gray-4;
+        background: $carmel-color-material-grey-300;
       }
     }
 
     a.carmel-link-current {
       border-bottom: 2px solid $carmel-color-background;
-      color: $carmel-color-gray-9;
+      color: $carmel-color-background;
       text-decoration: none;
       .badge {
-        background: $carmel-color-gray-9;
+        background: $carmel-color-background;
       }
     }
   }
@@ -44,7 +44,7 @@
 
   .archive-post {
       padding: 2rem 0;
-      border-bottom: 1px solid $carmel-color-gray-9;
+      border-bottom: 1px solid $carmel-color-material-grey-300;
 
       a {
         text-decoration: none;
@@ -74,13 +74,13 @@
        position: relative;
        top: 50%;
        transform: translateY(-50%);
-       color: $carmel-color-gray-0;
+       color: $carmel-color-white;
        padding-left:20px;
        padding-right:20px;
     }
 
     p {
-      color:$carmel-color-gray-8;
+      color:$carmel-color-text;
       margin-top: 50px;
 
     }
@@ -111,7 +111,7 @@
             font-size: 1rem;
             font-family: $carmel-font-sans, sans-serif;
             font-weight: 300;
-            color:$carmel-color-gray-8;
+            color:$carmel-color-text;
 
             span {
               display: none;

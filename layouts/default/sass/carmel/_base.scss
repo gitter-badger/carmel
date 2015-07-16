@@ -2,7 +2,7 @@
   color:      $color;
 
   @if (lightness($background) < 70) {
-    color: $carmel-color-gray-0;
+    color: $carmel-color-white;
   }
 }
 
@@ -11,12 +11,12 @@
   text-decoration: none;
 
   @if (lightness($background) < 70) {
-    color: $carmel-color-gray-0;
+    color: $carmel-color-white;
     text-decoration: underline;
   }
 }
 
-@mixin carmel-base ($background: $carmel-color-gray-0, $height:50px,$top:5,$bottom:5) {
+@mixin carmel-base ($background: $carmel-color-white, $height:50px,$top:5,$bottom:5) {
 
   min-height:         $height;
   width:              100%;
