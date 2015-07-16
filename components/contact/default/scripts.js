@@ -11,45 +11,51 @@ module.exports = function ($, app, localeId)  {
     
       }
 
-      function clearAlert (){
+      function clearAlert () {
          $scope.danger  = false;
-         $scope.success = false; 
+         $scope.success = false;
+         addAttr(); 
       }
 
-      function clearModel (){
+      function clearModel () {
         $scope.contact.name    = "";
         $scope.contact.email   = "";
         $scope.contact.message = "";
       }
-   
-      function removeAttrib (){
-        var nameAttr    = angular.element( document.querySelector( '#name' ) );
-        var emailAttr   = angular.element( document.querySelector( '#email' ) );
-        var messageAttr = angular.element( document.querySelector( '#message' ) );
-
+       
+      var nameAttr    = angular.element( document.querySelector( '#name' ));
+      var emailAttr   = angular.element( document.querySelector( '#email' ));
+      var messageAttr = angular.element( document.querySelector( '#message' ));
+      
+      function removeAttrib () {
         nameAttr.removeAttr('required');
         emailAttr.removeAttr('required');
         messageAttr.removeAttr('required');
       }
 
-      $scope.send = function(){
+      function addAttr () {
+        nameAttr.attr(   'required', "required");
+        emailAttr.attr(  'required', "required");
+        messageAttr.attr('required', "required");
+      }
+
+      $scope.send = function () {
 
         $timeout(clearAlert, 3000);
-
-        if(!$scope.contact.name && !$scope.contact.email && !$scope.contact.message ||  $scope.contact.name == "" || $scope.contact.email == "" || $scope.contact.message == "") {
-          
-          $scope.danger  = true;
-
-        }else{
-
-          $scope.success = true;
-          removeAttrib();
-          clearModel();
-
+        for(var key in $scope.contact) {
+          if(!$scope.contact[key] || $scope.contact[key].trim() === "") {
+              $scope.danger = true;
+            return;
+          }
         }
-      }
-  			
-     
-   
-    }
+
+        if($scope.danger) {
+          return;
+        }
+
+        $scope.success = true;
+        removeAttrib();
+        clearModel();
+      }  
+  }
 }
