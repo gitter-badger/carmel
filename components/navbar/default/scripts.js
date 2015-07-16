@@ -1,12 +1,13 @@
-module.exports = function ($, app, localeId)  {
-  
-  $window     = $(window).width();
-  var topbar  = $('.carmel-topbar-default .container-fluid');
-  var time    = 50;
-  var top     = topbar.outerHeight();
-  var bgColor = $('.carmel-navbar-default .navbar');
-
-    $('.carmel-navbar-default nav').css("top", top);
+module.exports = function ($, app, localeId, component)  {
+ 
+  $window         = $(window).width();
+  var topbar      = $('.carmel-topbar-default .container-fluid');
+  var time        = 50;
+  var top         = topbar.outerHeight();
+  var bgColor     = $('.carmel-navbar-default .navbar');
+  var scrollColor = $('.hero-image').css('background-color') || "black";
+    
+  $('.carmel-navbar-default nav').css("top", top);
 
   $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
@@ -15,9 +16,9 @@ module.exports = function ($, app, localeId)  {
             top : '0'
         }, time);
         if(bgColor.css('background-color') == "rgba(0, 0, 0, 0)") {
-            console.log("here");          
+            console.log(scrollColor);          
             bgColor.css({
-              background : 'black'
+              background : scrollColor
             });   
         }
       
