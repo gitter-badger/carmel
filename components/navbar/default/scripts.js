@@ -1,9 +1,10 @@
 module.exports = function ($, app, localeId)  {
   
-  $window    = $(window).width();
-  var topbar = $('.carmel-topbar-default .container-fluid');
-  var time   = 50;
-  var top    = topbar.outerHeight();
+  $window     = $(window).width();
+  var topbar  = $('.carmel-topbar-default .container-fluid');
+  var time    = 50;
+  var top     = topbar.outerHeight();
+  var bgColor = $('.carmel-navbar-default .navbar');
 
     $('.carmel-navbar-default nav').css("top", top);
 
@@ -13,6 +14,13 @@ module.exports = function ($, app, localeId)  {
             height : '56px',
             top : '0'
         }, time);
+        if(bgColor.css('background-color') == "rgba(0, 0, 0, 0)") {
+            console.log("here");          
+            bgColor.css({
+              background : 'black'
+            });   
+        }
+      
       
       $('.carmel-navbar-default .navbar .navbar-brand img').stop().animate({
         height : '45px'
@@ -39,6 +47,10 @@ module.exports = function ($, app, localeId)  {
           height : '72px',
           top : top
       }, time);
+
+      $('.carmel-navbar-default .navbar').css({
+              background : ''
+      }); 
         
       $('.carmel-navbar-default .navbar .navbar-brand img').stop().animate({
         height : '60px'
