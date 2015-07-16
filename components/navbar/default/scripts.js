@@ -16,7 +16,7 @@ module.exports = function ($, app, localeId, component)  {
             top : '0'
         }, time);
         if(bgColor.css('background-color') == "rgba(0, 0, 0, 0)") {
-            console.log(scrollColor);          
+         
             bgColor.css({
               background : scrollColor
             });   

@@ -5,10 +5,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-// nav {
-//   top:$top;
-// }
-
 .navbar .navbar-header button .icon-bar {
   background: $carmel-color-white;
 }
@@ -83,12 +79,10 @@
 
 .navbar .navbar-nav li.current a {
   color: $carmel-color-white;
-  background: darken($carmel-color-menu, 15%);
-  @include border-radius(4px);
+  border-bottom:2px solid $carmel-color-white;
+  @include border-radius(0);
 }
 
 .navbar .navbar-nav li.action a {
   color: white;
-  background: $carmel-color-button;
-  @include border-radius(4px);
 }
