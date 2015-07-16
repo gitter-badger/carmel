@@ -71,7 +71,7 @@
 .navbar .navbar-nav li a:hover {
  color: $carmel-color-white;
    background: darken($carmel-color-menu, 15%);
-   @include transition-duration(0.75s);
+   @include transition-duration(0.35s);
    @include transition-property(color);
    @include transition-property(background);
    @include border-radius(4px);
@@ -79,12 +79,15 @@
 
 .navbar .navbar-nav li.current a {
   color: $carmel-color-white;
-  border-bottom:2px solid $carmel-color-white;
+  border-bottom:1px solid $carmel-color-white;
   @include border-radius(0);
 }
 
 .navbar .navbar-nav li.action a {
   color: white;
-  background-color:$carmel-color-button;
+  border: 1px solid $carmel-color-white;
   @include border-radius(0);
+  &:hover {
+    background-color:$carmel-color-button;
+  }
 }
