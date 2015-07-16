@@ -1,7 +1,10 @@
-@include carmel-base($carmel-color-background, $height);
-
-@include background-size(cover);
-position:relative;
+.hero-small-image{
+	@include carmel-base($carmel-color-background, $height);
+	@include background-size(cover);
+	background-repeat: no-repeat;
+	background-position: center;
+	position:relative;
+}
 
 .heading {
   margin-top:    5.0rem;
