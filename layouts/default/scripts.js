@@ -1,5 +1,9 @@
 'use strict';
 
+	$.each($('.btn-action'), function(i, button){
+			var text = $(button).text();
+			$(button).text(text.substring(0,15));
+		});
 
 var app = angular.module('carmel', ['ngSanitize', 'ngRoute']);
 
