@@ -8,6 +8,7 @@ module.exports = function ($, app, localeId, component)  {
   var scrollColor = $('.hero-image').css('background-color') || "black";
     
   $('.carmel-navbar-default nav').css("top", top);
+  console.log(scrollColor);
 
   $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
