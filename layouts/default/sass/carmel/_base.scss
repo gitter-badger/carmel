@@ -37,3 +37,11 @@
     @include carmel-text-link ($background, $carmel-color-text);
   }
 }
+
+a:focus, a:active  {
+   outline: 0;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
