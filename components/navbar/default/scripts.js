@@ -1,5 +1,6 @@
 module.exports = function ($, app, localeId, component)  {
- 
+   
+
   $window         = $(window).width();
   var topbar      = $('.carmel-topbar-default .container-fluid');
   var time        = 50;
@@ -10,6 +11,15 @@ module.exports = function ($, app, localeId, component)  {
   $('.carmel-navbar-default nav').css("top", top);
   console.log(scrollColor);
 
+
+
+// console.log("opera -" + global.isOpera);
+// console.log("firefox -" + isFirefox);
+// console.log("safari -" + isSafari);
+// console.log("chrome -" + isChrome);
+// console.log("ie -" + isIE);
+
+ function scrolling (){
   $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
       $('.carmel-navbar-default nav').stop().animate({
@@ -77,7 +87,10 @@ module.exports = function ($, app, localeId, component)  {
     }
   });
 
+}
+  scrolling();
 
+  
   return function($scope, $http, $location, $sce, $timeout) {
 
    }
