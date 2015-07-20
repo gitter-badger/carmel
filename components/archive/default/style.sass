@@ -1,148 +1,20 @@
-.title {
-  @include carmel-base($carmel-color-white,auto,0.3,0.3);
-  text-align:center;
-  .posts-title {
-      @include carmel-base($carmel-color-white,auto,0.2,0.2);
-  }
-}
-
-.tags {
-  @include carmel-base($carmel-color-white,auto,0.3,0.3);
-  text-align:center;
-  ul, li {
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding:5px 10px;
-
-    a {
-      padding: 0.5rem;
-      font-size:1rem;
-      text-transform:uppercase;
-    }
-
-    a.carmel-link {
-      color: $carmel-color-material-grey-300;
-      text-decoration: none;
-      .badge {
-        background: $carmel-color-material-grey-300;
-      }
-    }
-
-    a.carmel-link-current {
-      border-bottom: 2px solid $carmel-color-background;
-      color: $carmel-color-background;
-      text-decoration: none;
-      .badge {
-        background: $carmel-color-background;
-      }
-    }
-  }
-}
-
 .articles {
-  @include carmel-base(transparent,auto,0);
-    position: relative;
+  @include carmel-base();
 
-  .archive-post {
-      padding: 2rem 0;
-      border-bottom: 1px solid $carmel-color-material-grey-300;
-
-      a {
-        text-decoration: none;
-
-      }
-      .post-img {
-        position: relative;
-        height: 350px;
-        background-color: transparent;
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.2);
-        }
-      }
+  p, code, pre {
+      text-align: justify;
   }
 
-      img {
-        top:0;
-        left:0;
-        height: 350px;
-        width:100%;
-        position: absolute;
-        z-index: -100;
-        background-color: $carmel-color-background;
-      }
+  h1, h2, h3, h4 {
+      text-align: left;
+  }
 
-    h2 {
-       position: relative;
-       top: 50%;
-       transform: translateY(-50%);
-       color: $carmel-color-white;
-       padding-left:20px;
-       padding-right:20px;
-    }
+  a {
+    pointer: cursor;
+    text-decoration: none;
+  }
 
-    p {
-      color:$carmel-color-text;
-      margin-top: 50px;
-
-    }
-
-        time {
-          float: left;
-          font-size: 0.8rem;
-          margin:10px 0;
-          font-weight: 300;
-        }
-
-          .archive-btn {
-            padding: 2rem 0;
-          }
-
-          .archive-preview {
-
-            .preview-btn {
-              padding:0.5rem 2.5rem;
-              float: left;
-              font-size:0.8rem;
-              @include border-radius(3px);
-            }
-
-          }
-
-          .length {
-            font-size: 1rem;
-            font-family: $carmel-font-sans, sans-serif;
-            font-weight: 300;
-            color:$carmel-color-text;
-
-            span {
-              display: none;
-            }
-          }
-            @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-              .length span {
-                display:inline-block;
-              }
-            }
-            @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-                .length span {
-                  display:inline-block;
-                }
-            }
-
-            @media screen and (min-width: $screen-lg-min) {
-              .length span {
-                display:inline-block;
-              }
-            }
-
-          .archive-next {
-
-            .next-btn {
-              @include border-radius(3px);
-              padding:0.5rem 2.5rem;
-              float: right;
-              font-size:0.8rem;
-            }
-          }
+  img {
+    max-width: 100%;
+  }
 }
