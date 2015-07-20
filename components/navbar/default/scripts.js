@@ -15,7 +15,7 @@ module.exports = function ($, app, localeId, component)  {
             height : '56px',
             top : '0'
         }, time);
-        if(bgColor.css('background-color') == "rgba(0, 0, 0, 0)") {
+        if(bgColor.css('background-color') == "rgba(0, 0, 0, 0)" || bgColor.css('background-color') == "transparent" ) {
          
             bgColor.css({
               background : scrollColor
