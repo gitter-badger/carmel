@@ -1,4 +1,25 @@
-module.exports = function ($, app, localeId)  {
+module.exports = function ($, app, localeId, component)  {
+
+  $('#form2 input[type=text], #form2 input[type=email], #form2 textarea').on('change invalid', function() {
+      var name    = $('#form2 input[type=text]').get(0);
+      var email   = $('#form2 input[type=email]').get(0);
+      var message = $('#form2 textarea').get(0);
+      name.setCustomValidity('');
+      email.setCustomValidity('');
+      message.setCustomValidity('');
+
+      if (!name.validity.valid) {
+        name.setCustomValidity(component.text.fillName);  
+      }
+      if (!email.validity.valid) {
+        email.setCustomValidity(component.text.fillEmail);  
+      }
+      if (!message.validity.valid) {
+        message.setCustomValidity(component.text.fillMessage);  
+      }
+  });
+
+
 
   return function($scope, $http, $location, $sce, $timeout) {
       $scope.danger  = false;
@@ -57,5 +78,7 @@ module.exports = function ($, app, localeId)  {
         removeAttrib();
         clearModel();
       }
+       
+      $scope.questions = component.variables.questions;
   }
 }
