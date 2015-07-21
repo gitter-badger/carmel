@@ -1,4 +1,19 @@
-module.exports = function ($, app, localeId)  {
+module.exports = function ($, app, localeId, component)  {
+
+  $('#form3 input[type=text], #form3 input[type=email]').on('change invalid', function() {
+      var name    = $('#form3 input[type=text]').get(0);
+      var email   = $('#form3 input[type=email]').get(0);
+
+      name.setCustomValidity('');
+      email.setCustomValidity('');
+
+      if (!name.validity.valid) {
+        name.setCustomValidity(component.text.fillName);  
+      }
+      if (!email.validity.valid) {
+        email.setCustomValidity(component.text.fillEmail);  
+      }
+  });
 
   return function($scope, $http, $location, $sce, $timeout) {
       $scope.danger  = false;
