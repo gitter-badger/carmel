@@ -10,6 +10,14 @@ $.fn.buttonTextWidth = function(text, button) {
 	return $.fn.textWidth(text,  $(button).css('font-size') + " " + $(button).css('font-family'));
 };
 
+$.fn.enableFacebook = function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=482611655235572";
+  fjs.parentNode.insertBefore(js, fjs);
+}
+
 // Common scripts
 $.each($('.btn-action'), function(i, button){
 		var text        = $(button).text();
@@ -25,7 +33,9 @@ $.each($('.btn-action'), function(i, button){
 		}
 });
 
-//detect browser 
+$.fn.enableFacebook(document, 'script', 'facebook-jssdk');
+
+//detect browser
 //  var global = {};
 
 //  global.isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
@@ -54,4 +64,3 @@ app.controller('MainController', ['$scope', function($scope) {
 		window.history.back();
 	}
 }]);
-

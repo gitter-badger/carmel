@@ -1,5 +1,5 @@
 module.exports = function ($, app, localeId, component)  {
-   
+
 
   $window         = $(window).width();
   var topbar      = $('.carmel-topbar-default .container-fluid');
@@ -7,11 +7,8 @@ module.exports = function ($, app, localeId, component)  {
   var top         = topbar.outerHeight();
   var bgColor     = $('.carmel-navbar-default .navbar');
   var scrollColor = $('.hero-image').css('background-color') || "black";
-    
+
   $('.carmel-navbar-default nav').css("top", top);
-  console.log(scrollColor);
-
-
 
 // console.log("opera -" + global.isOpera);
 // console.log("firefox -" + isFirefox);
@@ -27,13 +24,13 @@ module.exports = function ($, app, localeId, component)  {
             top : '0'
         }, time);
         if(bgColor.css('background-color') == "rgba(0, 0, 0, 0)" || bgColor.css('background-color') == "transparent" ) {
-         
+
             bgColor.css({
               background : scrollColor
-            });   
+            });
         }
-      
-      
+
+
       $('.carmel-navbar-default .navbar .navbar-brand img').stop().animate({
         height : '45px'
       }, time);
@@ -62,8 +59,8 @@ module.exports = function ($, app, localeId, component)  {
 
       $('.carmel-navbar-default .navbar').css({
               background : ''
-      }); 
-        
+      });
+
       $('.carmel-navbar-default .navbar .navbar-brand img').stop().animate({
         height : '60px'
       }, time);
@@ -90,7 +87,7 @@ module.exports = function ($, app, localeId, component)  {
 }
   scrolling();
 
-  
+
   return function($scope, $http, $location, $sce, $timeout) {
 
    }

@@ -14,13 +14,7 @@ html {
   }
 }
 
-%font-smoothing {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 %carmel-text-base {
-  @extend %font-smoothing;
   font-family:  $carmel-font-sans, sans-serif;
   margin:       1.0rem 0 2.0rem 0;
   font-size:    1.2rem;

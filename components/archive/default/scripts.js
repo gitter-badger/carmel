@@ -5,7 +5,7 @@ module.exports = function ($, app, localeId)  {
     var articles            = [];
 
     $scope.articles         = [];
-    $scope.perPage          =  3;
+    $scope.perPage          =  5;
     $scope.page             =  1;
     $scope.totalArticles    =  0;
     $scope.totalPages       =  0;

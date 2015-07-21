@@ -12,15 +12,17 @@
 <div class="article">
   <div class="container">
       <div class="row">
-      <!-- <div class="col-xs-12 col-sm-12">
-        <button ng-click="back()" class="btn btn-default btn-lg back-btn pull-left"><i class="fa fa-angle-left"></i> Back</button>
-      </div> -->
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
           <div ng-bind-html="article.body" ng-model="article.id" ng-init="article.id=__ARTICLE_ID__">
                 ((article.body))
           </div>
         </div>
-
       </div>
+
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+            <div class="fb-comments" data-numposts="5" data-width="100%"></div>
+      </div>
+    </div>
   </div>
 </div>
