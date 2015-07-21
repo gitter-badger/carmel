@@ -28,10 +28,12 @@ module.exports = function ($, app, localeId, component)  {
 
         name    : "",
         email   : "",
-        message : ""
-  
+        message : "",
+        context : component.variables.context
       }
 
+      var data = $scope.contact; 
+      
       function clearAlert () {
          $scope.danger  = false;
          $scope.success = false;
@@ -74,9 +76,25 @@ module.exports = function ($, app, localeId, component)  {
           return;
         }
 
-        $scope.success = true;
-        removeAttrib();
-        clearModel();
+
+        $http.post('http://carmel.io/api/messages', data).
+          success(function(data, status, headers, config) {
+
+
+          $scope.success = true;
+          removeAttrib();
+          clearModel();
+            // this callback will be called asynchronously
+           // when the response is available
+        }).
+        error(function(data, status, headers, config) {
+          // called asynchronously if an error occurs
+          // or server returns response with an error status.
+          $scope.danger = true;
+          
+        });
+
+        
       }
        
       $scope.questions = component.variables.questions;

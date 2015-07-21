@@ -10,9 +10,13 @@ module.exports = function ($, app, localeId, component)  {
       if (!name.validity.valid) {
         name.setCustomValidity(component.text.fillName);  
       }
-      if (!email.validity.valid) {
-        email.setCustomValidity(component.text.fillEmail);  
-      }
+ 
+
+      // if (!email.validity.valid && !component.text.fillEmail.includes('@')) {
+        
+      //     email.setCustomValidity(component.text.fillEmail);  
+        
+      // }
   });
 
   return function($scope, $http, $location, $sce, $timeout) {
