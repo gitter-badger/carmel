@@ -80,5 +80,6 @@ module.exports = function ($, app, localeId, component)  {
       }
        
       $scope.questions = component.variables.questions;
+     
   }
 }

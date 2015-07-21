@@ -26,8 +26,11 @@
 
 		</div>
 		<div class="col-lg-6">
-			<div class="list-group" >
-				  <a href="#" class="list-group-item link-action" ng-repeat="question in questions">((question))</a>
+			<div class="list-group">
+				<span ng-repeat="question in questions">
+					<a href="/((question.link))" class="list-group-item link-action">((question.text))</a>
+				</span>
+				  
 			</div>
 		</div>
 	</div>
