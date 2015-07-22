@@ -26,7 +26,7 @@
   text-align:         center;
   background:         $background;
 
-  h1, h2, p {
+  h1, h2,h3, h4, p {
     @include carmel-text-readability ($background, $carmel-color-text);
   }
 
