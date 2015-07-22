@@ -42,16 +42,16 @@
                 <hr><br><br>
             </div>
 
-            <div class="archive-btn" ng-show="totalArticles > 1">
+            <div class="archive-btn" ng-show="totalPages > 1">
                 <div class="col-xs-4 col-sm-4 col-lg-4  archive-preview">
-                    <a href="" class="btn btn-default preview-btn" ng-disabled="!hasOlder()" ng-click="fetchOlder()"><i class="fa fa-angle-left"></i> Older </a>
+                    <a href="" class="btn btn-default btn-lg" ng-disabled="!hasOlder()" ng-click="fetchOlder()"><i class="fa fa-angle-left"></i> $carmel.text(older)</a>
                 </div>
               <div class="col-xs-4 col-sm-4 col-lg-4 length">
-               <span>Page ((page)) of ((totalPages)) </span>
+               <span>$carmel.text(pages) ((page)) of ((totalPages)) </span>
               </div>
 
                 <div class="col-xs-4 col-sm-4 col-lg-4  archive-next">
-                    <a href="" class="btn btn-default next-btn" ng-disabled="!hasNewer()" ng-click="fetchNewer()"> Newer <i class="fa fa-angle-right"></i></a>
+                    <a href="" class="btn btn-default btn-lg" ng-disabled="!hasNewer()" ng-click="fetchNewer()">$carmel.text(newer) <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
 

@@ -1,0 +1,10 @@
+- hosts: carmel
+  sudo: 'yes'
+  remote_user: dev
+  vars:
+    wwwroot: /home/rmiroslav/Documents/workspace/carmelSites/carmelsites/castitate.ro/.carmel/preview
+    domain: castitate.ro
+    user: dev
+    version: '20150722124159'
+  roles:
+    - site
