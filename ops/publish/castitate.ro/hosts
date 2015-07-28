@@ -1,2 +1,0 @@
-[carmel]
-carmel-host ansible_ssh_host=104.236.228.93 ansible_ssh_user=dev ansible_ssh_port=13001

@@ -1,8 +1,5 @@
 <div class="container">
 	<div class="row">
-	<div class="col-lg-10 col-lg-offset-1">
-		<h2>$carmel.text(title)</h2>
-	</div>
 		<div class="col-lg-6">
 		<div class="alert alert-danger" role="alert" ng-show="danger">
 			$carmel.text(danger)
@@ -21,7 +18,7 @@
 			  <div class="form-group">
 			    <textarea class="form-control" ng-model="contact.message" id="message" placeholder="$carmel.text(message)" required="required"></textarea>
 			  </div>
-			  <button type="submit" class="btn btn-success btn-lg pull-left" ng-click="send()">$carmel.text(submit)</button>
+			  <button type="submit" class="btn btn-success btn-lg pull-left btn-action" ng-click="send()">$carmel.text(submit)</button>
 			</form>
 
 		</div>
@@ -33,7 +30,7 @@
 				<span ng-repeat="question in questions">
 					<a href="/((question.link))" class="list-group-item link-action">((question.text))</a>
 				</span>
-				  
+
 			</div> -->
 		</div>
 	</div>
