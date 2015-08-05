@@ -10,13 +10,7 @@ module.exports = function ($, app, localeId, component)  {
 
   $('.carmel-navbar-default nav').css("top", top);
 
-// console.log("opera -" + global.isOpera);
-// console.log("firefox -" + isFirefox);
-// console.log("safari -" + isSafari);
-// console.log("chrome -" + isChrome);
-// console.log("ie -" + isIE);
-
- function scrolling (){
+  function scrolling (){
   $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
       $('.carmel-navbar-default nav').stop().animate({

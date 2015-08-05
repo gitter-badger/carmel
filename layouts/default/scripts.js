@@ -14,8 +14,15 @@ $.fn.enableFacebook = function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=482611655235572";
+  js.src = "//connect.facebook.net/en_US/sdk.js";
   fjs.parentNode.insertBefore(js, fjs);
+  $(window).fbAsyncInit = function() {
+     FB.init({
+       appId      : '151265941872539',
+       xfbml      : true,
+       version    : 'v2.4'
+     });
+  };
 }
 
 // Common scripts
@@ -34,17 +41,6 @@ $.each($('.btn-action'), function(i, button){
 });
 
 $.fn.enableFacebook(document, 'script', 'facebook-jssdk');
-
-//detect browser
-//  var global = {};
-
-//  global.isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-//     Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
-// var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
-// var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
-//     // At least Safari 3+: "[object HTMLElementConstructor]"
-// var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
-// var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
 
 var app = angular.module('carmel', ['ngSanitize', 'ngRoute']);
 

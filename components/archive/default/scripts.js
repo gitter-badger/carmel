@@ -32,6 +32,10 @@ module.exports = function ($, app, localeId)  {
       var end          = ($scope.page-1) * $scope.perPage + $scope.perPage;
       $scope.articles  = articles.slice(start, end);
 
+      if (!tag || !$scope.tags || $scope.tags.length == 0) {
+        return;
+      }
+
       $scope.tags.forEach(function(t) {
         t.current = false;
         if ((!tag && !t.articles) || (!tag.articles && !t.articles) || (tag && t.articles && tag.title === t.title)) {
@@ -90,7 +94,12 @@ module.exports = function ($, app, localeId)  {
 
     $http.get('/' + (localeId ? localeId  + '/': '') + 'data/articles/all.json').
       success(function(data, status, headers, config) {
-        allArticles           = data;
+
+        allArticles = data;
+        allArticles.sort(function (a,b) {
+          return (b.id - a.id);
+        });
+
         articles              = allArticles;
         $scope.page           = 1;
         $scope.tags           = [];

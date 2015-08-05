@@ -72,5 +72,8 @@
   "bugs": {
     "url": "https://github.com/dancali/carmel/issues"
   },
-  "homepage": "https://github.com/dancali/carmel"
+  "homepage": "https://github.com/dancali/carmel",
+  "devDependencies": {
+    "gulp-if": "^1.2.5"
+  }
 }

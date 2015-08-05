@@ -1,0 +1,10 @@
+text:
+  title: FOOTER_TITLE
+  body: FOOTER_BODY
+  actionTitle: FOOTER_ACTION_TITLE
+  aboutTitle: FOOTER_ABOUT_TITLE
+  aboutBody: FOOTER_ABOUT_BODY
+  copyright: FOOTER_COPYRIGHT
+style:
+- height: 200px
+variables:
