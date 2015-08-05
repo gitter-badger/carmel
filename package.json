@@ -11,9 +11,6 @@
   },
   "preferGlobal": "true",
   "dependencies": {
-    "angular": "^1.4.2",
-    "angular-route": "^1.4.2",
-    "angular-sanitize": "^1.4.2",
     "bootstrap-sass": "^3.3.5",
     "browserify": "^10.2.4",
     "colors": "^1.1.0",
@@ -46,7 +43,6 @@
     "jquery": "^2.1.4",
     "js-yaml": "^3.3.0",
     "merge-stream": "^0.1.7",
-    "moment": "^2.10.3",
     "python": "0.0.4",
     "shelljs": "^0.5.1",
     "through2": "^2.0.0",
@@ -74,6 +70,8 @@
   },
   "homepage": "https://github.com/dancali/carmel",
   "devDependencies": {
+    "fullcalendar": "^2.3.1",
+    "gulp-add-src": "^0.2.0",
     "gulp-if": "^1.2.5"
   }
 }

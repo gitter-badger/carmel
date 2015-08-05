@@ -1,0 +1,7 @@
+style:
+- height: 550px
+text:
+  title: HERO_TITLE
+  subtitle: HERO_SUBTITLE
+  actionTitle: HERO_ACTION_TITLE
+variables:  

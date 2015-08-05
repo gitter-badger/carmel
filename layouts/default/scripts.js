@@ -42,7 +42,7 @@ $.each($('.btn-action'), function(i, button){
 
 $.fn.enableFacebook(document, 'script', 'facebook-jssdk');
 
-var app = angular.module('carmel', ['ngSanitize', 'ngRoute']);
+var app = angular.module('carmel', ['ngRoute', 'ngSanitize', 'ui.calendar']);
 
 app.config(function($interpolateProvider, $routeProvider, $locationProvider) {
 
