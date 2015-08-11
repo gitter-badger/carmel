@@ -10,41 +10,32 @@ module.exports = function ($, app, localeId)  {
      $scope.eventSources = [{
        events: [
                    {
-                       title    : '8 Voluntari',
+                       title    : '0 voluntari',
                        start    : '2015-09-23T07:00:00+02:00',
                        end      : '2015-09-23T08:00:00+02:00',
                        editable : false,
-                       backgroundColor: "#2ecc71",
+                       backgroundColor : "#c0392b",
                        borderColor : "#34495e",
                        textColor : "#ffffff"
                    },
                    {
-                       title    : '0 Voluntari',
+                       title    : '0 voluntari',
                        start    : '2015-09-23T08:00:00+02:00',
                        end      : '2015-09-23T09:00:00+02:00',
                        editable : false,
-                       backgroundColor: "#c0392b",
-                       borderColor : "#34495e",
-                       textColor : "#ffffff"
-                   },
-                   {
-                       title    : '2 Voluntari',
-                       start    : '2015-09-23T09:00:00+02:00',
-                       end      : '2015-09-23T10:00:00+02:00',
-                       editable : false,
-                       backgroundColor: "#f39c12",
+                       backgroundColor : "#c0392b",
                        borderColor : "#34495e",
                        textColor : "#ffffff"
                    }
-              ],
-       color: "blue",
-       textColor: "white"
+              ]
      }];
 
      $scope.uiConfig = {
       calendar: {
+        height: "auto",
         defaultView: 'agendaWeek',
-        scrollTime: '07:00:00',
+        minTime: '07:00:00',
+        maxTime: '19:00:00',
         allDaySlot: false,
         editable: false,
         header:{

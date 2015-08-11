@@ -6,9 +6,8 @@ module.exports = function ($, app, localeId)  {
         scrollTop: $(".carmel-summary-default").offset().top - 20
     }, 600);
   });
-   
+
   return function($scope, $http, $location, $sce, $timeout) {
 
-
-   }
+  }
 }

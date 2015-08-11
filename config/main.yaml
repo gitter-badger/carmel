@@ -5,6 +5,4 @@ ngControllerArgs:
 - sce
 - timeout
 logging:
-  build:
-    components: false
-    pages: false
+  level: 1
