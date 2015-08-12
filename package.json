@@ -47,6 +47,7 @@
     "js-yaml": "^3.3.0",
     "merge-stream": "^0.1.7",
     "moment": "^2.10.6",
+    "ncp": "^2.0.0",
     "python": "0.0.4",
     "shelljs": "^0.5.1",
     "through2": "^2.0.0",
