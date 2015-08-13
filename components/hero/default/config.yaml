@@ -5,3 +5,4 @@ text:
   subtitle: HERO_SUBTITLE
   actionTitle: HERO_ACTION_TITLE
 variables:
+  animationDuration: 600
