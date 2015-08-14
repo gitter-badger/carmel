@@ -1,4 +1,4 @@
-module.exports = function ($, app, localeId, component)  {
+module.exports = function ($, app, locale, component) {
   return function($scope, $http, $location, $sce, $timeout) {
   }
 }
