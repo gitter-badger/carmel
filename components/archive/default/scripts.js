@@ -14,7 +14,7 @@ module.exports = function ($, app, localeId)  {
     $scope.tags             = [];
 
     function showTags () {
-        $http.get('/' + (localeId ? localeId  + '/': '') + 'data/articles/tags.json').
+        $http.get('/' + (localeId ? localeId  + '/': '') + 'data/tags.json').
           success(function(data, status, headers, config) {
             data.forEach(function(tag) {
               $scope.tags.push({title: tag.tag, totalArticles: tag.articles.length, articles: tag.articles});
@@ -92,7 +92,7 @@ module.exports = function ($, app, localeId)  {
       return ($scope.page > 1);
     }
 
-    $http.get('/' + (localeId ? localeId  + '/': '') + 'data/articles/all.json').
+    $http.get('/' + (localeId ? localeId  + '/': '') + 'data/articles.json').
       success(function(data, status, headers, config) {
 
         allArticles = data;
