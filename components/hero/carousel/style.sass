@@ -1,6 +1,7 @@
 .carousel {
     margin-bottom: 4rem;
     padding: 0;
+    background: $carmel-color-material-green-a700;
 }
 
 * {
@@ -14,11 +15,17 @@
   box-sizing: content-box; }
 
 .carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
+  opacity: 0.25;
+  // -webkit-transition-property: opacity;
+  // -moz-transition-property: opacity;
+  // -o-transition-property: opacity;
+  // transition-property: opacity;
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 .carousel-fade .carousel-inner .active {
   opacity: 1;

@@ -1,7 +1,7 @@
 module.exports = function ($, app, localeId, component)  {
 
   $('.carousel').carousel({
-    interval: 2000
+    interval: 6000
   });
   $('.carousel-control').click(function(e){
     e.preventDefault();
