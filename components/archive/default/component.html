@@ -8,24 +8,23 @@
 
 <div class="articles">
     <div class="container">
-
-        <div class="col-lg-2 col-lg-offset-6" ng-class="class">
+<!--
+        <div class="col-lg-2 col-lg-offset-6">
           <img src="../img/spinner.gif" style="width: 40px; height: 40px; display: block;"/>
-        </div>
+        </div> -->
 
-        <div id="show" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 hide">
+        <div id="show" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
 
-            <div class="archive-post">
+            <div class="archive-post" ng-repeat="city in cities">
                 <a href="">
-                    <img src="http://www.ultimele-stiri.eu/images/ultimele-stiri.eu/city/share/cluj.jpg"/>
-                    <h2> Cluj Napoca </h2>
+                    <img src="((city.image))"/>
+                    <h2>((city.name))</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        ((city.description))
                     </p>
                 </a>
                 <hr><br><br>
             </div>
         </div>
-            <button type="button" name="button" ng-click="show()">Show</button>
     </div>
 </div>
