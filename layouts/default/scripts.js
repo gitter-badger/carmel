@@ -1,13 +1,5 @@
 'use strict';
 
-global.jQuery     = require('jquery/dist/jquery');
-global.$          = global.jQuery;
-
-require('bootstrap/dist/js/bootstrap');
-require('angular/angular');
-require('angular-route/angular-route');
-require('angular-sanitize/angular-sanitize');
-
 $.fn.textWidth = function(text, font) {
     if (!$.fn.textWidth.fakeEl) $.fn.textWidth.fakeEl = $('<span>').hide().appendTo(document.body);
     $.fn.textWidth.fakeEl.text(text || this.val() || this.text()).css('font', font || this.css('font'));

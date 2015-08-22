@@ -20,11 +20,16 @@ module.exports = function ($, app, localeId)  {
               $scope.tags.push({title: tag.tag, totalArticles: tag.articles.length, articles: tag.articles});
             });
             $scope.tags.unshift({title: 'all', totalArticles: allArticles.length});
-            $scope.showArticles = true;
             showArticles();
           }).
           error(function(data, status, headers, config) {
           });
+    }
+
+    function doShowArticles() {
+       $timeout(function () {
+         $scope.showArticles = true;
+       }, 500);
     }
 
     function showArticles (tag) {
@@ -33,6 +38,7 @@ module.exports = function ($, app, localeId)  {
       $scope.articles  = articles.slice(start, end);
 
       if (!tag || !$scope.tags || $scope.tags.length == 0) {
+        doShowArticles();
         return;
       }
 
@@ -42,6 +48,8 @@ module.exports = function ($, app, localeId)  {
           t.current = true;
         }
       });
+
+      doShowArticles();
     }
 
     $scope.showTag = function(tag) {
@@ -63,7 +71,7 @@ module.exports = function ($, app, localeId)  {
         $scope.totalArticles = articles.length;
         $scope.totalPages    = Math.ceil($scope.totalArticles / $scope.perPage);
 
-        showArticles(tag);
+        doShowArticles();
     }
 
     $scope.fetchOlder = function() {

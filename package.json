@@ -11,6 +11,7 @@
   },
   "preferGlobal": "true",
   "dependencies": {
+    "aws-sdk": "^2.1.46",
     "bootstrap-sass": "^3.3.5",
     "browserify": "^10.2.4",
     "colors": "^1.1.0",
@@ -21,6 +22,7 @@
     "exit": "^0.1.2",
     "font-awesome": "^4.3.0",
     "fs-extra": "^0.18.3",
+    "fstream": "^1.0.7",
     "gulp": "git://github.com/gulpjs/gulp.git#4.0",
     "gulp-add-src": "^0.2.0",
     "gulp-autoprefixer": "^2.2.0",
@@ -59,6 +61,7 @@
     "through2": "^2.0.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
+    "walk": "^2.3.9",
     "which": "^1.1.1",
     "yargs": "^3.18.0"
   },
