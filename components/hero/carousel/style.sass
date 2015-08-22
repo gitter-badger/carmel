@@ -1,11 +1,31 @@
-margin: 2rem 0;
+.carousel {
+    margin-bottom: 4rem;
+    padding: 0;
+    background: $carmel-color-material-green-a700;
+}
+
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+*:before, *:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
 
 .carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
+  opacity: 0.25;
+  // -webkit-transition-property: opacity;
+  // -moz-transition-property: opacity;
+  // -o-transition-property: opacity;
+  // transition-property: opacity;
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 .carousel-fade .carousel-inner .active {
   opacity: 1;
@@ -22,4 +42,18 @@ margin: 2rem 0;
 }
 .carousel-fade .carousel-control {
   z-index: 2;
+}
+.slide-left {
+  position: absolute;
+  top:50%;
+}
+
+.slide-right {
+  position: absolute;
+  top:50%;
+}
+
+.item img {
+  width:100%;
+  height: $height;
 }
