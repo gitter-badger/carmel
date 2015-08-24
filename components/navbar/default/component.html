@@ -16,8 +16,9 @@
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           {{#each menu}}
-              <li {{#if current}} class='current' {{else}} {{#if action}} class='action' {{/if}}{{/if}}><a href="{{link}}">{{text}}
-              </a></li>
+              <li {{#if current}} class='current' {{else}} {{#if action}} class='action' {{/if}}{{/if}}>
+                <a href="{{link}}" class="carmel-text-link">{{text}}</a>
+              </li>
           {{/each}}
 
           <li><div class="g-ytsubscribe" data-channelid="UCLfpZSpk2WvEmYGCxY0WBbg" data-layout="default" data-count="hidden"></div></li>

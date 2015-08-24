@@ -1,10 +1,10 @@
 style:
-- bg: "#53C5E3"
-- text-color: "#fff"
-- border: "#fff"
-- button-background: "#f39c12"
+- text-color: $carmel-color-white
+- border-color: $carmel-color-white
+- background-color: $carmel-color-material-light-blue-300
+- link-color: $carmel-color-white
 text:
-  title: Video Title
-  details: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-variables:
-  maxChars: 500
+  title: VIDEO_TITLE
+  details: VIDEO_DETAILS
+  button: VIDEO_BUTTON
+  links: VIDEO_LINK

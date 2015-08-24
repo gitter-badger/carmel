@@ -6,30 +6,17 @@
 }
 
 .navbar .navbar-header button .icon-bar {
-  background: $carmel-color-white;
+  background: $carmel-color-black;
 }
 
 .navbar-collapse {
   border-top: 1px solid $carmel-color-menu !important;
 }
 
-.navbar .navbar-header button {
-  background: $item-background-color;
-  height: 44px;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid $carmel-color-white;
-}
-
 .navbar .navbar-default .navbar-nav > li > a, .navbar .navbar-default .navbar-brand {
-  color: $carmel-color-white;
+  color: $carmel-color-black;
 }
 
-.navbar .navbar-default .navbar-nav > li > a:hover,
-.navbar .navbar-default .navbar-nav > li > a:focus {
-  color: $carmel-color-white;
-
-}
 @media only screen and (max-width: 766px) {
 
   .navbar .collapsing, .navbar .in {
@@ -63,37 +50,39 @@
 }
 
 .navbar .navbar-nav li a {
-  color: #eee;
-  font-family: $carmel-font-sans, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  margin-left: 4px;
+   color: $item-text-color;
+   font-family: $carmel-font-sans, sans-serif;
+   font-weight: 700;
+   font-size: 16px;
+   margin-left: 4px;
 }
 
 .navbar .navbar-nav li a:hover {
- color: $carmel-color-white;
-   background: darken($carmel-color-menu, 15%);
+   font-weight: 700;
+   color:  $item-hover-color;
+   background: transparent;
    @include transition-duration(0.35s);
    @include transition-property(color);
    @include transition-property(background);
-   @include border-radius(4px);
+   @include border-radius(0px);
 }
 
-.navbar .navbar-nav li a:focus, .navbar .navbar-nav li a:active { 
+.navbar .navbar-nav li a:focus, .navbar .navbar-nav li a:active {
   background-color: transparent;
 }
 
 .navbar .navbar-nav li.current a {
-  color: $carmel-color-white;
-  border-bottom:1px solid $carmel-color-white;
-  @include border-radius(0);
+   color:  $item-selected-color;
+   background: $item-selected-background-color;
+   @include border-radius(0px);
+   border-bottom:1px solid transparent;
 }
 
 .navbar .navbar-nav li.action a {
-  color: white;
-  border: 1px solid $carmel-color-white;
+  color: $item-action-text-color;
+  background: $item-action-background-color;
   @include border-radius(0);
   &:hover {
-    background-color:$carmel-color-button;
+    background-color: darken($item-action-background-color, 15%);
   }
 }
