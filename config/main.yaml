@@ -5,4 +5,4 @@ ngControllerArgs:
 - sce
 - timeout
 logging:
-  level: 1
+  level: 2
