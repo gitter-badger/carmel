@@ -6,3 +6,6 @@ ngControllerArgs:
 - timeout
 logging:
   level: 1
+components:
+  repositories:
+    carmel: dancali/carmel-components

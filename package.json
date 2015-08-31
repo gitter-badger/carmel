@@ -1,6 +1,6 @@
 {
   "name": "carmel",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "The easiest way to build a website",
   "main": "./lib/index.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "font-awesome": "^4.3.0",
     "fs-extra": "^0.18.3",
     "fstream": "^1.0.7",
+    "git-node": "^0.1.1",
     "gulp": "git://github.com/gulpjs/gulp.git#4.0",
     "gulp-add-src": "^0.2.0",
     "gulp-autoprefixer": "^2.2.0",
@@ -32,6 +33,7 @@
     "gulp-debug": "^2.0.1",
     "gulp-filter": "^2.0.2",
     "gulp-front-matter": "^1.2.3",
+    "gulp-git": "^1.2.4",
     "gulp-handlebars": "^4.0.0",
     "gulp-htmlmin": "^1.1.1",
     "gulp-if": "^1.2.5",
@@ -55,6 +57,7 @@
     "moment": "^2.10.6",
     "ncp": "^2.0.0",
     "node-uuid": "^1.4.3",
+    "nodegit": "^0.4.1",
     "python": "0.0.4",
     "shelljs": "^0.5.1",
     "sqlite3": "^3.0.10",

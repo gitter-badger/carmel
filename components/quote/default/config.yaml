@@ -1,9 +1,0 @@
-style:
-- color: "#4a4a4a"
-- align: justify
-text:
-  title: QUOTE_TITLE
-  body: QUOTE_BODY
-variables:
-  titleMaxChars: 24
-  bodyMaxChars: 256
